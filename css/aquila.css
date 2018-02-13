@@ -1,8 +1,4 @@
-/* Compiled Less CSS File */
-/* Generated from "aquila.css" */
-
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,700);
-
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700);
 /*---------------------------------------------------
     LESS Elements 0.9
@@ -10,7 +6,6 @@
     A set of useful LESS mixins
     More info at: http://lesselements.com
   ---------------------------------------------------*/
-/*** Mixins ***/
 .fontAwesome {
   font-family: FontAwesome!important;
 }
@@ -149,10 +144,35 @@
  * use: @include dashicons( '\f140' );
  */
 body.login {
-  background-image: url(../images/aqlHolding.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: repeat;
+  background: #111111;
+}
+body.login #login {
+  width: 100%;
+}
+body.login #login:before {
+  font-family: "aquila-icons" !important;
+  content: "\61" !important;
+  font-size: 30px;
+  font-size: 150px;
+  line-height: 1;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  float: left;
+  padding-top: 50px;
+  color: #d9be6a;
+}
+body.login #login #login_error,
+body.login #login .message {
+  border: none;
+  padding: 0;
+  margin-left: 0;
+  background: none;
+  color: #d9be6a;
+  text-align: center;
+}
+body.login #login h1 a {
+  display: none!important;
 }
 body.login #login a {
   color: #b0933b;
@@ -167,28 +187,30 @@ body.login #login a:active,
 body.login #login a:focus {
   color: #b0933b;
 }
-body.login #login h1 a {
-  background-image: url(../images/aqlLogo.png);
-  width: 100%;
-  background-size: contain;
-  margin-bottom: 0px;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
 body.login #login form {
   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
   box-shadow: none;
-  background: #333333;
-  background: rgba(0, 0, 0, 0.5);
+  background: #222222;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+body.login #login form p {
+  width: 320px;
+  max-width: 100%;
+  display: inline-flex;
+  margin: 0 auto;
 }
 body.login #login form input[type=checkbox]:checked:before {
   content: "\f147";
   color: #d9be6a;
 }
-body.login #login #wp-submit {
+body.login #login form #wp-submit {
   background: #d9be6a;
   border-color: #b0933b;
   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
   box-shadow: none;
   color: #333333;
   text-decoration: none;
@@ -197,13 +219,105 @@ body.login #login #wp-submit {
   -webkit-transition: 0.2s all linear;
   -moz-transition: 0.2s all linear;
   -o-transition: 0.2s all linear;
+  width: 90%;
+  margin: 5%;
+  padding: 10px 15px;
+  height: auto;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 14px;
 }
-body.login #login #wp-submit:hover {
+body.login #login form #wp-submit:hover {
   background: #b0933b;
   border-color: #d9be6a;
   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
   box-shadow: none;
   color: #333333;
+}
+body.login #login form .input,
+body.login #login form input[type=checkbox],
+body.login #login form input[type=text] {
+  appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 90%;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  transition: 0.2s all linear;
+  -webkit-transition: 0.2s all linear;
+  -moz-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+  font-weight: 400;
+}
+body.login #login form .input:hover,
+body.login #login form input[type=checkbox]:hover,
+body.login #login form input[type=text]:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+body.login #login form .input:focus,
+body.login #login form input[type=checkbox]:focus,
+body.login #login form input[type=text]:focus {
+  background-color: white;
+  width: 100%;
+  color: #b0933b;
+}
+body.login #login form input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  line-height: 1;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+body.login #login form input[type=checkbox]:focus {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 16px;
+}
+body.login #login form label {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  float: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+body.login #backtoblog,
+body.login #nav {
+  font-size: 13px;
+  padding: 0 24px;
+  width: 320px;
+  max-width: 100%;
+  margin: 0 auto!important;
+  text-align: center;
+  padding: 10px 0 0 0;
 }
 html.wp-toolbar {
   background: #f3f3f3;
@@ -211,13 +325,9 @@ html.wp-toolbar {
 body.wp-admin {
   /* Admin Menu */
   /* Active tabs use a bottom border color that matches the page background color. */
-
   /* Admin Menu: submenu */
-
   /* Admin Menu: current */
-
   /* Admin Menu: collapse button */
-
 }
 body.wp-admin #wpcontent,
 body.wp-admin #wpfooter {
@@ -297,7 +407,25 @@ body.wp-admin #wpcontent .button-secondary {
   border: none;
   background: #ccc;
   box-shadow: none;
-  border-radius: 0;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding-box;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 body.wp-admin #wpcontent #rightnow a:hover,
 body.wp-admin #wpcontent #media-upload a.del-link:hover,
@@ -353,7 +481,25 @@ body.wp-admin #wpcontent .button-primary {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
-  border-radius: 0;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding-box;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   transition: 0.2s all linear;
   -webkit-transition: 0.2s all linear;
   -moz-transition: 0.2s all linear;
@@ -402,7 +548,25 @@ body.wp-admin #wpcontent .page-title-action {
   background: #333333;
   color: #ffffff;
   border: none;
-  border-radius: 0;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding-box;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   transition: 0.2s all linear;
   -webkit-transition: 0.2s all linear;
   -moz-transition: 0.2s all linear;
@@ -646,7 +810,9 @@ body.wp-admin #adminmenu li.wp-has-current-submenu div.wp-menu-image:before {
   /* Admin Menu: bubble */
 }
 body.wp-admin #adminmenu .awaiting-mod,
-body.wp-admin #adminmenu .update-plugins {
+body.wp-admin #adminmenu .update-plugins,
+body.wp-admin #adminmenu li a.wp-has-current-submenu .update-plugins,
+body.wp-admin #adminmenu li.current a .awaiting-mod {
   color: #111111;
   background: #b0933b;
 }
@@ -731,7 +897,7 @@ body.wp-admin #wpcontent:before {
   content: "\61" !important;
   font-size: 30px;
   font-size: 1000px;
-  position: absolute;
+  position: fixed;
   color: rgba(34, 34, 34, 0.05);
   top: 400px;
   left: -300px;
@@ -761,11 +927,8 @@ html.wp-toolbar {
   font-family: 'Raleway', sans-serif !important;
   /* Admin Bar: submenu */
   /* Admin Bar: search */
-
   /* Admin Bar: my account */
-
   /* Pointers */
-
 }
 #wpadminbar .ab-item,
 #wpadminbar a.ab-item,
@@ -1021,8 +1184,25 @@ body.folded #collapse-menu {
 }
 body.folded #collapse-menu #collapse-button {
   margin: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding-box;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   width: 100%;
   height: 100%;
 }
@@ -1102,8 +1282,25 @@ body.folded #collapse-menu #collapse-button div:after {
   }
   body.wp-admin.auto-fold #collapse-menu #collapse-button {
     margin: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-bottom-right-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius-topright: 0px;
+    -moz-border-radius-bottomright: 0;
+    -moz-border-radius-bottomleft: 0;
+    -moz-border-radius-topleft: 0;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    -moz-background-clip: padding-box;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
     width: 100%;
     height: 100%;
   }
@@ -1132,9 +1329,6 @@ body.folded #collapse-menu #collapse-button div:after {
     color: #d9be6a !important;
     font-size: 34px;
   }
-}
-@media screen and (min-width: 783px) {
-  
 }
 @media screen and (max-width: 782px) {
   html.wp-toolbar {
@@ -1201,3 +1395,4 @@ body.folded #collapse-menu #collapse-button div:after {
     right: 50px!important;
   }
 }
+/*# sourceMappingURL=aquila.css.map */
