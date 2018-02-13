@@ -27,7 +27,7 @@ function aquila_admin_support_widget_function() {
 		</ul>";
 
 		if (current_user_can('manage_options')) {
-			include('/../functions/pluginList.php');
+			//include('/../functions/pluginList.php');
 		}
 
 	echo "</p>";
