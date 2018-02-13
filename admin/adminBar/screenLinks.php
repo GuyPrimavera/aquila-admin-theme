@@ -1,5 +1,4 @@
-<?php 
-if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
+<?php if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
 
 add_action('admin_bar_menu', 'new_screenlinks', 100);
 function new_screenlinks($admin_bar){

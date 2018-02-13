@@ -1,7 +1,7 @@
+/* LESS Elements 0.9 */
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Lato);
-/* LESS Elements 0.9 */
 .fontAwesome {
   font-family: "fontAwesome" !important;
 }
@@ -129,4 +129,10 @@
   -webkit-transition: 0.2s all linear;
   -moz-transition: 0.2s all linear;
   -o-transition: 0.2s all linear;
+}
+.transNone {
+  transition: none!important;
+  -webkit-transition: none!important;
+  -moz-transition: none!important;
+  -o-transition: none!important;
 }

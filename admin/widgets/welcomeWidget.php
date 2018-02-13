@@ -1,5 +1,4 @@
-<?php 
-if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
+<?php if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
 
 // Add Welcome Widget
 
@@ -45,12 +44,12 @@ function aquila_welcome_widget_function() {
 	echo "	
 	<p class='about-description'>
 		<ul>
-			<li><i class='aquila-wordpress'></i><strong>WordPress</strong><br/>" . $wordpressVer . "</li>
-			<li><i class='aquila-aquila'></i><strong>Aquila</strong><br/>" . $aquilaVer . "</li>
+			<li><i class='aquila-wordpress'></i><strong>" . __( 'WordPress', 'aquila-admin-theme' ) . "</strong><br/>" . $wordpressVer . "</li>
+			<li><i class='aquila-aquila'></i><strong>" . __( 'Aquila', 'aquila-admin-theme' ) . "</strong><br/>" . $aquilaVer . "</li>
 			<li><i class='aquila-palette'></i><strong>" . $themeInfo->get( 'Name' ) . "</strong><br/>" . $themeInfo->get( 'Version' ) . "</li>
-			<li><i class='aquila-terminal'></i><strong>Server IP</strong><br/>" . $server_ip_address . "</li>
-			<li><i class='aquila-php'></i><strong>PHP</strong><br/>" . $phpVersion . "</li>
-			<li><i class='aquila-cubes'></i><strong>Memory Usage</strong><br/>" . $memUsage . " / " . $memLimit . "MB (" . $memPercent . "%)</li>
+			<li><i class='aquila-terminal'></i><strong>" . __( 'Server IP', 'aquila-admin-theme' ) . "</strong><br/>" . $server_ip_address . "</li>
+			<li><i class='aquila-php'></i><strong>" . __( 'PHP', 'aquila-admin-theme' ) . "</strong><br/>" . $phpVersion . "</li>
+			<li><i class='aquila-cubes'></i><strong>" . __( 'Memory Usage', 'aquila-admin-theme' ) . "</strong><br/>" . $memUsage . " / " . $memLimit . "MB (" . $memPercent . "%)</li>
 		</ul>
 	</p>
 	";

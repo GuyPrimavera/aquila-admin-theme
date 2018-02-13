@@ -1,4 +1,4 @@
-<?php
+<?php if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
 
 function aquila_admin_login_logo_url() {
     return home_url();
