@@ -1,8 +1,9 @@
 @import "elements.less";
 @import "mix.less";
+@import "/../icons/faVars.less";
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,700);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700);
-
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 /// Custom Mixins
 @gold:		#d9be6a;
 @goldD:		#B0933B;
@@ -226,9 +227,10 @@ body.wp-admin {
 		.postbox {
 			border: none;
 			.box-shadow(none);
-			background: @bd;
+			background: fade(black, 10%);
 			.hndle {
 				border: none;
+				background: fade(black, 20%);
 			}
 			#major-publishing-actions {
 				background: @bc;
@@ -440,20 +442,6 @@ body.wp-admin {
 			.tac;
 			text-indent: -2px;
 		}
-		#menu-dashboard {
-			.wp-menu-image:before {
-				font-family: "aquila-icons" !important;
-				content: "\61";
-			}
-		}
-		#collapse-button {
-			div:after {
-				.fontAwesome;
-				content: '\f100';
-			}
-		}
-		.wp-menu-name {
-		}
 	}
 	
 	/* Active tabs use a bottom border color that matches the page background color. */
@@ -498,8 +486,6 @@ body.wp-admin {
 		background: @goldD;
 	}
 	#adminmenu li.current a .awaiting-mod, #adminmenu li a.wp-has-current-submenu .update-plugins, #adminmenu li:hover a .awaiting-mod, #adminmenu li.menu-top:hover > a .update-plugins {
-	}
-	div.wp-menu-image:before {
 	}
 	/* Admin Menu: collapse button */
 	#collapse-menu:hover {
@@ -577,8 +563,9 @@ body.wp-admin {
 			.icoAquila;
 			font-size: 1000px;
 			position: fixed;
+			color: #ededed;
 			color: rgba(34, 34, 34, 0.05);
-			top: 400px;
+			top: 0px;
 			left: -300px;
 		}
 	}
@@ -586,6 +573,140 @@ body.wp-admin {
 		color: @red!important;
 	}
 }
+
+// Admin Menu Icons
+
+// Font Awesome Icons
+
+#adminmenu {
+	#toplevel_page_wpseo_dashboard, 
+	#toplevel_page_mailchimp-for-wp,
+	#toplevel_page_all-in-one-seo-pack-aioseop_class, 
+	#menu-posts, 
+	#menu-comments, 
+	#toplevel_page_wysija_campaigns, 
+	#toplevel_page_edit-post_type-acf-field-group, 
+	#toplevel_page_pmxe-admin-home, 
+	#toplevel_page_pmxi-admin-home, 
+	#toplevel_page_bws_plugins, 
+	#toplevel_page_metaslider, 
+	#toplevel_page_aiowpsec, 
+	#toplevel_page_CF7DBPluginSubmissions, 
+	#toplevel_page_duplicator, 
+	#toplevel_page_nextgen-gallery, 
+	#toplevel_page_w3tc_dashboard, 
+	#toplevel_page_WP-Optimize, 
+	#toplevel_page_wptouch-admin-general-settings, 
+	#toplevel_page_wpseo_dashboard, 
+	#toplevel_page_wpseo_dashboard, 
+	#toplevel_page_yst_ga_extensions {
+		.wp-menu-image {
+			background: none!important;
+			&:before {
+				.menuFA;
+			}
+			img {
+				display: none!important;
+			}
+		}
+	}
+}
+
+.wp-menu-image {
+	&:before {
+		#adminmenu #toplevel_page_wpseo_dashboard & {
+			.fa_yoast;
+		}
+		#adminmenu #toplevel_page_mailchimp-for-wp & {
+			.fa_send;
+		}
+		#adminmenu #toplevel_page_all-in-one-seo-pack-aioseop_class & {
+			.fa_shield!important;
+		}
+		#adminmenu #menu-posts & {
+			.fa_pencil;
+		}
+		#adminmenu #menu-comments & {
+			.fa_comments;
+		}
+		#adminmenu #toplevel_page_wysija_campaigns & {
+			.fa_meanpath;
+		}
+		#adminmenu #toplevel_page_edit-post_type-acf-field-group & {
+			.fa_check_square;
+		}
+		#adminmenu #toplevel_page_pmxe-admin-home & {
+			.fa_undo;
+		}
+		#adminmenu #toplevel_page_pmxi-admin-home & {
+			.fa_repeat;
+		}
+		#adminmenu #toplevel_page_bws_plugins & {
+			.fa_bold;
+		}
+		#adminmenu #toplevel_page_metaslider & {
+			.fa_angle_double_up;
+		}
+		#adminmenu #toplevel_page_aiowpsec & {
+			.fa_shield;
+		}
+		#adminmenu #toplevel_page_CF7DBPluginSubmissions & {
+			.fa_database;
+		}
+		#adminmenu #toplevel_page_duplicator & {
+			.fa_share_alt;
+		}
+		#adminmenu #toplevel_page_nextgen-gallery & {
+			.fa_square;
+		}
+		#adminmenu #toplevel_page_w3tc_dashboard & {
+			.fa_cube;
+		}
+		#adminmenu #toplevel_page_WP-Optimize & {
+			.fa_check_circle;
+		}
+		#adminmenu #toplevel_page_wptouch-admin-general-settings & {
+			.fa_mobile;
+		}
+		#adminmenu #toplevel_page_yst_ga_extensions & {
+			.fa_yoast;
+		}
+		#adminmenu #toplevel_page_yst_ga_dashboard & {
+			font-size: 16px;
+			line-height: 1.6;
+		}
+		#adminmenu #toplevel_page_tablepress & {
+			font-size: 16px;
+			line-height: 1.3;
+		}
+		// TODO: WordFence Icon
+		// TODO: Clef Icon
+	}
+}
+
+// Aquila Icons
+
+#adminmenu {
+	#menu-dashboard {
+		.wp-menu-image {
+			background: none!important;
+			&:before {
+				.icoAquila;
+			}
+			img {
+				display: none!important;
+			}
+		}
+	}
+}
+
+#collapse-button {
+	div:after {
+		.fontAwesome;
+		content: '\f100';
+	}
+}
+
 
 /// Editors
 
@@ -786,6 +907,7 @@ body.folded {
 	#collapse-menu {
 		width: 50px;
 		height: 50px;
+		margin-bottom: 40px;
 		#collapse-button {
 			margin: 0;
 			.border-radius(0px);

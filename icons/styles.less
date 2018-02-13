@@ -1,0 +1,44 @@
+@import "variables";
+
+@font-face {
+    font-family: 'Aquila';
+    src:    url('@{icomoon-font-path}/Aquila.eot?mvknes');
+    src:    url('@{icomoon-font-path}/Aquila.eot?mvknes#iefix') format('embedded-opentype'),
+        url('@{icomoon-font-path}/Aquila.ttf?mvknes') format('truetype'),
+        url('@{icomoon-font-path}/Aquila.woff?mvknes') format('woff'),
+        url('@{icomoon-font-path}/Aquila.svg?mvknes#Aquila') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="aquila-"], [class*=" aquila-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'Aquila' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.aquila-magento {
+    &:before {
+        content: @aquila-magento;
+    }
+}
+.aquila-mito {
+    &:before {
+        content: @aquila-mito;
+    }
+}
+.aquila-aquila {
+    &:before {
+        content: @aquila-aquila;
+    }
+}
+

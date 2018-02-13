@@ -1,5 +1,12 @@
 .fontAwesome {
-  font-family: FontAwesome!important;
+  font-family: "fontAwesome" !important;
+}
+.menuFA {
+  font-family: "fontAwesome" !important;
+  font-size: 16px;
+  margin-top: 0px;
+  float: left;
+  line-height: 1.3;
 }
 .serif {
   font-family: 'Merriweather', serif !important;
@@ -13,9 +20,10 @@
   background-repeat: repeat;
 }
 .icoAquila {
-  font-family: "aquila-icons" !important;
-  content: "\61" !important;
-  font-size: 30px;
+  font-family: "Aquila" !important;
+  content: "\a002";
+  font-size: 20px;
+  line-height: 1;
 }
 .fS0 {
   font-size: 18px;
