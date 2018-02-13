@@ -1,0 +1,331 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+/* LESS Elements 0.9 */
+.fontAwesome {
+  font-family: "fontAwesome" !important;
+}
+.menuFA {
+  font-family: "fontAwesome" !important;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.serif {
+  font-family: 'Raleway', serif;
+}
+.sans {
+  font-family: 'Roboto', sans-serif !important;
+}
+.heading {
+  font-family: 'Raleway', sans-serif;
+}
+.bgCov {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+}
+.icoAquila {
+  font-family: 'Aquila' !important;
+  content: "\a002";
+}
+.tac {
+  text-align: center;
+}
+.va {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.abs {
+  position: absolute;
+}
+.absFull {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.fix {
+  position: fixed;
+}
+.rel {
+  position: relative;
+}
+.dN {
+  display: none;
+}
+.dNI {
+  display: none!important;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.z0 {
+  z-index: 0;
+}
+.z1 {
+  z-index: 1;
+}
+.z10 {
+  z-index: 10;
+}
+.z99 {
+  z-index: 99;
+}
+.z999 {
+  z-index: 999;
+}
+/* Widths & Heights */
+.w0 {
+  width: 0%;
+}
+.w25 {
+  width: 25%;
+}
+.w50 {
+  width: 50%;
+}
+.w75 {
+  width: 75%;
+}
+.w100 {
+  width: 100%;
+}
+.mw100 {
+  max-width: 100%;
+}
+.h0 {
+  height: 0%;
+}
+.h25 {
+  height: 25%;
+}
+.h50 {
+  height: 50%;
+}
+.h75 {
+  height: 75%;
+}
+.h100 {
+  height: 100%;
+}
+.mh100 {
+  max-height: 100%;
+}
+/* Other */
+.borderBox {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.trans {
+  transition: 0.2s all linear;
+  -webkit-transition: 0.2s all linear;
+  -moz-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+}
+/* colors.scss & _variables.scss */
+/* _mixins.scss */
+body.login {
+  background: #424242;
+  font-family: 'Roboto', sans-serif !important;
+}
+body.login #login {
+  width: 100%;
+  padding: 0;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+body.login #login:before {
+  font-family: 'Aquila' !important;
+  content: "\a002";
+  font-size: 150px;
+  line-height: 1;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  float: left;
+  padding-top: 10px;
+  color: #ffee58;
+}
+body.login #login #login_error,
+body.login #login .message {
+  border: none;
+  padding: 0;
+  margin-left: 0;
+  background: none;
+  color: #ffee58;
+  text-align: center;
+  box-shadow: none;
+}
+body.login #login h1 a {
+  display: none!important;
+}
+body.login #login a {
+  color: #f5f5f5;
+  opacity: 0.8;
+  transition: 0.2s all linear;
+  -webkit-transition: 0.2s all linear;
+  -moz-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+  text-decoration: none!important;
+}
+body.login #login a:hover,
+body.login #login a:active,
+body.login #login a:focus {
+  opacity: 1;
+  color: #f5f5f5;
+}
+body.login #login form {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: #212121;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+body.login #login form p {
+  width: 320px;
+  max-width: 100%;
+  display: inline-flex;
+  margin: 0 auto;
+}
+body.login #login form input[type=checkbox]:checked:before {
+  content: "\f147";
+  color: #ffee58;
+}
+body.login #login form #wp-submit {
+  background: #ffee58;
+  border: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  color: #212121;
+  text-decoration: none;
+  text-shadow: none;
+  transition: 0.2s all linear;
+  -webkit-transition: 0.2s all linear;
+  -moz-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+  width: 90%;
+  margin: 5%;
+  padding: 10px 15px;
+  height: auto;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+body.login #login form #wp-submit:hover {
+  background: #fff38b;
+  color: #212121;
+}
+body.login #login form .input,
+body.login #login form input[type=checkbox],
+body.login #login form input[type=text] {
+  appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 90%;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  transition: 0.2s all linear;
+  -webkit-transition: 0.2s all linear;
+  -moz-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+  font-weight: 400;
+}
+body.login #login form .input:hover,
+body.login #login form input[type=checkbox]:hover,
+body.login #login form input[type=text]:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+body.login #login form .input:focus,
+body.login #login form input[type=checkbox]:focus,
+body.login #login form input[type=text]:focus {
+  background-color: white;
+  width: 100%;
+  color: #0091ea;
+}
+body.login #login form input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  line-height: 1;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+body.login #login form input[type=checkbox]:focus {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 16px;
+}
+body.login #login form label {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  float: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+body.login #backtoblog,
+body.login #nav {
+  font-size: 13px;
+  padding: 0 24px;
+  width: 320px;
+  max-width: 100%;
+  margin: 0 auto!important;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+body.login #backtoblog {
+  padding-bottom: 100px;
+}
+body.login .wp-social-login-widget {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffee58;
+}
+#loginform #jetpack-sso-wrap,
+#loginform .jetpack-sso-clear {
+  width: 320px;
+  max-width: 100%;
+  display: inline-block;
+  margin: 0 auto;
+}

@@ -1,5 +1,5 @@
-<?php
-
+<?php 
+if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
 
 function aquila_plugin_widget() {
 
@@ -16,7 +16,7 @@ function aquila_plugin_widget() {
 
 		wp_add_dashboard_widget(
 		 'aquila-plugin-support',
-		 'Plugins Support',
+		 'Plugin Support',
 		 'aquila_plugin_widget_function'
 		);
 
@@ -32,9 +32,9 @@ echo "<p class='about-description'>";
 
 	$aquilaOptions = get_option( 'aquila_settings' );
 	if(isset($aquilaOptions['aquila_chk_pluginSupport']) && $aquilaOptions['aquila_chk_pluginSupport'] == 1){
-		echo " <p>Visible to <strong>Editors</strong>.</p> ";
+		echo ' <p>Visible to <a href="options-general.php?page=aquilaSettings"><strong>Editors</strong></a></p> ';
 	} else {
-		echo " <p>Visible to <strong>Administrators</strong>.</p> ";
+		echo ' <p>Visible to <a href="options-general.php?page=aquilaSettings"><strong>Administrators</strong></a></p> ';
 	}
 	
 	echo "<ul>";

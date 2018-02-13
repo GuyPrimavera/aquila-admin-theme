@@ -1,0 +1,117 @@
+@import "mdColours.less";
+
+
+// Colour Scheme
+
+@primary: @md_yellow_400;
+@secondary: @md_light_blue_A700;
+
+/* colors.scss & _variables.scss */
+
+@base: @md_grey_100;
+@baseD: @md_grey_700;
+@box: @md_grey_300;
+@text: @md_grey_800;
+@textL: @md_grey_100;
+@textD: @md_grey_900;
+@icon-color: @text;
+@highlight-color: @primary;
+@notification-color: @primary;
+@body-background: @base;
+@menuBG: @md_grey_700;
+@barBG: @menuBG;
+//@icon-color: hsl( hue( @base ), 7%, 95% );
+@link: @md_blue_700;
+@link-focus: lighten( @link, 10% );
+
+@button-color: @secondary;
+@form-checked: @secondary;
+
+
+// admin menu & admin-bar
+
+@menu-text: @textL;
+@menu-icon: @primary;
+@menu-background: @menuBG;
+
+@menu-highlight-text: @primary;
+@menu-highlight-icon: @primary;
+@menu-highlight-background: darken( @menuBG, 5% );
+
+@menu-current-text: @textD;
+@menu-current-icon: @textD!important;
+@menu-current-background: @primary;
+
+@menu-submenu-text: @textL;
+@menu-submenu-background: lighten( @menuBG, 10% );
+
+@menu-submenu-focus-text: @primary;
+@menu-submenu-current-text: @textL;
+
+@menu-bubble-text: @textL;
+@menu-bubble-background: @secondary;
+@menu-bubble-current-text: @text;
+@menu-bubble-current-background: @menu-submenu-background;
+
+@menu-collapse-text: @menu-icon;
+@menu-collapse-icon: @menu-icon;
+@menu-collapse-focus-text: @text;
+@menu-collapse-focus-icon: @menu-highlight-icon;
+
+@adminbar-avatar-frame: lighten( @menu-background, 7% );
+@adminbar-input-background: lighten( @menu-background, 7% );
+
+@menu-customizer-text: mix( @base, @text, 40% );
+
+
+/* _mixins.scss */
+
+.button( @button-color, @text: #fff ) {
+	background: @button-color;
+	border-color: darken( @button-color, 10% ) darken( @button-color, 15% ) darken( @button-color, 15% );
+	color: @text;
+	box-shadow: 0 1px 0 darken( @button-color, 15% );
+	text-shadow: 0 -1px 1px darken( @button-color, 15% ),
+		1px 0 1px darken( @button-color, 15% ),
+		0 1px 1px darken( @button-color, 15% ),
+		-1px 0 1px darken( @button-color, 15% );
+
+	&:hover,
+	&:focus {
+		background: lighten( @button-color, 3% );
+		border-color: darken( @button-color, 15% );
+		color: @text;
+		box-shadow: 0 1px 0 darken( @button-color, 15% );
+	}
+
+	&:focus {
+		box-shadow: inset 0 1px 0 darken( @button-color, 10% ),
+					0 0 2px 1px #33b3db;
+	}
+
+	&:active {
+		background: darken( @button-color, 10% );
+		border-color: darken( @button-color, 15% );
+	 	box-shadow: inset 0 2px 0 darken( @button-color, 15% );
+	}
+
+	&[disabled],
+	&:disabled,
+	&.button-primary-disabled,
+	&.disabled {
+		color: hsl( hue( @button-color ), 10%, 80% ) !important;
+		background: darken( @button-color, 8% ) !important;
+		border-color: darken( @button-color, 15% ) !important;
+		text-shadow: none !important;
+	}
+
+	&.button-hero {
+		box-shadow: 0 2px 0 darken( @button-color, 15% ) !important;
+		&:active {
+		 	box-shadow: inset 0 3px 0 darken( @button-color, 15% ) !important;
+		}
+	}
+
+}
+
+

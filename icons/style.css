@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'Aquila';
+  src:  url('fonts/Aquila.eot?dnmeo0');
+  src:  url('fonts/Aquila.eot?dnmeo0#iefix') format('embedded-opentype'),
+    url('fonts/Aquila.ttf?dnmeo0') format('truetype'),
+    url('fonts/Aquila.woff?dnmeo0') format('woff'),
+    url('fonts/Aquila.svg?dnmeo0#Aquila') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="aquila-"], [class*=" aquila-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Aquila' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.aquila-tools:before {
+  content: "\e909";
+}
+.aquila-comment:before {
+  content: "\e90a";
+}
+.aquila-import_export:before {
+  content: "\e90b";
+}
+.aquila-shopping_basket:before {
+  content: "\e90c";
+}
+.aquila-person_pin:before {
+  content: "\e90d";
+}
+.aquila-person_add:before {
+  content: "\e90e";
+}
+.aquila-person:before {
+  content: "\e90f";
+}
+.aquila-palette:before {
+  content: "\e910";
+}
+.aquila-photo:before {
+  content: "\e911";
+}
+.aquila-envelope:before {
+  content: "\e912";
+}
+.aquila-cubes:before {
+  content: "\e913";
+}
+.aquila-plug:before {
+  content: "\e914";
+}
+.aquila-page:before {
+  content: "\e915";
+}
+.aquila-feather:before {
+  content: "\e916";
+}
+.aquila-settings:before {
+  content: "\e917";
+}
+.aquila-aquila_full:before {
+  content: "\e918";
+}
+.aquila-terminal:before {
+  content: "\e907";
+}
+.aquila-code:before {
+  content: "\e908";
+}
+.aquila-java:before {
+  content: "\e901";
+}
+.aquila-javascript:before {
+  content: "\e902";
+}
+.aquila-jquery:before {
+  content: "\e903";
+}
+.aquila-mysql:before {
+  content: "\e904";
+}
+.aquila-php:before {
+  content: "\e905";
+}
+.aquila-edge:before {
+  content: "\eadc";
+}
+.aquila-mito:before {
+  content: "\a001";
+}
+.aquila-aquila:before {
+  content: "\a002";
+}
+.aquila-css:before {
+  content: "\e900";
+}
+.aquila-html:before {
+  content: "\eadf";
+}
+.aquila-wordpress:before {
+  content: "\eab6";
+}
+.aquila-magento:before {
+  content: "\a003";
+}
+.aquila-pencil:before {
+  content: "\e906";
+}
+.aquila-apple:before {
+  content: "\eabf";
+}
+.aquila-windows:before {
+  content: "\eac3";
+}
+.aquila-chrome:before {
+  content: "\eae5";
+}
+.aquila-firefox:before {
+  content: "\eae6";
+}
+.aquila-ie:before {
+  content: "\eae7";
+}
+.aquila-opera:before {
+  content: "\eae8";
+}
+.aquila-safari:before {
+  content: "\eae9";
+}
+
