@@ -22,6 +22,4 @@ if ( is_admin_bar_showing() ) {
 add_action( 'wp_head', 'aquila_admin_bar', 99 ); 
 
 remove_action( 'admin_color_scheme_picker', 'admin_color_scheme_picker' );
-
-
 ?>
