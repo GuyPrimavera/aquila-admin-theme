@@ -97,7 +97,7 @@
 .w25 {
   width: 25%;
 }
-.50 {
+.w50 {
   width: 50%;
 }
 .w75 {
@@ -406,6 +406,8 @@ body.wp-admin #wpcontent .button-secondary {
   color: #111;
   border: none;
   background: #ccc;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
   box-shadow: none;
   -webkit-border-top-right-radius: 0px;
   -webkit-border-bottom-right-radius: 0;
@@ -438,6 +440,7 @@ body.wp-admin #wpcontent .ui-tabs-nav a:hover {
 body.wp-admin #wpcontent .postbox {
   border: none;
   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
   box-shadow: none;
   background: #dddddd;
 }
@@ -476,6 +479,7 @@ body.wp-admin #wpcontent .button-primary {
   border: none;
   color: #111111;
   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
   box-shadow: none;
   text-shadow: none;
   text-transform: uppercase;
@@ -511,6 +515,7 @@ body.wp-admin #wpcontent .button-primary:active {
   background: #b0933b;
   color: #ffffff;
   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
   box-shadow: none;
   text-shadow: none;
 }
@@ -611,6 +616,8 @@ body.wp-admin #wpcontent strong .post-com-count span {
 }
 body.wp-admin #wpcontent table.widefat {
   border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
   box-shadow: none;
 }
 body.wp-admin #wpcontent table.widefat ol,
@@ -651,6 +658,8 @@ body.wp-admin #wpcontent #screen-meta-links .screen-meta-toggle {
 }
 body.wp-admin #wpcontent #screen-meta-links .screen-meta-toggle .show-settings {
   border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
   box-shadow: none;
   color: #111111;
 }
@@ -821,9 +830,19 @@ body.wp-admin #collapse-menu:hover {
 }
 body.wp-admin #collapse-button div:after {
   color: #d9be6a;
+  -khtml-opacity: 0.5;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
   opacity: 0.5;
 }
 body.wp-admin #collapse-menu:hover #collapse-button div:after {
+  -khtml-opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  filter: alpha(opacity=100);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
   opacity: 1;
   color: #d9be6a;
 }
@@ -843,11 +862,15 @@ body.wp-admin .media-progress-bar div {
   background-color: #d9be6a;
 }
 body.wp-admin .details.attachment {
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 5px #d9be6a;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 body.wp-admin .attachment.details .check {
   background-color: #d9be6a;
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 2px #d9be6a;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
   /* Themes */
 }
 body.wp-admin .theme-browser .theme.active .theme-name,
@@ -868,8 +891,9 @@ body.wp-admin .wp-slider .ui-slider-handle.ui-state-hover,
 body.wp-admin .wp-slider .ui-slider-handle.focus {
   background: #d9be6a;
   border-color: #b0933b;
-  -webkit-box-shadow: inset 0 1px 0 #de4146, 0 1px 0 rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0 1px 0 #de4146, 0 1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
   /* Responsive Component */
 }
 body.wp-admin div#wp-responsive-toggle a:before {
@@ -890,6 +914,11 @@ body.wp-admin #wpfooter #footer-left {
   text-align: center;
 }
 body.wp-admin li#toplevel_page_aquila-options .wp-menu-image img {
+  -khtml-opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  filter: alpha(opacity=100);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
   opacity: 1;
 }
 body.wp-admin #wpcontent:before {
@@ -1028,20 +1057,16 @@ html.wp-toolbar {
   color: #ffffff;
   background: #333333;
 }
-#wpadminbar #adminbarsearch .adminbar-input::-webkit-input-placeholder {
-  color: #ffffff;
-  opacity: 0.7;
-}
-#wpadminbar #adminbarsearch .adminbar-input:-moz-placeholder {
-  color: #ffffff;
-  opacity: 0.7;
-}
-#wpadminbar #adminbarsearch .adminbar-input::-moz-placeholder {
-  color: #ffffff;
-  opacity: 0.7;
-}
+#wpadminbar #adminbarsearch .adminbar-input::-webkit-input-placeholder,
+#wpadminbar #adminbarsearch .adminbar-input:-moz-placeholder,
+#wpadminbar #adminbarsearch .adminbar-input::-moz-placeholder,
 #wpadminbar #adminbarsearch .adminbar-input:-ms-input-placeholder {
   color: #ffffff;
+  -khtml-opacity: 0.7;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+  filter: alpha(opacity=70);
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
   opacity: 0.7;
 }
 #wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar > a img {
@@ -1088,6 +1113,7 @@ html.wp-toolbar {
   background-size: 70%;
   background-repeat: no-repeat !important;
   background-position: center 60%!important;
+  display: block;
 }
 #wpadminbar .ab-top-menu > li.hover > .ab-item,
 #wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus,
