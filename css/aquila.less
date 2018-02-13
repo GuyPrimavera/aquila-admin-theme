@@ -526,11 +526,13 @@ body.wp-admin {
 		background-color: @gold;
 	}
 	.details.attachment {
-		.box-shadow(0 0 0 1px @w, 0 0 0 5px @gold);
+		//.box-shadow(0 0 0 1px @w, 0 0 0 5px @gold);
+		.box-shadow(none);
 	}
 	.attachment.details .check {
 		background-color: @gold;
-		.box-shadow(0 0 0 1px @w, 0 0 0 2px @gold);
+		//.box-shadow(0 0 0 1px @w, 0 0 0 2px @gold);
+		.box-shadow(none);
 	/* Themes */ }
 	.theme-browser .theme.active .theme-name, .theme-browser .theme.add-new-theme:hover:after {
 		background: @gold;
@@ -544,7 +546,8 @@ body.wp-admin {
 	.wp-slider .ui-slider-handle, .wp-slider .ui-slider-handle.ui-state-hover, .wp-slider .ui-slider-handle.focus {
 		background: @gold;
 		border-color: @goldD;
-		.box-shadow(inset 0 1px 0 #de4146, 0 1px 0 rgba(0, 0, 0, .15));
+		//.box-shadow(inset 0 1px 0 #de4146, 0 1px 0 rgba(0, 0, 0, .15));
+		.box-shadow(none);
 	/* Responsive Component */ }
 	div#wp-responsive-toggle a:before {
 		color: @bf3;
@@ -717,6 +720,7 @@ html.wp-toolbar {
     background-size: 70%;
     background-repeat: no-repeat !important;
     background-position: center 60%!important;
+    display: block;
 	}	
 	.ab-top-menu>li.hover>.ab-item, &.nojq .quicklinks .ab-top-menu>li>.ab-item:focus, &:not(.mobile) .ab-top-menu>li:hover>.ab-item, &:not(.mobile) .ab-top-menu>li>.ab-item:focus {
 		background: @b3;
