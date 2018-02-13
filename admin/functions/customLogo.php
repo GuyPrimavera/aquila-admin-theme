@@ -7,22 +7,24 @@ function clean_output_buffer() {
 
 // Custom Logo
 
-$aquilaOptions = get_option( 'aquila_settings' );
-$aquilaNewLogo = $aquilaOptions['aquila_new_logo'];
-$aquilaNewLogoSqr = $aquilaOptions['aquila_new_logo_sqr']; 
+$aquilaLogoSettings = get_option( 'aquilaLogoSettings' );
+$aquilaNewLogo = $aquilaLogoSettings['aquila_new_logo'];
+$aquilaNewLogoSqr = $aquilaLogoSettings['aquila_new_logo_sqr']; 
 
 $GLOBALS['aquilaNewLogo'] = $aquilaNewLogo;
 $GLOBALS['aquilaNewLogoSqr'] = $aquilaNewLogoSqr;
 
-if( isset($aquilaOptions['aquila_new_logo']) && $aquilaOptions['aquila_new_logo'] !== "" ) {
-	add_action( 'admin_bar_init', 'aquila_new_logo_admin'); 
-	add_action( 'login_head', 'aquila_new_logo_login' ); 
+if( isset($aquilaLogoSettings['aquila_new_logo']) && $aquilaLogoSettings['aquila_new_logo'] !== "" ) {
+	add_action( 'admin_head', 'aquila_new_logo_admin', 90); 
+	add_action( 'wp_head', 'aquila_new_logo_admin', 90); 
+	add_action( 'login_head', 'aquila_new_logo_login', 90 ); 
 }
 
 // Custom Logo (square)
 
-if( isset($aquilaOptions['aquila_new_logo_sqr']) && $aquilaOptions['aquila_new_logo_sqr'] !== "" ) {
-	add_action( 'admin_bar_init', 'aquila_new_logo_sqr_admin' ); 
+if( isset($aquilaLogoSettings['aquila_new_logo_sqr']) && $aquilaLogoSettings['aquila_new_logo_sqr'] !== "" ) {
+	add_action( 'admin_head', 'aquila_new_logo_sqr_admin', 90 ); 
+	add_action( 'wp_head', 'aquila_new_logo_sqr_admin', 90 ); 
 }
 
 // Admin bar
@@ -43,6 +45,20 @@ function aquila_new_logo_admin() {
 	    top: 10%;
 	    left: 10%;
 		}
+		body.folded #wpadminbar li#wp-admin-bar-wp-logo > .ab-item .ab-icon:before {
+			display: none!important;
+		}
+		body.folded #wpadminbar #wp-toolbar li#wp-admin-bar-wp-logo > .ab-item span.ab-icon {
+			background-image: url('" . $GLOBALS['aquilaNewLogoSqr'] . "')!important;
+			background-size: contain;
+	    background-repeat: no-repeat;
+	    background-position: center center;
+			margin: 0%!important;
+			max-width: 80%;
+			height: 80%;
+			top: 10%;
+			left: 10%;
+		}		
 	</style>";
 }
 	 

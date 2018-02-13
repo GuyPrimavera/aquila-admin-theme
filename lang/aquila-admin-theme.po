@@ -1,0 +1,184 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#: admin/adminBar/adminBarLinks.php:63 admin/adminBar/adminBarLinks.php:64
+#: admin/adminBar/adminBarLinks.php:75 admin/adminBar/adminBarLinks.php:76
+#: admin/adminBar/adminBarLinks.php:87 admin/adminBar/adminBarLinks.php:88
+#: admin/adminBar/screenLinks.php:11 admin/adminBar/screenLinks.php:21
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: guy@designbymito.com\n"
+"POT-Creation-Date: 2017-09-29 16:46+0100\n"
+"PO-Revision-Date: 2017-09-29 16:47+0\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Eazy Po 0.9.5.3\n"
+
+#: admin/options.php:10 admin/options.php:25
+msgid "Aquila Settings"
+msgstr ""
+
+#: admin/options.php:11 admin/widgets/welcomeWidget.php:48
+msgid "Aquila"
+msgstr ""
+
+#: admin/options.php:32
+msgid "Show <strong>Adminbar</strong> links?"
+msgstr ""
+
+#: admin/options.php:40
+msgid "Show Editors <strong>Plugins Support</strong> metabox?"
+msgstr ""
+
+#: admin/options.php:48
+msgid "Show all other <strong>Dashboard metaboxes</strong>?"
+msgstr ""
+
+#: admin/options.php:56
+msgid "Do not rename <strong>Posts</strong> to <strong>Blog</strong>"
+msgstr ""
+
+#: admin/options.php:64
+msgid "Hide <strong>Footer credit</strong> link."
+msgstr ""
+
+#: admin/options.php:72
+msgid "Show <strong>WordPress Update</strong> notices."
+msgstr ""
+
+#: admin/options.php:85
+msgid "Custom Logo"
+msgstr ""
+
+#: admin/options.php:92
+msgid "Custom logo"
+msgstr ""
+
+#: admin/options.php:100
+msgid "Custom logo (square) <br/><em>Used in the \"folded\" menu</em>"
+msgstr ""
+
+#: admin/options.php:113
+msgid "Color Scheme"
+msgstr ""
+
+#: admin/options.php:120
+msgid "Primary Color"
+msgstr ""
+
+#: admin/options.php:128
+msgid "Secondary Color"
+msgstr ""
+
+#: admin/options.php:136
+msgid "Menu Background Color"
+msgstr ""
+
+#: admin/options.php:310
+msgid "General changes to your admin area."
+msgstr ""
+
+#: admin/options.php:314
+msgid "Choose a custom logo for your admin area."
+msgstr ""
+
+#: admin/options.php:318
+msgid "Select a new color scheme for the admin area."
+msgstr ""
+
+#: admin/adminBar/adminBarLinks.php:60
+msgid "WordPress Lessons"
+msgstr ""
+
+#: admin/adminBar/adminBarLinks.php:65 admin/adminBar/adminBarLinks.php:77
+#: admin/adminBar/adminBarLinks.php:89
+msgid "_blank"
+msgstr ""
+
+#: admin/adminBar/adminBarLinks.php:72
+msgid "WordPress User Guide"
+msgstr ""
+
+#: admin/adminBar/adminBarLinks.php:84
+msgid "Aquila Support"
+msgstr ""
+
+#: admin/adminBar/screenLinks.php:12 admin/adminBar/screenLinks.php:22
+msgid "screenLink"
+msgstr ""
+
+#: admin/functions/postToBlog.php:15 admin/functions/postToBlog.php:25
+#: admin/functions/postToBlog.php:36 admin/functions/postToBlog.php:37
+msgid "Blog"
+msgstr ""
+
+#: admin/functions/postToBlog.php:16 admin/functions/postToBlog.php:27
+#: admin/functions/postToBlog.php:28
+msgid "Add Blog Post"
+msgstr ""
+
+#: admin/functions/postToBlog.php:17
+msgid "Blog Tags"
+msgstr ""
+
+#: admin/functions/postToBlog.php:26 admin/functions/postToBlog.php:30
+msgid "Blog Post"
+msgstr ""
+
+#: admin/functions/postToBlog.php:29
+msgid "Edit Blog Post"
+msgstr ""
+
+#: admin/functions/postToBlog.php:31
+msgid "View Blog Post"
+msgstr ""
+
+#: admin/functions/postToBlog.php:32
+msgid "Search Blog Posts"
+msgstr ""
+
+#: admin/functions/postToBlog.php:33
+msgid "No Blog Posts found"
+msgstr ""
+
+#: admin/functions/postToBlog.php:34
+msgid "No Blog Posts found in Trash"
+msgstr ""
+
+#: admin/functions/postToBlog.php:35
+msgid "All Blog Posts"
+msgstr ""
+
+#: admin/widgets/pluginWidget.php:36
+#, php-format
+msgid "<p>Visible to <a href=\"%s\"><strong>Editors</strong></a></p>"
+msgstr ""
+
+#: admin/widgets/pluginWidget.php:38
+#, php-format
+msgid "<p>Visible to <a href=\"%s\"><strong>Administrators</strong></a></p>"
+msgstr ""
+
+#: admin/widgets/welcomeWidget.php:47
+msgid "WordPress"
+msgstr ""
+
+#: admin/widgets/welcomeWidget.php:50
+msgid "Server IP"
+msgstr ""
+
+#: admin/widgets/welcomeWidget.php:51
+msgid "PHP"
+msgstr ""
+
+#: admin/widgets/welcomeWidget.php:52
+msgid "Memory Usage"
+msgstr ""

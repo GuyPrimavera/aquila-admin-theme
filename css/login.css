@@ -1,7 +1,7 @@
+/* LESS Elements 0.9 */
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Lato);
-/* LESS Elements 0.9 */
 .fontAwesome {
   font-family: "fontAwesome" !important;
 }
@@ -130,10 +130,13 @@
   -moz-transition: 0.2s all linear;
   -o-transition: 0.2s all linear;
 }
-/* colors.scss & _variables.scss */
-/* _mixins.scss */
+.transNone {
+  transition: none!important;
+  -webkit-transition: none!important;
+  -moz-transition: none!important;
+  -o-transition: none!important;
+}
 body.login {
-  background: #424242;
   font-family: 'Roboto', sans-serif !important;
 }
 body.login #login {
@@ -155,7 +158,6 @@ body.login #login:before {
   position: relative;
   float: left;
   padding-top: 10px;
-  color: #ffee58;
 }
 body.login #login #login_error,
 body.login #login .message {
@@ -163,7 +165,6 @@ body.login #login .message {
   padding: 0;
   margin-left: 0;
   background: none;
-  color: #ffee58;
   text-align: center;
   box-shadow: none;
 }
@@ -171,7 +172,6 @@ body.login #login h1 a {
   display: none!important;
 }
 body.login #login a {
-  color: #f5f5f5;
   opacity: 0.8;
   transition: 0.2s all linear;
   -webkit-transition: 0.2s all linear;
@@ -183,14 +183,11 @@ body.login #login a:hover,
 body.login #login a:active,
 body.login #login a:focus {
   opacity: 1;
-  color: #f5f5f5;
 }
 body.login #login form {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  background: #212121;
-  background: rgba(255, 255, 255, 0.05);
   display: flex;
   flex-direction: column;
 }
@@ -202,15 +199,12 @@ body.login #login form p {
 }
 body.login #login form input[type=checkbox]:checked:before {
   content: "\f147";
-  color: #ffee58;
 }
 body.login #login form #wp-submit {
-  background: #ffee58;
   border: none;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important;
-  color: #212121;
   text-decoration: none;
   text-shadow: none;
   transition: 0.2s all linear;
@@ -226,17 +220,12 @@ body.login #login form #wp-submit {
   letter-spacing: 1px;
   font-size: 14px;
 }
-body.login #login form #wp-submit:hover {
-  background: #fff38b;
-  color: #212121;
-}
 body.login #login form .input,
 body.login #login form input[type=checkbox],
 body.login #login form input[type=text] {
   appearance: none;
   outline: 0;
   border: 1px solid rgba(255, 255, 255, 0.4);
-  background-color: rgba(255, 255, 255, 0.2);
   width: 90%;
   -webkit-border-top-right-radius: 3px;
   -webkit-border-bottom-right-radius: 0;
@@ -262,24 +251,21 @@ body.login #login form input[type=text] {
   display: block;
   text-align: center;
   font-size: 18px;
-  color: white;
   transition: 0.2s all linear;
   -webkit-transition: 0.2s all linear;
   -moz-transition: 0.2s all linear;
   -o-transition: 0.2s all linear;
   font-weight: 400;
 }
-body.login #login form .input:hover,
-body.login #login form input[type=checkbox]:hover,
-body.login #login form input[type=text]:hover {
-  background-color: rgba(255, 255, 255, 0.4);
-}
 body.login #login form .input:focus,
 body.login #login form input[type=checkbox]:focus,
 body.login #login form input[type=text]:focus {
-  background-color: white;
   width: 100%;
-  color: #0091ea;
+}
+body.login #login form .input#aiowps-captcha-answer,
+body.login #login form input[type=checkbox]#aiowps-captcha-answer,
+body.login #login form input[type=text]#aiowps-captcha-answer {
+  width: auto;
 }
 body.login #login form input[type=checkbox] {
   width: 16px;
@@ -290,11 +276,9 @@ body.login #login form input[type=checkbox] {
   margin-right: 5px;
 }
 body.login #login form input[type=checkbox]:focus {
-  background-color: rgba(255, 255, 255, 0.4);
   width: 16px;
 }
 body.login #login form label {
-  color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
   text-align: center;
   width: 100%;
@@ -320,7 +304,6 @@ body.login .wp-social-login-widget {
   width: 300px;
   margin: 0 auto;
   text-align: center;
-  color: #ffee58;
 }
 #loginform #jetpack-sso-wrap,
 #loginform .jetpack-sso-clear {
@@ -328,4 +311,9 @@ body.login .wp-social-login-widget {
   max-width: 100%;
   display: inline-block;
   margin: 0 auto;
+}
+.aiowps-captcha-equation {
+  text-align: center;
+  font-size: 20px;
+  line-height: 2;
 }

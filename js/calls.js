@@ -118,4 +118,54 @@ $j(document).ready(function($j){
 	
 });
 
+// Colour picker
 
+
+$j(function($j) {
+	if (typeof $j.wp !== 'undefined' && typeof $j.wp.wpColorPicker !== 'undefined') {
+		$j.wp.wpColorPicker.prototype.options = {
+			palettes: [
+				'#f44336',
+				'#E91E63',
+				'#9c27b0',
+				'#673ab7',
+				'#3f51b5',
+				'#2196F3',
+				'#03a9f4',
+				'#00bcd4',
+				'#009688',
+				'#4caf50',
+				'#8bc34a',
+				'#cddc39',
+				'#ffeb3b',
+				'#ffc107',
+				'#ff9800',
+				'#ff5722',
+				'#795548',
+				'#9e9e9e',
+				'#607d8b',
+				'#ffffff'
+			],
+			width: 450,
+			mode: "hsv"
+		};
+	}
+
+});
+
+
+$j(document).ready(function($j){
+  $j('.colourPicker').each(function(){
+    $j(this).wpColorPicker();
+  });
+});
+
+
+/*
+$j(document).ready(function($j){
+  //$j('#color-picker').iris();
+  $j('.colourPicker').each(function(){
+    $j(this).iris();
+  });
+});
+*/

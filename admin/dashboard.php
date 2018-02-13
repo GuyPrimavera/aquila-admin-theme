@@ -1,5 +1,4 @@
-<?php 
-if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
+<?php if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
 
 include('widgets/removeWidgets.php');
 include('widgets/welcomeWidget.php');

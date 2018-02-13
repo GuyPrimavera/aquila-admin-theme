@@ -1,5 +1,4 @@
-<?php 
-if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
+<?php if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
 
 // Admin Bar links
 
@@ -28,7 +27,9 @@ if(isset($aquilaOptions['aquila_chk_abLinks']) && $aquilaOptions['aquila_chk_abL
         $wp_admin_bar->remove_menu('customer-area');
         $wp_admin_bar->remove_menu('itsec_admin_bar_menu');
         $wp_admin_bar->remove_menu('maintenance_options');
-        $wp_admin_bar->remove_menu('tribe-events');    		
+        $wp_admin_bar->remove_menu('tribe-events');
+        $wp_admin_bar->remove_menu('analytify');    
+        $wp_admin_bar->remove_menu('cxssh-main-menu');
     }
     add_action( 'wp_before_admin_bar_render', 'aquila_admin_bar_links', 999 );
 
@@ -56,8 +57,8 @@ function aquila_wp_logo_links($admin_bar){
     $admin_bar->add_menu( array(
         'id'    => 'wpLessons',
         'parent'=> 'wp-logo',
-        'title' => 'WordPress Lessons',
-        'href'  => __('https://codex.wordpress.org/WordPress_Lessons'),
+        'title' => __( 'WordPress Lessons', 'aquila-admin-theme' ),
+        'href'  => 'https://codex.wordpress.org/WordPress_Lessons',
         'meta'  => array(
             'title' => __(''),          
             'class' => __(''), 
@@ -68,8 +69,8 @@ function aquila_wp_logo_links($admin_bar){
     $admin_bar->add_menu( array(
         'id'    => 'wpGuide',
         'parent'=> 'wp-logo',
-        'title' => 'WordPress User Guide',
-        'href'  => __('http://easywpguide.com/wordpress-manual/'),
+        'title' => __( 'WordPress User Guide', 'aquila-admin-theme' ),
+        'href'  => 'http://easywpguide.com/wordpress-manual/',
         'meta'  => array(
             'title' => __(''),          
             'class' => __(''),            
@@ -80,8 +81,8 @@ function aquila_wp_logo_links($admin_bar){
     $admin_bar->add_menu( array(
         'id'    => 'mitoSupport',
         'parent'=> 'wp-logo-external',
-        'title' => 'Aquila Support',
-        'href'  => __('https://designbymito.com/support/'),
+        'title' => __( 'Aquila Support', 'aquila-admin-theme' ),
+        'href'  => 'https://designbymito.com/support/',
         'meta'  => array(
             'title' => __(''),          
             'class' => __(''),            
