@@ -37,9 +37,11 @@ function aquila_new_logo_admin() {
 			background-size: contain;
 	    background-repeat: no-repeat;
 	    background-position: center center;
-	    margin: 5%!important;
-	    max-width: 90%;
-	    height: 60%;
+	    margin: 0%!important;
+	    max-width: 80%;
+	    height: 80%;
+	    top: 10%;
+	    left: 10%;
 		}
 	</style>";
 }
@@ -78,9 +80,11 @@ function aquila_new_logo_sqr_admin() {
 			background-size: contain;
 	    background-repeat: no-repeat;
 	    background-position: center center;
-			margin: 20% 10%!important;
+			margin: 0%!important;
 			max-width: 80%;
-			height: 60%;
+			height: 80%;
+			top: 10%;
+			left: 10%;
 		}
 	</style>";
 }

@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: material design wordpress, material design admin theme, material design wordpress admin, material wordpress, admin theme, admin, admin panel, admin theme style plugin, admin-theme, admin theme, aquila, backend theme, clean admin, color scheme, colour scheme, custom admin theme, flat admin theme, free admin theme, modern admin theme, new admin ui, plugin, simple admin theme, white label, white label admin, wordpress, wordPress admin, wordpress admin theme, wp-admin, wp admin page, wp admin theme
 Requires at least: 4.0
 Tested up to: 4.8
-Stable tag: 2.0.1
+Stable tag: 2.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -74,6 +74,9 @@ No. It only changes the admin area, the login page and the admin bar for logged-
 
 == Changelog ==
 
+= 2.0.2 - 14/06/2017 =
+* Fixed custom logo alignment in FireFox.
+
 = 2.0.1 - 14/06/2017 =
 * Fixed "Headers already sent" error.
 
@@ -132,6 +135,12 @@ No. It only changes the admin area, the login page and the admin bar for logged-
 * Beta release.
 
 == Upgrade Notice ==
+
+= 2.0.2 =
+* Fixed custom logo alignment in FireFox.
+
+= 2.0.1 =
+* Minor bug fixes.
 
 = 2.0 =
 Entire plugin re-written.
