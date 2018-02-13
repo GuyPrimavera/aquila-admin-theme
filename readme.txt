@@ -3,8 +3,8 @@ Contributors: GuyPrimavera
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YVPWSJB4SPN5N
 Tags: admin theme, admin, admin panel, admin theme style plugin, admin-theme, admin theme, aquila, backend theme, clean admin, color scheme, colour scheme, custom admin theme, flat admin theme, free admin theme, modern admin theme, new admin ui, plugin, simple admin theme, white label, white label admin, wordpress, wordPress admin, wordpress admin theme, wp-admin, wp admin page, wp admin theme
 Requires at least: 4.0
-Tested up to: 4.5.2
-Stable tag: 0.95
+Tested up to: 4.6
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,6 +29,7 @@ Many updates have been made to the admin area, including:
 *		WordPress and plugins support links on dashboard.
 *		"Update" notifications hidden from Editors.
 *		"Post Format" removed from posts.
+*		Multisite support
 
 == Installation ==
 
@@ -40,7 +41,11 @@ Many updates have been made to the admin area, including:
 
 = Do I need to configure this plugin or change any settings? =
 
-No. All settings are applied automatically once the plugin is activated and there are no settings that need to be configured.
+No. All settings are applied automatically once the plugin is activated, but there is now an "Aquila Settings" page to refine these options if you wish to do so.
+
+= Does this plugin make any changes to the website's front-end? =
+
+No. It only changes the admin area, the login page and the admin bar for logged-in users.
 
 == Screenshots ==
 
@@ -52,6 +57,14 @@ No. All settings are applied automatically once the plugin is activated and ther
 6. Edit post page.
 
 == Changelog ==
+
+= 1.0 - 27/06/2016 =
+* Aquila Settings page to control various functions.
+* Multisite support for "Plugins Support" widget.
+* Admin menu icons added for various plugins.
+* Many plugin links removed from admin bar to keep it clean.
+* The UK left the EU for no reason.
+* Tested with over 100 popular plugins for conflicts.
 
 = 0.95 - 20/06/2016 =
 * Fixed issue with wp-logo in top-left of admin area.
@@ -77,6 +90,9 @@ No. All settings are applied automatically once the plugin is activated and ther
 * Beta release.
 
 == Upgrade Notice ==
+
+= 1.0 =
+Fixed things that needed fixing.
 
 = 0.95 =
 Beta release 5.

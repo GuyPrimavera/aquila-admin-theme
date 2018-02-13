@@ -3,6 +3,7 @@
 include('widgets/removeWidgets.php');
 include('widgets/welcomeWidget.php');
 include('widgets/supportWidget.php');
+include('widgets/pluginWidget.php');
 
 include('functions/addClasses.php');
 include('functions/adminBarStyle.php');
