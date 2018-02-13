@@ -1,4 +1,5 @@
-<?php
+<?php 
+if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
 
 //hide core updates notification in the dashboard
 

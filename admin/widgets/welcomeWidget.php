@@ -1,4 +1,5 @@
-<?php
+<?php 
+if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
 
 // Add Welcome Widget
 
@@ -23,14 +24,33 @@ function aquila_welcome_widget_function() {
 	$aquilaName = get_bloginfo('name');
 	$aquilaUrl = get_bloginfo('url');
 	$themeInfo = wp_get_theme();
+
+	// Memory and server stats
+
+	$memLimit = (int) ini_get('memory_limit');
+	$memUsage= function_exists('memory_get_peak_usage') ? round(memory_get_peak_usage(TRUE) / 1024 / 1024, 2) : 0;			
+	if ( !empty($memUsage) && !empty($memLimit) ) {
+		$memPercent = round ($memUsage / $memLimit * 100, 0);
+	}		
+
+	$server_ip_address = (!empty($_SERVER[ 'SERVER_ADDR' ]) ? $_SERVER[ 'SERVER_ADDR' ] : "");
+	if ($server_ip_address == "") { // Added for IP Address in IIS
+		$server_ip_address = (!empty($_SERVER[ 'LOCAL_ADDR' ]) ? $_SERVER[ 'LOCAL_ADDR' ] : "");
+	}
+	$hostName = gethostname();
+	$phpVersion = PHP_VERSION;
+	$osBits = (PHP_INT_SIZE * 8);
+
 	
 	echo "	
 	<p class='about-description'>
 		<ul>
-			<li>WordPress Version: &nbsp; " . $wordpressVer . "</li>
-			<li>Aquila Version: &nbsp; " . $aquilaVer . "</li>
-			<li>Website Address: &nbsp; <a href='" . $aquilaUrl . "' target='_blank'>" . $aquilaUrl . "</a></li>
-			<li>Theme: &nbsp; " . $themeInfo->get( 'Name' ) . " (" . $themeInfo->get( 'Version' ) . ")</li>
+			<li><i class='aquila-wordpress'></i><strong>WordPress</strong><br/>" . $wordpressVer . "</li>
+			<li><i class='aquila-aquila'></i><strong>Aquila</strong><br/>" . $aquilaVer . "</li>
+			<li><i class='aquila-palette'></i><strong>" . $themeInfo->get( 'Name' ) . "</strong><br/>" . $themeInfo->get( 'Version' ) . "</li>
+			<li><i class='aquila-terminal'></i><strong>Server IP</strong><br/>" . $server_ip_address . "</li>
+			<li><i class='aquila-php'></i><strong>PHP</strong><br/>" . $phpVersion . "</li>
+			<li><i class='aquila-cubes'></i><strong>Memory Usage</strong><br/>" . $memUsage . " / " . $memLimit . "MB (" . $memPercent . "%)</li>
 		</ul>
 	</p>
 	";

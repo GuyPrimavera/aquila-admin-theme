@@ -1,10 +1,115 @@
-.aquila-magento {
-    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa003;');
+.aquila-tools {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe909;');
+}
+.aquila-comment {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90a;');
+}
+.aquila-import_export {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90b;');
+}
+.aquila-shopping_basket {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90c;');
+}
+.aquila-person_pin {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90d;');
+}
+.aquila-person_add {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90e;');
+}
+.aquila-person {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90f;');
+}
+.aquila-palette {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe910;');
+}
+.aquila-photo {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe911;');
+}
+.aquila-envelope {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe912;');
+}
+.aquila-cubes {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe913;');
+}
+.aquila-plug {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe914;');
+}
+.aquila-page {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe915;');
+}
+.aquila-feather {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe916;');
+}
+.aquila-settings {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe917;');
+}
+.aquila-aquila_full {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe918;');
+}
+.aquila-terminal {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe907;');
+}
+.aquila-code {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe908;');
+}
+.aquila-java {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe901;');
+}
+.aquila-javascript {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe902;');
+}
+.aquila-jquery {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe903;');
+}
+.aquila-mysql {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe904;');
+}
+.aquila-php {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe905;');
+}
+.aquila-edge {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeadc;');
 }
 .aquila-mito {
-    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa001;');
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa001;');
 }
 .aquila-aquila {
-    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa002;');
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa002;');
+}
+.aquila-css {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe900;');
+}
+.aquila-html {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeadf;');
+}
+.aquila-wordpress {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeab6;');
+}
+.aquila-magento {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xa003;');
+}
+.aquila-pencil {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe906;');
+}
+.aquila-apple {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeabf;');
+}
+.aquila-windows {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeac3;');
+}
+.aquila-chrome {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeae5;');
+}
+.aquila-firefox {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeae6;');
+}
+.aquila-ie {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeae7;');
+}
+.aquila-opera {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeae8;');
+}
+.aquila-safari {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xeae9;');
 }
 

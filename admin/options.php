@@ -1,11 +1,19 @@
-<?php
+<?php 
+if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
+
 add_action( 'admin_menu', 'aquila_add_admin_menu' );
 add_action( 'admin_init', 'aquila_settings_init' );
 
-
 function aquila_add_admin_menu(  ) { 
 
-	add_submenu_page( 'index.php', 'Aquila Settings', '<i class="aquila-aquila" style="font-size: 140%;float: right;line-height: 0.8;"></i>  Aquila Settings', 'manage_options', 'aquilaSettings', 'aquila_options_page' );
+	add_submenu_page( 
+		'options-general.php', 
+		'Aquila Settings', 
+		'<i class="aquila-aquila" style="font-size: 140%;float: right;line-height: 0.8;"></i>  Aquila Settings', 
+		'manage_options', 
+		'aquilaSettings', 
+		'aquila_options_page' 
+	);
 
 }
 
@@ -23,7 +31,7 @@ function aquila_settings_init(  ) {
 
 	add_settings_field( 
 		'aquila_chk_abLinks', 
-		__( 'Show <em>Adminbar</em> links?', 'aquila-admin-theme' ), 
+		__( 'Show <strong>Adminbar</strong> links?', 'aquila-admin-theme' ), 
 		'aquila_chk_abLinks_render', 
 		'aatPage', 
 		'aquila_aatPage_section' 
@@ -31,7 +39,7 @@ function aquila_settings_init(  ) {
 
 	add_settings_field( 
 		'aquila_chk_pluginSupport', 
-		__( 'Show Editors <em>Plugins Support</em> metabox?', 'aquila-admin-theme' ), 
+		__( 'Show Editors <strong>Plugins Support</strong> metabox?', 'aquila-admin-theme' ), 
 		'aquila_chk_pluginSupport_render', 
 		'aatPage', 
 		'aquila_aatPage_section' 
@@ -39,45 +47,35 @@ function aquila_settings_init(  ) {
 
 	add_settings_field( 
 		'aquila_chk_dashBoxes', 
-		__( 'Show all other <em>Dashboard metaboxes</em>?', 'aquila-admin-theme' ), 
+		__( 'Show all other <strong>Dashboard metaboxes</strong>?', 'aquila-admin-theme' ), 
 		'aquila_chk_dashBoxes_render', 
 		'aatPage', 
 		'aquila_aatPage_section' 
 	);
 
-	/*
 	add_settings_field( 
-		'aquila_text_field_2', 
-		__( 'Settings field description', 'aquila-admin-theme' ), 
-		'aquila_text_field_2_render', 
+		'aquila_chk_postBlog', 
+		__( 'Do not rename <strong>Posts</strong> to <strong>Blog</strong>', 'aquila-admin-theme' ), 
+		'aquila_chk_postBlog_render', 
 		'aatPage', 
 		'aquila_aatPage_section' 
 	);
 
 	add_settings_field( 
-		'aquila_radio_field_3', 
-		__( 'Settings field description', 'aquila-admin-theme' ), 
-		'aquila_radio_field_3_render', 
+		'aquila_new_logo', 
+		__( 'Custom logo', 'aquila-admin-theme' ), 
+		'aquila_new_logo_render', 
 		'aatPage', 
 		'aquila_aatPage_section' 
 	);
 
 	add_settings_field( 
-		'aquila_textarea_field_4', 
-		__( 'Settings field description', 'aquila-admin-theme' ), 
-		'aquila_textarea_field_4_render', 
+		'aquila_new_logo_sqr', 
+		__( 'Custom logo (square) <br/><em>Used in the "folded" menu</em>', 'aquila-admin-theme' ), 
+		'aquila_new_logo_sqr_render', 
 		'aatPage', 
 		'aquila_aatPage_section' 
 	);
-
-	add_settings_field( 
-		'aquila_select_field_5', 
-		__( 'Settings field description', 'aquila-admin-theme' ), 
-		'aquila_select_field_5_render', 
-		'aatPage', 
-		'aquila_aatPage_section' 
-	);
-	*/
 
 }
 
@@ -119,52 +117,56 @@ function aquila_chk_dashBoxes_render(  ) {
 
 }
 
-/*
-function aquila_text_field_2_render(  ) { 
+function aquila_chk_postBlog_render(  ) { 
 
 	$options = get_option( 'aquila_settings' );
+	if ( isset ( $options['aquila_chk_postBlog'] ) ) { $aquilaPostBlog = $options['aquila_chk_postBlog']; 
+	} else { $aquilaPostBlog = 0; };
+
 	?>
-	<input type='text' name='aquila_settings[aquila_text_field_2]' value='<?php echo $options['aquila_text_field_2']; ?>'>
+	<input type='checkbox' name='aquila_settings[aquila_chk_postBlog]' <?php checked( $aquilaPostBlog, 1 ); ?> value='1'>
 	<?php
 
 }
 
-
-function aquila_radio_field_3_render(  ) { 
+function aquila_new_logo_render(  ) { 
 
 	$options = get_option( 'aquila_settings' );
+	if ( isset ( $options['aquila_new_logo'] ) ) { 
+		$aquilaNewLogo = $options['aquila_new_logo']; 
+	} else { 
+		$aquilaNewLogo = 'none'; 
+	};
 	?>
-	<input type='radio' name='aquila_settings[aquila_radio_field_3]' <?php checked( $options['aquila_radio_field_3'], 1 ); ?> value='1'>
+
+	<input class="aquilaNewLogoUrl" id="" type="text" name="aquila_settings[aquila_new_logo]" value="<?php echo $aquilaNewLogo; ?>" style="margin-bottom:10px; clear:right; display: none;">
+	<a href="#" class="button aquilaNewLogoUpload">Upload logo</a>
+	<a href="#" class="button aquilaNewLogoClear">Remove logo</a>
+	<img class="aquilaOptionsLogo aquila_new_logo" src="<?php echo $aquilaNewLogo; ?>" />
+	<?php echo wp_get_attachment_url( get_option( 'media_selector_attachment_id' ) ); ?>
 	<?php
 
 }
 
-
-function aquila_textarea_field_4_render(  ) { 
+function aquila_new_logo_sqr_render(  ) { 
 
 	$options = get_option( 'aquila_settings' );
+	if ( isset ( $options['aquila_new_logo_sqr'] ) ) { 
+		$aquilaNewLogoSqr = $options['aquila_new_logo_sqr']; 
+	} else { 
+		$aquilaNewLogoSqr = 'none'; 
+	};
 	?>
-	<textarea cols='40' rows='5' name='aquila_settings[aquila_textarea_field_4]'> 
-		<?php echo $options['aquila_textarea_field_4']; ?>
- 	</textarea>
+
+	<input class="aquilaNewLogoUrl" id="" type="text" name="aquila_settings[aquila_new_logo_sqr]" value="<?php echo $aquilaNewLogoSqr; ?>" style="margin-bottom:10px; clear:right; display: none;">
+	<a href="#" class="button aquilaNewLogoUpload">Upload logo</a>
+	<a href="#" class="button aquilaNewLogoClear">Remove logo</a>
+	<img class="aquilaOptionsLogo aquila_new_logo" src="<?php echo $aquilaNewLogoSqr; ?>" />
+	<?php echo wp_get_attachment_url( get_option( 'media_selector_attachment_id' ) ); ?>
 	<?php
 
 }
 
-
-function aquila_select_field_5_render(  ) { 
-
-	$options = get_option( 'aquila_settings' );
-	?>
-	<select name='aquila_settings[aquila_select_field_5]'>
-		<option value='1' <?php selected( $options['aquila_select_field_5'], 1 ); ?>>Option 1</option>
-		<option value='2' <?php selected( $options['aquila_select_field_5'], 2 ); ?>>Option 2</option>
-	</select>
-
-<?php
-
-}
-*/
 
 function aquila_settings_section_callback(  ) { 
 
@@ -177,7 +179,7 @@ function aquila_options_page(  ) {
 
 	?>
 	<div class="wrap">
-		<form action='options.php' method='post'>
+		<form action='options.php' method='post' class='aquilaSettingsPage'>
 
 			<h2><i class="aquila-aquila" style="font-size: 200%;line-height: 0.5;float: left;margin-right: 5px"></i></h2>
 

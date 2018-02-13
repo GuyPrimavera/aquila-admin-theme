@@ -1,0 +1,163 @@
+@import "vars.less";
+@import "/../icons/variables.less";
+@import "colours.less";
+
+/// Login
+
+body.login {
+	background: @text;
+	.sans;
+	#login {
+		width: 100%;
+		padding: 0;
+		.va;
+		&:before {
+			.icoAquila;
+			font-size: 150px;
+			line-height: 1;
+			.tac;
+			width: 100%;
+			position: relative;
+			float: left;
+			padding-top: 10px;
+			color: @primary;
+		}
+		#login_error, .message {
+		    border: none;
+		    padding: 0;
+		    margin-left: 0;
+		    background: none;
+		    color: @primary;
+		    .tac;
+		    box-shadow: none;
+		}
+		h1 {
+			a {
+				.dNI;
+			}
+		}
+		a {
+			color: @textL;
+			opacity: 0.8;
+			.trans;
+			text-decoration: none!important;
+			&:hover, &:active, &:focus {
+				opacity: 1;
+				color: @textL;
+			}
+		}
+		form {
+			.box-shadow(none);
+			background: @textD;
+			background: fade(white, 5%);
+			display: flex;
+			flex-direction: column;
+			p {
+				width: 320px;
+				max-width: 100%;
+				display: inline-flex;
+				margin:  0 auto;
+			}
+			input[type=checkbox]:checked:before {
+				content: "\f147";
+				color: @primary;
+			}
+			#wp-submit {
+				background: @primary;
+				border: none;
+				.box-shadow(none)!important;
+				color: @textD;
+				text-decoration: none;
+				text-shadow: none;
+				.trans;
+				width: 90%;
+		    margin: 5%;
+		    padding: 10px 15px;
+		    height: auto;
+		    text-transform: uppercase;
+		    font-weight: 700;
+		    letter-spacing: 1px;
+		    font-size: 14px;
+				&:hover {
+					background: lighten(@primary, 10%);
+					color: @textD;
+				}
+			}
+			.input, input[type=checkbox], input[type=text] {
+				display: block;
+				appearance: none;
+				outline: 0;
+				border: 1px solid fade(white, 40%);
+				background-color: fade(white, 20%);
+				width: 90%;
+				.border-radius(3px);
+				padding: 10px 15px;
+				margin: 0 auto 10px auto;
+				display: block;
+				.tac;
+				font-size: 18px;
+				color: white;
+				.trans;
+				font-weight: 400;
+				&:hover{
+					background-color: fade(white, 40%);
+				}
+				&:focus{
+					background-color: white;
+					width: 100%;
+					color: @secondary;
+				}
+			}
+			input[type=checkbox] {
+				width: 16px;
+				height: 16px;
+				display: inline-block;
+				line-height: 1;
+				margin-bottom: 3px;
+				margin-right: 5px;
+				&:focus{
+					background-color: fade(white, 40%);
+					width: 16px;
+				}
+			}
+			label {
+				color: fade(white, 50%);
+		    font-size: 14px;
+		    .tac;
+		    width: 100%;
+		    float: left;
+		    text-transform: uppercase;
+		    letter-spacing: 1px;
+		    line-height: 2;
+			}
+		}
+	}
+	#backtoblog, #nav {
+    font-size: 13px;
+    padding: 0 24px;
+    width: 320px;
+    max-width: 100%;
+    margin: 0 auto!important;
+    .tac;
+    padding: 10px 0 0 0;
+	}
+	#backtoblog {
+    padding-bottom: 100px;
+	}
+	.wp-social-login-widget {
+		width: 300px;
+		margin: 0 auto;
+		text-align: center;
+		color: @primary;
+	}
+}
+
+// Jetpack
+
+#loginform #jetpack-sso-wrap, #loginform .jetpack-sso-clear {
+	width: 320px;
+  max-width: 100%;
+  display: inline-block;
+  margin: 0 auto;
+}
+
