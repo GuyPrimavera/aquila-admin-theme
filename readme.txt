@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: admin theme, admin, admin panel, admin theme style plugin, admin-theme, admin theme, aquila, backend theme, clean admin, color scheme, colour scheme, custom admin theme, flat admin theme, free admin theme, modern admin theme, new admin ui, plugin, simple admin theme, white label, white label admin, wordpress, wordPress admin, wordpress admin theme, wp-admin, wp admin page, wp admin theme
 Requires at least: 4.0
 Tested up to: 4.5.2
-Stable tag: 0.93
+Stable tag: 0.94
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -52,6 +52,9 @@ No. All settings are applied automatically once the plugin is activated and ther
 6. Edit post page.
 
 == Changelog ==
+
+= 0.94 - 20/06/2016 =
+* Temporarily removed "plugin support" metabox due to issue on MultiSite installations.
 
 = 0.93 - 20/06/2016 =
 * New login screen.

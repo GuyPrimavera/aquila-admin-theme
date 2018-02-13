@@ -5,14 +5,14 @@
  * Description: The Aquila Admin Theme
  * Author: Guy Primavera
  * Author URI: http://www.guyprimavera.com/
- * Version: 0.93
+ * Version: 0.94
  * Text Domain: aquila-admin-theme
  * License: GPL2
  *
  * Copyright 2016 Guy Primavera
  */ 
  
-$aquilaVer = 0.93;
+$aquilaVer = 0.94;
 
 include ('scripts.php');
 include ('login/aquila-login-screen.php');
