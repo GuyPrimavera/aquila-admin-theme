@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: material design wordpress, material design admin theme, material design wordpress admin, material wordpress, admin theme, admin, admin panel, admin theme style plugin, admin-theme, admin theme, aquila, backend theme, clean admin, color scheme, colour scheme, custom admin theme, flat admin theme, free admin theme, modern admin theme, new admin ui, plugin, simple admin theme, white label, white label admin, wordpress, wordPress admin, wordpress admin theme, wp-admin, wp admin page, wp admin theme
 Requires at least: 4.0
 Tested up to: 4.8.2
-Stable tag: 2.2
+Stable tag: 2.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -82,7 +82,10 @@ No. It only changes the admin area, the login page and the admin bar for logged-
 
 == Changelog ==
 
-= 2.1 - 29/09/2017 =
+= 2.2.1 - 29/09/2017 =
+* Fixed readme file.
+
+= 2.2 - 29/09/2017 =
 * Added customisable color scheme with a color-picker in the admin area.
 * Material Design color picker.
 * Create a new tabbed options page.
@@ -97,6 +100,9 @@ No. It only changes the admin area, the login page and the admin bar for logged-
 * Created a list of Material Design Color Palette colors as PHP variables for use throughout plugin.
 * Plugin set up for translation.
 * Minor bug fixes.
+
+= 2.2 - 29/09/2017 =
+* Same as v2.2 (re-committed).
 
 = 2.0.3 - 17/07/2017 =
 * Fixed conflict with WP All Import plugin when custom logo is used.
