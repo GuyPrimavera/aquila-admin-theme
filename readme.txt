@@ -1,10 +1,10 @@
 === Aquila Admin Theme ===
 Contributors: GuyPrimavera
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YVPWSJB4SPN5N
-Tags: admin, admin panel, admin theme style plugin, admin-theme, admin theme, aquila, backend theme, clean admin, color scheme, colour scheme, custom admin theme, flat admin theme, free admin theme, modern admin theme, new admin ui, plugin, simple admin theme, white label, white label admin, wordpress, wordPress admin, wordpress admin theme, wp-admin, wp admin page, wp admin theme
+Tags: admin theme, admin, admin panel, admin theme style plugin, admin-theme, admin theme, aquila, backend theme, clean admin, color scheme, colour scheme, custom admin theme, flat admin theme, free admin theme, modern admin theme, new admin ui, plugin, simple admin theme, white label, white label admin, wordpress, wordPress admin, wordpress admin theme, wp-admin, wp admin page, wp admin theme
 Requires at least: 4.0
 Tested up to: 4.5.2
-Stable tag: 0.92
+Stable tag: 0.93
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,12 +12,11 @@ The Aquila admin theme.
 
 == Description ==
 
-A chic black and gold color scheme for WordPress Admin (v4.0 onwards). Used by Design by Mito for client websites, Aquila also cleans up the admin area from unnecessary or potentially confusing items.
+A clean black and gold color scheme for WordPress Admin (v4.0 onwards). Used by [Design by Mito](https://designbymito.com/) for client websites, Aquila also cleans up the admin area from unnecessary or potentially confusing items.
 
 Many updates have been made to the admin area, including:
 
-*   Black and gold color scheme.
-*		Complete admin area re-design.
+*		Admin area re-design.
 *		"Posts" renamed to "Blog".
 *   Dashboard metaboxes removed and cleaned up.
 *   User "Profile" area cleaned up and simplified.
@@ -54,6 +53,16 @@ No. All settings are applied automatically once the plugin is activated and ther
 
 == Changelog ==
 
+= 0.93 - 20/06/2016 =
+* New login screen.
+* CSS (LESS) reformatted.
+* Added more CSS cross-browser support.
+* Fixed-position background logo.
+* Functions organised and separated.
+* Support links for all installed plugins now available to admins on dashboard.
+* "Welcome" widget removed.
+* Theme info in dashboard metabox.
+
 = 0.92 - 15/06/2016 =
 * ReadMe file updated.
 * Asset images added.
@@ -62,6 +71,9 @@ No. All settings are applied automatically once the plugin is activated and ther
 * Beta release.
 
 == Upgrade Notice ==
+
+= 0.93 =
+Beta release 3.
 
 = 0.92 =
 Beta release 2.
