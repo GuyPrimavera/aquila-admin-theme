@@ -4,12 +4,13 @@ if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
 // Global scripts
 function aquila_global_load_style() {
 	if ( is_admin_bar_showing() ) {
+		global $aquilaVer;
 		wp_enqueue_script("jquery");
-		wp_register_style( 'aquila-admin-icons', plugins_url( 'aquila-admin-theme/icons/style.css' ) );
+		wp_register_style( 'aquila-admin-icons', plugins_url( 'aquila-admin-theme/icons/style.css' ), array(), $aquilaVer );
 		wp_enqueue_style( 'aquila-admin-icons' );
-		wp_register_style( 'aquila-adminBar-style', plugins_url( 'aquila-admin-theme/css/adminBar.css' ) );
+		wp_register_style( 'aquila-adminBar-style', plugins_url( 'aquila-admin-theme/css/adminBar.css' ), array(), $aquilaVer );
 		wp_enqueue_style( 'aquila-adminBar-style' );
-		wp_register_script( 'aquilaCalls', plugins_url( '/js/calls.js', __FILE__ ), array('jquery'), '2.3', true );
+		wp_register_script( 'aquilaCalls', plugins_url( '/js/calls.js', __FILE__ ), array('jquery'), $aquilaVer, true );
 		wp_enqueue_script( 'aquilaCalls');
 	}
 }
@@ -19,7 +20,8 @@ add_action( 'login_enqueue_scripts', 'aquila_global_load_style' );
 
 // Admin scripts
 function aquila_admin_load_style() {
-	wp_register_style( 'aquila-admin-style', plugins_url( 'aquila-admin-theme/css/aquila.css' ) );
+	global $aquilaVer;
+	wp_register_style( 'aquila-admin-style', plugins_url( 'aquila-admin-theme/css/aquila.css' ), array(), $aquilaVer );
 	wp_enqueue_style( 'aquila-admin-style' );
 	wp_enqueue_style( 'wp-color-picker');
 	wp_enqueue_script( 'wp-color-picker');
@@ -35,9 +37,10 @@ add_action( 'admin_enqueue_scripts', 'aquila_admin_load_style', 99 );
 
 // Login scripts
 function aquila_login_load_style() {
-	wp_register_style( 'aquila-admin-icons', plugins_url( 'aquila-admin-theme/icons/style.css' ) );
+	global $aquilaVer;
+	wp_register_style( 'aquila-admin-icons', plugins_url( 'aquila-admin-theme/icons/style.css' ), array(), $aquilaVer );
 	wp_enqueue_style( 'aquila-admin-icons' );
-	wp_register_style( 'aquila-login-style', plugins_url( 'aquila-admin-theme/css/login.css' ) );
+	wp_register_style( 'aquila-login-style', plugins_url( 'aquila-admin-theme/css/login.css' ), array(), $aquilaVer );
 	wp_enqueue_style( 'aquila-login-style' );
 }
 add_action( 'login_enqueue_scripts', 'aquila_login_load_style' );
