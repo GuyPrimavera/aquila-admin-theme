@@ -1,5 +1,5 @@
 # Aquila Admin Theme
-* Contributors: GuyPrimavera, designbymito
+* Contributors: GuyPrimavera
 * Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YVPWSJB4SPN5N
 
 Material Design inspired admin theme with a customisable color scheme. Add your own custom logo to match your website.
