@@ -1,7 +1,5 @@
 /* LESS Elements 0.9 */
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext');
 .fontAwesome {
   font-family: "fontAwesome" !important;
 }
@@ -10,14 +8,11 @@
   font-size: 18px;
   line-height: 1.6;
 }
-.serif {
-  font-family: 'Raleway', serif;
-}
 .sans {
   font-family: 'Roboto', sans-serif !important;
 }
 .heading {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .bgCov {
   background-size: cover;
@@ -304,6 +299,12 @@ body.login .wp-social-login-widget {
   width: 300px;
   margin: 0 auto;
   text-align: center;
+}
+.interim-login #login {
+  top: 0!important;
+  -webkit-transform: unset!important;
+  -ms-transform: unset!important;
+  transform: unset!important;
 }
 #loginform #jetpack-sso-wrap,
 #loginform .jetpack-sso-clear {

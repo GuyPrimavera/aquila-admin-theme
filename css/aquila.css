@@ -1,7 +1,5 @@
 /* LESS Elements 0.9 */
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext');
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 .fontAwesome {
   font-family: "fontAwesome" !important;
@@ -11,14 +9,11 @@
   font-size: 18px;
   line-height: 1.6;
 }
-.serif {
-  font-family: 'Raleway', serif;
-}
 .sans {
   font-family: 'Roboto', sans-serif !important;
 }
 .heading {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .bgCov {
   background-size: cover;
@@ -2357,7 +2352,7 @@ html.wp-toolbar body.wp-admin #wpcontent #wpbody h4,
 html.wp-toolbar body.wp-admin #wpcontent #wpbody h5,
 html.wp-toolbar body.wp-admin #wpcontent #wpbody h6 {
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   font-family: 'Roboto', sans-serif !important;
 }
 html.wp-toolbar body.wp-admin #wpcontent #wpbody #screen-meta-links {
@@ -2386,7 +2381,7 @@ html.wp-toolbar div.updated {
 html.wp-toolbar .notice a,
 html.wp-toolbar div.error a,
 html.wp-toolbar div.updated a {
-  font-weight: 600;
+  font-weight: 700;
 }
 html.wp-toolbar .notice table th,
 html.wp-toolbar div.error table th,
@@ -2501,7 +2496,7 @@ body.wp-admin .page-title-action:active {
   outline: 0;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 2.3;
   border: none!important;
   box-shadow: none!important;
@@ -2666,10 +2661,6 @@ a {
   text-decoration: none;
 }
 /* Forms */
-input[type=checkbox]:checked:before {
-  margin: -14px 0 0 -12px;
-  font-size: 40px;
-}
 input[type=radio]:checked:before {
   width: 14px;
   height: 14px;
@@ -2702,9 +2693,10 @@ input[type=radio]:checked:before {
 .folded #adminmenu .wp-has-current-submenu .wp-submenu a,
 #adminmenu a.wp-has-current-submenu:focus + .wp-submenu a,
 #adminmenu .wp-has-current-submenu.opensub .wp-submenu a {
-  text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 12px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 400!important;
 }
 /* Admin Menu: bubble */
 #adminmenu .awaiting-mod,
@@ -2721,14 +2713,14 @@ input[type=radio]:checked:before {
 #adminmenu .update-plugins .plugin-count {
   padding: 0px 4px 0px 5px;
   font-size: 10px;
-  line-height: 1.8;
-  font-weight: 300;
+  line-height: 1;
+  font-weight: 700;
 }
 body.folded #adminmenu .awaiting-mod .plugin-count,
 body.folded #adminmenu .update-plugins .plugin-count,
 body.auto-fold #adminmenu .awaiting-mod .plugin-count,
 body.auto-fold #adminmenu .update-plugins .plugin-count {
-  padding: 0px 4px;
+  padding: 0px 0px;
 }
 #adminmenu .wp-submenu .awaiting-mod,
 #adminmenu .wp-submenu .update-plugins {
@@ -2846,7 +2838,7 @@ ul#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after {
 ul#adminmenu div.wp-menu-name {
   padding: 12px 10px 12px 0px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1.5;
   font-size: 13px;
 }
@@ -3008,7 +3000,7 @@ body.wp-admin .postbox > h3,
 body.wp-admin .stuffbox > h3 {
   font-size: 18px;
   line-height: 2;
-  font-weight: 300;
+  font-weight: 400;
   font-family: inherit;
 }
 body.wp-admin .postbox#welcome-to-aquila ul,
@@ -3461,7 +3453,15 @@ body.wp-admin .us-hb-screenlock {
   display: none!important;
 }
 form.aquilaSettingsPage table tr th {
-  font-weight: 300;
+  font-weight: 400;
+  width: 300px;
+  padding: 10px 10px 10px 0;
+}
+form.aquilaSettingsPage table tr td {
+  padding: 10px 10px 10px 0;
+}
+form.aquilaSettingsPage table tr td label {
+  margin-left: 10px;
 }
 form.aquilaSettingsPage table tr a.button {
   float: left;
@@ -3477,18 +3477,182 @@ form.aquilaSettingsPage table tr img.aquilaOptionsLogo {
 form.aquilaSettingsPage table tr img.aquilaOptionsLogo[src="none"] {
   display: none!important;
 }
+/*
 .wp-picker-container .iris-picker {
   padding-bottom: 75px!important;
+  .iris-palette-container {
+    width: 74%;
+    .iris-palette {
+	    width: 28px!important;
+	    height: 28px!important;
+	    margin-right: 5px;
+	    margin-top: 10px;
+	    margin-left: 0!important;
+		}
+	}
 }
-.wp-picker-container .iris-picker .iris-palette-container {
-  width: 74%;
+*/
+ul#aquilaHelp {
+  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
-.wp-picker-container .iris-picker .iris-palette-container .iris-palette {
-  width: 28px!important;
-  height: 28px!important;
-  margin-right: 5px;
-  margin-top: 10px;
-  margin-left: 0!important;
+ul#aquilaHelp li {
+  width: 240px;
+  max-width: 100%;
+  float: left;
+  display: inline-block;
+  display: flex;
+  margin: 10px;
+}
+ul#aquilaHelp li a {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  transition: 0.2s all linear;
+  -webkit-transition: 0.2s all linear;
+  -moz-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+ul#aquilaHelp li a:hover,
+ul#aquilaHelp li a:active,
+ul#aquilaHelp li a:focus,
+ul#aquilaHelp li a:target {
+  background: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+ul#aquilaHelp li a h3,
+ul#aquilaHelp li a h4 {
+  text-decoration: none!important;
+}
+ul#aquilaHelp li a h3 {
+  opacity: 1;
+}
+ul#aquilaHelp li a h4 {
+  opacity: 1;
+}
+body.wp-admin {
+  /* Sidebar manually collapsed. */
+  /* Mobile menu opened. */
+  /* In small screens with resposive menu expanded there is small white space. */
+  /* Sidebar manually collapsed. */
+  /* Mobile menu opened. */
+  /* In small screens with resposive menu expanded there is small white space. */
+}
+body.wp-admin .edit-post-header {
+  /* Set left position when auto-fold is not on the body element. */
+  left: 0;
+}
+@media (min-width: 782px) {
+  body.wp-admin .edit-post-header {
+    left: 250px;
+    top: 65px;
+  }
+}
+body.wp-admin.auto-fold .edit-post-header {
+  /* Auto fold is when on smaller breakpoints, nav menu auto colllapses. */
+}
+@media (min-width: 782px) {
+  body.wp-admin.auto-fold .edit-post-header {
+    left: 60px;
+  }
+}
+@media (min-width: 960px) {
+  body.wp-admin.auto-fold .edit-post-header {
+    left: 250px;
+  }
+}
+body.wp-admin.folded .edit-post-header {
+  left: 0;
+}
+@media (min-width: 782px) {
+  body.wp-admin.folded .edit-post-header {
+    left: 60px;
+  }
+  body.wp-admin.is-fullscreen-mode .edit-post-header {
+    top: 0 !important;
+  }
+}
+@media (max-width: 782px) {
+  body.wp-admin.auto-fold .wp-responsive-open .edit-post-header {
+    left: 250px;
+  }
+}
+@media (max-width: 600px) {
+  body.wp-admin.auto-fold .wp-responsive-open .edit-post-header {
+    margin-left: -18px;
+  }
+}
+body.wp-admin.is-fullscreen-mode .edit-post-header {
+  left: 0 !important;
+}
+@media (min-width: 600px) {
+  body.wp-admin .edit-post-sidebar {
+    top: 120px;
+  }
+  body.wp-admin.is-fullscreen-mode .edit-post-sidebar {
+    top: 56px;
+  }
+}
+@media (min-width: 782px) {
+  body.wp-admin .edit-post-sidebar {
+    top: 120px;
+  }
+  body.wp-admin.is-fullscreen-mode .edit-post-sidebar {
+    top: 56px;
+  }
+}
+body.wp-admin .components-notice-list {
+  /* Set left position when auto-fold is not on the body element. */
+  left: 0;
+}
+@media (min-width: 782px) {
+  body.wp-admin .components-notice-list {
+    left: 250px;
+  }
+}
+body.wp-admin.auto-fold .components-notice-list {
+  /* Auto fold is when on smaller breakpoints, nav menu auto colllapses. */
+}
+@media (min-width: 782px) {
+  body.wp-admin.auto-fold .components-notice-list {
+    left: 60px;
+  }
+}
+@media (min-width: 960px) {
+  body.wp-admin.auto-fold .components-notice-list {
+    left: 250px;
+  }
+}
+body.wp-admin.folded .components-notice-list {
+  left: 0;
+}
+@media (min-width: 782px) {
+  body.wp-admin.folded .components-notice-list {
+    left: 60px;
+  }
+}
+@media (max-width: 782px) {
+  body.wp-admin.auto-fold .wp-responsive-open .components-notice-list {
+    left: 250px;
+  }
+}
+@media (max-width: 600px) {
+  body.wp-admin.auto-fold .wp-responsive-open .components-notice-list {
+    margin-left: -18px;
+  }
+}
+body.wp-admin.is-fullscreen-mode .components-notice-list {
+  left: 0 !important;
 }
 .media-frame.mode-grid .media-toolbar {
   height: 50px;

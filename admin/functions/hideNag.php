@@ -1,13 +1,10 @@
 <?php if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
 
 //hide core updates notification in the dashboard
-
 $aquilaOptions = get_option( 'aquila_settings' );
-
 if(isset($aquilaOptions['aquila_chk_showNag']) && $aquilaOptions['aquila_chk_showNag'] == 1){
-
+	// do nothing
 } else {
-
 	function aquila_admin_update_nag() {
 		if( current_user_can('manage_options') ) {
 		} else {
@@ -16,8 +13,6 @@ if(isset($aquilaOptions['aquila_chk_showNag']) && $aquilaOptions['aquila_chk_sho
 		}
 	}
 	add_action('admin_menu','aquila_admin_update_nag');
-
 }
-
 
 ?>

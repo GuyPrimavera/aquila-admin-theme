@@ -7,63 +7,65 @@ if ( is_admin() ) {
 }
 
 add_action('login_head', 'colourSchemeCSS');
-
-
 function colourSchemeCSS() {
-
 include('mdColours.php');
 include('bright.php');
 include('isDark.php');
 
 /// Define custom colours
-
 $aquilaColourSettings = get_option( 'aquilaColourSettings' );
 $aquilaPrimary = $aquilaColourSettings['aquila_primary_colour'];
 $aquilaSecondary = $aquilaColourSettings['aquila_secondary_colour'];
 $aquilaMenuBack = $aquilaColourSettings['aquila_menu_back_colour'];
+$aquilaMenuText = $aquilaColourSettings['aquila_menu_text_colour'];
 
 // Check darkness of custom colours
-
 if ( $aquilaPrimary ) {
-  $pri = $aquilaPrimary;
-  if( isDark( $pri, 99 ) ) {
-    $priNew = $mdGrey900;
-  } elseif( !isDark( $pri, 1 ) ) {
-    $priNew = $mdGrey50;
-  } else {
-    $priNew = $pri;
-  }
+  $pri = $priNew = $aquilaPrimary;
 } else {
   $pri = $mdYellow400;
   $priNew = $pri;
 }
 
 if ( $aquilaSecondary ) {
-  $sec = $aquilaSecondary;
-  if( isDark( $sec, 99 ) ) {
+  $sec = $secNew = $aquilaSecondary;
+  /*if( isDark( $sec, 99 ) ) {
     $secNew = $mdGrey900;
   } elseif( !isDark( $sec, 1 ) ) {
     $secNew = $mdGrey50;
   } else {
     $secNew = $sec;
-  }
+  }*/
 } else {
   $sec = $mdLightBlueA700;
   $secNew = $sec;
 }
 
 if ( $aquilaMenuBack ) {
-  $menu = $aquilaMenuBack;
-  if( isDark( $menu, 99 ) ) {
+  $menu = $menuNew = $aquilaMenuBack;
+  /*if( isDark( $menu, 99 ) ) {
     $menuNew = $mdGrey900;
   } elseif( !isDark( $menu, 1 ) ) {
     $menuNew = $mdGrey100;
   } else {
     $menuNew = $menu;
-  }
+  }*/
 } else {
   $menu = $mdGrey700;
   $menuNew = $menu;
+}
+if ( $aquilaMenuText ) {
+  $menuText = $menuTextNew = $aquilaMenuText;
+  /*if( isDark( $menuText, 99 ) ) {
+    $menuTextNew = $mdGrey900;
+  } elseif( !isDark( $menuText, 1 ) ) {
+    $menuTextNew = $mdGrey100;
+  } else {
+    $menuTextNew = $menuText;
+  }*/
+} else {
+  $menuText = $mdWhite;
+  $menuTextNew = $menuText;
 }
 
 
@@ -90,11 +92,11 @@ if( isDark( $sec, 50 ) ) {
 }
 
 if( isDark( $menu, 50 ) ) {
-  $menuText = $mdWhite;
+  //$menuText = $mdWhite;
   $menu2 = bright( $menuNew, 20);
   $menu3 = bright( $menuNew, 40);
 } else {
-  $menuText = $mdGrey900;
+  //$menuText = $mdGrey900;
   $menu2 = bright( $menuNew, -20);
   $menu3 = bright( $menuNew, -40);
 }
@@ -103,8 +105,10 @@ $disabled = $mdGrey500;
 $linkText = $mdGrey900;
 
 // LessPHP
-
-require "lessc.inc.php";
+if ( !class_exists( 'lessc' ) ) {
+    require_once 'lessc.inc.php';
+}
+//require "lessc.inc.php";
 $less = new lessc;
 $less->setFormatter("compressed");
 
@@ -129,9 +133,7 @@ $less->setVariables(array(
 echo '<style type="text/css" media="screen">';
 echo $less->compile('
 
-
 /* Core UI */
-
 body.wp-core-ui {
   .button {
     background: @sec;
@@ -402,6 +404,15 @@ body.wp-admin {
         color: @menuText;
         background: @menu3;
       }
+    }
+    .opensub .wp-submenu li.current a, 
+    .wp-submenu li.current, 
+    .wp-submenu li.current a, 
+    .wp-submenu li.current a:focus, 
+    .wp-submenu li.current a:hover, 
+    a.wp-has-current-submenu:focus+.wp-submenu li.current a {
+      //background: @menu3;
+      font-weight: 700!important;
     }
   }
   &.folded #adminmenu {
@@ -723,9 +734,11 @@ body.login.wp-core-ui {
     color: @menuText;
   }
 }
-  
+
 ');
 
 echo '</style>';
 
-} ?>
+} 
+
+?>

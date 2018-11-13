@@ -38,7 +38,7 @@ html.wp-toolbar {
 			#wpbody {
 				h1, h2, h3, h4, h5, h6 {
 					text-transform: uppercase;
-					font-weight: 300;
+					font-weight: 400;
 					.sans;
 				}
 				#screen-meta-links {
@@ -66,7 +66,7 @@ html.wp-toolbar {
 		text-align: center;
 		border-radius: 2px;
 		a {
-			font-weight: 600;
+			font-weight: 700;
 		}
 		table th, table tr {
 			background: none!important;
@@ -125,7 +125,7 @@ html.wp-toolbar {
     outline: 0;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 2.3;
     border: none!important;
     box-shadow: none!important;
@@ -189,8 +189,8 @@ a {
 /* Forms */
 
 input[type=checkbox]:checked:before {
-	margin: -14px 0 0 -12px;
-	font-size: 40px;
+	//margin: -14px 0 0 -12px;
+	//font-size: 40px;
 }
 
 input[type=radio]:checked:before {
@@ -226,9 +226,10 @@ input[type=radio]:checked:before {
 .folded #adminmenu .wp-has-current-submenu .wp-submenu a,
 #adminmenu a.wp-has-current-submenu:focus + .wp-submenu a,
 #adminmenu .wp-has-current-submenu.opensub .wp-submenu a {
-  text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 12px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 400!important;
 }
 
 /* Admin Menu: bubble */
@@ -250,12 +251,12 @@ input[type=radio]:checked:before {
     }
 	  .plugin-count {
 			padding: 0px 4px 0px 5px;
-			font-size: 10px;
-			line-height: 1.8;
-	    font-weight: 300;
+	    font-size: 10px;
+	    line-height: 1;
+	    font-weight: 700;
 	    body.folded &,
 	    body.auto-fold & {
-	    	padding: 0px 4px;
+	    	padding: 0px 0px;
 	    }
 	  }
 	}
@@ -350,7 +351,7 @@ ul#adminmenu {
 	div.wp-menu-name {
 		padding: 12px 10px 12px 0px;
 		text-transform: uppercase;
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 		line-height: 1.5;
 		font-size: 13px;
 	}
@@ -482,7 +483,7 @@ body.wp-admin {
 		& > h2, & > h3 {
 			font-size: 18px;
 			line-height: 2;
-			font-weight: 300;
+			font-weight: 400;
 			font-family: inherit;
 		}
 		&#welcome-to-aquila {
@@ -985,7 +986,15 @@ form.aquilaSettingsPage {
 	table {
 		tr {
 			th {
-				font-weight: 300;
+				font-weight: 400;
+				width: 300px;
+			  padding: 10px 10px 10px 0;
+			}
+			td {
+			  padding: 10px 10px 10px 0;
+			  label {
+			  	margin-left: 10px;
+			  }
 			}
 			a.button {
 				float: left;
@@ -1006,7 +1015,7 @@ form.aquilaSettingsPage {
 }
 
 // Colour Picker
-
+/*
 .wp-picker-container .iris-picker {
   padding-bottom: 75px!important;
   .iris-palette-container {
@@ -1020,6 +1029,171 @@ form.aquilaSettingsPage {
 		}
 	}
 }
+*/
+
+// Help page
+ul#aquilaHelp {
+	display: block;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: stretch;
+	li {
+		width: 240px;
+		max-width: 100%;
+		float: left;
+		display: inline-block;
+		display: flex;
+		margin: 10px;
+		a {
+			display: inline-block;
+			display: flex;
+			flex-direction: column;
+			background: rgba(0, 0, 0, 0.1);
+			padding: 20px;
+			text-align: center;
+			width: 100%;
+			.trans;
+			.mdShadow;
+			&:hover, &:active, &:focus, &:target {
+				background: rgba(0, 0, 0, 0.15);
+				.mdShadowHover;
+			}
+			h3, h4 {
+				text-decoration: none!important;
+			}
+			h3 {
+				opacity: 1;
+			}
+			h4 {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+// wp5.0 and Gutenberg
+
+body.wp-admin {
+	.edit-post-header {
+		/* Set left position when auto-fold is not on the body element. */
+		left: 0;
+	}
+	@media (min-width: 782px) {
+		.edit-post-header {
+			left: @sideWidth;
+			top: @barHeight;
+		}
+	}
+	&.auto-fold .edit-post-header {
+		/* Auto fold is when on smaller breakpoints, nav menu auto colllapses. */
+	}
+	@media (min-width: 782px) {
+		&.auto-fold .edit-post-header {
+			left: @sideWidthFolded;
+		}
+	}
+	@media (min-width: 960px) {
+		&.auto-fold .edit-post-header {
+			left: @sideWidth;
+		}
+	}
+	/* Sidebar manually collapsed. */
+	&.folded .edit-post-header {
+		left: 0;
+	}
+	@media (min-width: 782px) {
+		&.folded .edit-post-header {
+			left: @sideWidthFolded;
+		} 
+		&.is-fullscreen-mode .edit-post-header {
+			top: 0 !important;
+		}
+	}
+	/* Mobile menu opened. */
+	@media (max-width: 782px) {
+		&.auto-fold .wp-responsive-open .edit-post-header {
+			left: @sideWidth;
+		}
+	}
+	/* In small screens with resposive menu expanded there is small white space. */
+	@media (max-width: 600px) {
+		&.auto-fold .wp-responsive-open .edit-post-header {
+			margin-left: -18px;
+		}
+	}
+	&.is-fullscreen-mode .edit-post-header {
+		left: 0 !important;
+	}
+
+	.edit-post-sidebar {
+	}
+	@media (min-width: 600px) {
+		.edit-post-sidebar {
+			top: 120px;
+		}
+		&.is-fullscreen-mode .edit-post-sidebar {
+			top: 56px;
+		}
+	}
+	@media (min-width: 782px) {
+		.edit-post-sidebar {
+			top: 120px;
+		}
+		&.is-fullscreen-mode .edit-post-sidebar {
+			top: 56px;
+		}
+	}
+
+	.components-notice-list {
+		/* Set left position when auto-fold is not on the body element. */
+		left: 0;
+	}
+	@media (min-width: 782px) {
+		.components-notice-list {
+			left: @sideWidth;
+		}
+	}
+	&.auto-fold .components-notice-list {
+	/* Auto fold is when on smaller breakpoints, nav menu auto colllapses. */
+	}
+	@media (min-width: 782px) {
+		&.auto-fold .components-notice-list {
+			left: @sideWidthFolded;
+		}
+	}
+	@media (min-width: 960px) {
+		&.auto-fold .components-notice-list {
+			left: @sideWidth;
+		}
+	}
+	/* Sidebar manually collapsed. */
+	&.folded .components-notice-list {
+		left: 0;
+	}
+	@media (min-width: 782px) {
+		&.folded .components-notice-list {
+			left: @sideWidthFolded;
+		}
+	}
+	/* Mobile menu opened. */
+	@media (max-width: 782px) {
+		&.auto-fold .wp-responsive-open .components-notice-list {
+			left: @sideWidth;
+		}
+	}
+	/* In small screens with resposive menu expanded there is small white space. */
+	@media (max-width: 600px) {
+		&.auto-fold .wp-responsive-open .components-notice-list {
+			margin-left: -18px;
+		}
+	}
+	&.is-fullscreen-mode .components-notice-list {
+		left: 0 !important;
+	}
+
+}
 
 
 // Temp fixes 
@@ -1030,3 +1204,4 @@ form.aquilaSettingsPage {
 .media-frame .attachments-browser {
 	overflow: scroll;
 }
+

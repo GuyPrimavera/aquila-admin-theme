@@ -1,10 +1,10 @@
 === Aquila Admin Theme ===
-Contributors: GuyPrimavera, designbymito
+Contributors: GuyPrimavera
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YVPWSJB4SPN5N
 Tags: material design wordpress, material design admin theme, material design wordpress admin, material wordpress, admin theme, admin, admin panel, admin theme style plugin, admin-theme, admin theme, aquila, backend theme, clean admin, color scheme, colour scheme, custom admin theme, flat admin theme, free admin theme, modern admin theme, new admin ui, plugin, simple admin theme, white label, white label admin, wordpress, wordPress admin, wordpress admin theme, wp-admin, wp admin page, wp admin theme
 Requires at least: 4.0
-Tested up to: 4.8.2
-Stable tag: 2.2.1
+Tested up to: 5.0-beta4
+Stable tag: 2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,6 +33,7 @@ Many updates have been made to the admin area, including:
 *   "Update" notifications hidden from Editors.
 *   "Post Format" removed from posts.
 *   Multisite support.
+*   Gutenberg support.
 *   View server information directly on the dashboard.
 *   Media Library support for clear PNG images.
 *   Aquila Settings page to control most of these options.
@@ -72,15 +73,34 @@ No. It only changes the admin area, the login page and the admin bar for logged-
 
 == Screenshots ==
 
-1. Aquila CMS login page (Red).
-2. Edit page (Blue).
-3. Aquila Settings for the custom logo (White/Blue).
-4. Colour Scheme settings with custom logo (Red).
-5. Dashboard (Red).
-6. Folded admin menu (Default Colors).
-7. View pages (Black/Pink).
+1. Edit page with default Aquila options.
+2. Dashboard with custom colors and logo.
+3. Aquila general settings.
+4. Custom logo upload screen.
+5. Color scheme creator.
+6. Example admin page with custom colors and logo.
+7. Front-end showing admin bar icon instead of full admin bar (logged-in).
 
 == Changelog ==
+
+= 2.3 - 13/11/2018 =
+* New admin bar with icon and hidden top-bar.
+* Added versioning for main JS file to allow easier updating of the plugin.
+* Added failsafe check for lessc compiler in case it's already being used by another plugin.
+* Reverted the color picker to standard WordPress function, as the other one was rubbish.
+* Option to show admin bar by default on front-end.
+* Revised options page.
+* New "Menu Text Color" option.
+* Better method of hiding admin bar links.
+* Actions links added to plugins page.
+* Added "Help" tab to the settings page.
+* Re-structured settings area code.
+* Failsafe check added to postToBlog.php to see if the submenus exist before modifying them.
+* Login page logo title changed to site title.
+* Interim login styling issue fixed.
+* New asset images for WP repo.
+* New translation files added for English (UK) and Italian.
+* Tested with WP 5.0-beta4 and Gutenberg.
 
 = 2.2.1 - 29/09/2017 =
 * Fixed readme file.
@@ -94,7 +114,7 @@ No. It only changes the admin area, the login page and the admin bar for logged-
 * Added an option to remove the footer credit link.
 * Added an option to show WP upgrade notices.
 * Fixed bug with renaming "posts" to "blog" when user has specific custom user role.
-* LessPHP used to convert selected colours to CSS variables.
+* LessPHP used to convert selected colors to CSS variables.
 * Fixed margin of metaboxes in "WP Optimize" plugin.
 * Fixed layout bug with the login CAPTCHA in "All-in-one Security" plugin.
 * Created a list of Material Design Color Palette colors as PHP variables for use throughout plugin.
@@ -168,6 +188,11 @@ No. It only changes the admin area, the login page and the admin bar for logged-
 * Beta release.
 
 == Upgrade Notice ==
+
+= 2.3 =
+* New admin bar with icon and hidden top-bar.
+* New color options.
+* Bug fixes.
 
 = 2.1 =
 * Added customisable color scheme with a new color-picker in the admin area.

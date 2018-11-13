@@ -1,46 +1,35 @@
 <?php if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
 
 // Admin Bar links
-
 $aquilaOptions = get_option( 'aquila_settings' );
 
 if(isset($aquilaOptions['aquila_chk_abLinks']) && $aquilaOptions['aquila_chk_abLinks'] == 1){
-
+    // do nothing
 } else {
+    add_action( 'admin_bar_menu', 'aquila_admin_bar_cleanup', 200 );
+    function aquila_admin_bar_cleanup() 
+    {
+        global $wp_admin_bar;   
+        if ( !is_object( $wp_admin_bar ) ) {
+            return;
+        }
 
-    function aquila_admin_bar_links() {
-        global $wp_admin_bar;
-        $wp_admin_bar->remove_menu('updates');
-        $wp_admin_bar->remove_menu('comments');
-        $wp_admin_bar->remove_menu('new-content');
-        $wp_admin_bar->remove_menu('vc_inline-admin-bar-link');
-        $wp_admin_bar->remove_menu('revslider');
-        $wp_admin_bar->remove_menu('customize');
-        $wp_admin_bar->remove_menu('themes');
-        $wp_admin_bar->remove_menu('widgets');
-        $wp_admin_bar->remove_menu('menus');
-        $wp_admin_bar->remove_menu('wpseo-menu');
-        $wp_admin_bar->remove_menu('ngg-menu');
-        $wp_admin_bar->remove_menu('w3tc');
-        $wp_admin_bar->remove_menu('all-in-one-seo-pack');
-        $wp_admin_bar->remove_menu('updraft_admin_node');
-        $wp_admin_bar->remove_menu('customer-area');
-        $wp_admin_bar->remove_menu('itsec_admin_bar_menu');
-        $wp_admin_bar->remove_menu('maintenance_options');
-        $wp_admin_bar->remove_menu('tribe-events');
-        $wp_admin_bar->remove_menu('analytify');    
-        $wp_admin_bar->remove_menu('cxssh-main-menu');
+        $nodes = $wp_admin_bar->get_nodes();
+        $nodesKeep = array('wp-logo', 'site-name', 'adminTitle', 'screenOptions', 'contextHelp', 'menu-toggle', 'my-account', 'view', 'edit');
+
+        foreach( $nodes as $node )
+        {
+            if( (!$node->parent || 'top-secondary' == $node->parent) && (!in_array($node->id, $nodesKeep)) ) {
+                $wp_admin_bar->remove_menu( $node->id );
+                //echo $node->id . '<br/>';
+            }           
+        }
     }
-    add_action( 'wp_before_admin_bar_render', 'aquila_admin_bar_links', 999 );
-
 }
 
 // Remove nodes
-
 add_action( 'admin_bar_menu', 'aquila_remove_wp_logo_nodes', 999 );
-
-function aquila_remove_wp_logo_nodes() 
-{
+function aquila_remove_wp_logo_nodes() {
     global $wp_admin_bar;   
     $wp_admin_bar->remove_node( 'about' );
     $wp_admin_bar->remove_node( 'wporg' );
@@ -50,10 +39,8 @@ function aquila_remove_wp_logo_nodes()
 }
 
 // Add Aquila links
-
 add_action('admin_bar_menu', 'aquila_wp_logo_links', 100);
 function aquila_wp_logo_links($admin_bar){
-
     $admin_bar->add_menu( array(
         'id'    => 'wpLessons',
         'parent'=> 'wp-logo',
@@ -65,7 +52,6 @@ function aquila_wp_logo_links($admin_bar){
             'target' => __('_blank'),                        
         ),
     ));
-
     $admin_bar->add_menu( array(
         'id'    => 'wpGuide',
         'parent'=> 'wp-logo',
@@ -77,7 +63,6 @@ function aquila_wp_logo_links($admin_bar){
             'target' => __('_blank'),                        
         ),
     ));
-
     $admin_bar->add_menu( array(
         'id'    => 'mitoSupport',
         'parent'=> 'wp-logo-external',
@@ -89,7 +74,6 @@ function aquila_wp_logo_links($admin_bar){
             'target' => __('_blank'),                        
         ),
     ));
-
 }
 
 ?>

@@ -1,7 +1,6 @@
-<?php 
+<?php if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
 
 function isDark($hexCode, $darknessVar) {
-
   // $darknessVar must be a number between 0 and 100
   // $lightnessVar = 180;
 
@@ -76,7 +75,5 @@ function isDark($hexCode, $darknessVar) {
   }
 
 }
-
-
 
 ?>

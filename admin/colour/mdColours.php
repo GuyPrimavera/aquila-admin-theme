@@ -1,4 +1,4 @@
-<?php
+<?php if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
 
 /// Material Design Colours - PHP variables
 // Guy Primavera
