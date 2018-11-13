@@ -1,7 +1,6 @@
 <?php if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
 
 // Remove "How are you" //
-
 function aquila_admin_bar_appearance() {
 	global $wp_admin_bar;
 	$user_id      = get_current_user_id();

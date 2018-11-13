@@ -1,8 +1,6 @@
 /* LESS Elements 0.9 */
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-@import url(https://fonts.googleapis.com/css?family=Lato);
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext');
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 .fontAwesome {
   font-family: "fontAwesome" !important;
@@ -12,14 +10,11 @@
   font-size: 18px;
   line-height: 1.6;
 }
-.serif {
-  font-family: 'Raleway', serif;
-}
 .sans {
   font-family: 'Roboto', sans-serif !important;
 }
 .heading {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .bgCov {
   background-size: cover;
@@ -2347,6 +2342,55 @@ body.admin-bar #wpadminbar .noticon {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.aquilaFront #wpadminbar {
+  display: none;
+  padding-left: 65px;
+}
+.aquilaFront #aquilaAdminbarIcon {
+  overflow: hidden;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  height: 45px;
+  width: 45px;
+  z-index: 999999;
+  border-radius: 50%;
+  -webkit-box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.25), 5px 0px 10px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.25), 5px 0px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.25), 5px 0px 10px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.2s all linear;
+  -webkit-transition: 0.2s all linear;
+  -moz-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+}
+.aquilaFront #aquilaAdminbarIcon:before {
+  font-family: 'Aquila' !important;
+  content: "\a002";
+  font-size: 30px;
+  line-height: 49px;
+  width: 45px;
+  text-align: center;
+  position: relative;
+  display: block;
+  height: 45px;
+}
+.aquilaFront #aquilaAdminbarIcon:hover,
+.aquilaFront #aquilaAdminbarIcon:target,
+.aquilaFront #aquilaAdminbarIcon:focus,
+.aquilaFront #aquilaAdminbarIcon:active {
+  opacity: 1;
+}
+.aquilaOpenBar.aquilaFront #aquilaAdminbarIcon {
+  background-color: rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
 #wpadminbar {
   height: 65px;
   -webkit-box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.25), 5px 0px 10px rgba(0, 0, 0, 0.22);
@@ -2486,4 +2530,16 @@ body.folded #wpadminbar li#wp-admin-bar-wp-logo > .ab-item .ab-icon:before {
 }
 #wpadminbar #screen-meta-links {
   display: none!important;
+}
+#wpadminbar.openBar {
+  height: 65px;
+}
+@media screen and (max-width: 782px) {
+  .aquilaFront #aquilaAdminbarIcon {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    height: 37px;
+    width: 37px;
+  }
 }

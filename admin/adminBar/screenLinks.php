@@ -2,7 +2,6 @@
 
 add_action('admin_bar_menu', 'new_screenlinks', 100);
 function new_screenlinks($admin_bar){
-
 	$admin_bar->add_menu( array(
 		'id'    => 'screenOptions',
 		'title' => '',
@@ -12,7 +11,6 @@ function new_screenlinks($admin_bar){
 			'class' => __('screenLink'),			
 		),
 	));
-
 	$admin_bar->add_menu( array(
 		'id'    => 'contextHelp',
 		'title' => '',
@@ -22,9 +20,6 @@ function new_screenlinks($admin_bar){
 			'class' => __('screenLink'),			
 		),
 	));
-
-
-
 }
 
 ?>

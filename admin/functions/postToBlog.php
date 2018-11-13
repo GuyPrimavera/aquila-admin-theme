@@ -3,21 +3,23 @@
 $aquilaOptions = get_option( 'aquila_settings' );
 
 if(isset($aquilaOptions['aquila_chk_postBlog']) && $aquilaOptions['aquila_chk_postBlog'] == 1){
-
+    // do nothing
 } else {
-
     function aquila_admin_post_to_blog() {
         global $menu;
         //global $submenu;
-
         if (isset($menu[5][5]) && $menu[5][5] === "menu-posts" && current_user_can("edit_posts")) {
             $menu[5][0] = 'Blog';
-            $submenu['edit.php'][5][0] = __( 'Blog', 'aquila-admin-theme' );
-            $submenu['edit.php'][10][0] = __( 'Add Blog Post', 'aquila-admin-theme' );
-            $submenu['edit.php'][16][0] = __( 'Blog Tags', 'aquila-admin-theme' );
-            echo '';
-        } // Thanks Aaron Queen
-
+            if (isset($submenu['edit.php'][5])) {
+                $submenu['edit.php'][5][0] = __( 'Blog', 'aquila-admin-theme' );
+            }
+            if (isset($submenu['edit.php'][10])) {
+                $submenu['edit.php'][10][0] = __( 'Add Blog Post', 'aquila-admin-theme' );
+            }
+            if (isset($submenu['edit.php'][16])) {
+                $submenu['edit.php'][16][0] = __( 'Blog Tags', 'aquila-admin-theme' );
+            }
+        }
     }
     function aquila_admin_blog_object() {
         global $wp_post_types;
@@ -36,19 +38,15 @@ if(isset($aquilaOptions['aquila_chk_postBlog']) && $aquilaOptions['aquila_chk_po
         $labels->menu_name = __( 'Blog', 'aquila-admin-theme' );
         $labels->name_admin_bar = __( 'Blog', 'aquila-admin-theme' );
     }
-     
     add_action( 'admin_menu', 'aquila_admin_post_to_blog' );
     add_action( 'init', 'aquila_admin_blog_object' );
-
 }
 
 // Format meta box
-
 function aquila_admin_blog_meta_boxes() {
     remove_meta_box( 'formatdiv' , 'post' , 'normal' ); 
     remove_meta_box( 'mymetabox_revslider_0' , 'post' , 'normal' ); 
 }
 add_action( 'admin_menu' , 'aquila_admin_blog_meta_boxes' );
-
 
 ?>

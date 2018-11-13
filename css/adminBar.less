@@ -1,13 +1,12 @@
 @import "vars.less";
 @import "/../icons/faVars.less";
 @import "/../icons/variables.less";
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext');
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 
 // Admin Bar
 
 body.admin-bar {
-	//padding-top: @barHeight;
 	#wpadminbar {
 		* {
 			.sans;
@@ -26,6 +25,53 @@ body.admin-bar {
 	}
 }
 
+// Admin bar icon
+.aquilaFront {
+	#wpadminbar {
+		display: none;
+		padding-left: 65px;
+	}
+	#aquilaAdminbarIcon {
+		overflow: hidden;
+	  position: fixed;
+	  top: 10px;
+	  left: 10px;
+	  background-color: #000000;
+	  background-color: rgba(0,0,0,0.5);
+	  color: #fff;
+	  //color: rgba(255,255,255,0.5);
+	  height: 45px;
+	  width: 45px;
+	  z-index: 999999;
+	  border-radius: 50%;
+		-webkit-box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.25), 5px 0px 10px rgba(0, 0, 0, 0.22);
+		-moz-box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.25), 5px 0px 10px rgba(0, 0, 0, 0.22);
+		box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.25), 5px 0px 10px rgba(0, 0, 0, 0.22);
+		cursor: pointer;
+		opacity: 0.8;
+		.trans;
+		&:before {
+			.icoAquila;
+			content: @aquila-aquila;
+			font-size: 30px;
+	    line-height: 49px;
+	    width: 45px;
+	    text-align: center;
+	    position: relative;
+	    display: block;
+	    height: 45px;
+		}
+		&:hover, &:target, &:focus, &:active {
+			opacity: 1;
+		}
+		.aquilaOpenBar& {
+	  	background-color: rgba(0,0,0,0.25);
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+		}
+	}
+}
 /// Admin Bar
 
 #wpadminbar {
@@ -174,4 +220,18 @@ body.admin-bar {
 	#screen-meta-links {
 		display: none!important;
 	}
+	// Admin bar open
+	&.openBar {
+		height: @barHeight;
+	}
+}
+
+@media screen and (max-width: 782px) {
+	.aquilaFront #aquilaAdminbarIcon {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    height: 37px;
+    width: 37px;
+  }
 }

@@ -1,9 +1,7 @@
-<?php 
+<?php if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
 
 function lum( $hex, $percent ) {
-	
 	// validate hex string
-	
 	$hex = preg_replace( '/[^0-9a-f]/i', '', $hex );
 	$new_hex = '#';
 	

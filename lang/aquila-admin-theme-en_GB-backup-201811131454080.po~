@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: Aquila Admin Theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-13 14:47+0000\n"
-"PO-Revision-Date: 2018-11-13 15:06+0000\n"
+"PO-Revision-Date: 2018-11-13 14:48+0000\n"
 "Last-Translator: admin <wp2@designbymito.com>\n"
-"Language-Team: Italian\n"
-"Language: it_IT\n"
+"Language-Team: \n"
+"Language: en_GB\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,309 +16,302 @@ msgstr ""
 #: admin/functions/postToBlog.php:17 admin/functions/postToBlog.php:29
 #: admin/functions/postToBlog.php:30
 msgid "Add Blog Post"
-msgstr "Aggiungi post sul blog"
+msgstr ""
 
 #: admin/options/registerSettings.php:35
 msgid "Admin bar"
-msgstr "Barra di amministrazione"
+msgstr ""
 
 #: admin/options/registerSettings.php:53
 msgid "Admin Menu Colors"
-msgstr "Colori del menu Admin"
+msgstr ""
 
 #: admin/functions/postToBlog.php:37
 msgid "All Blog Posts"
-msgstr "Tutti i post dei blog"
+msgstr ""
 
 #: admin/options/registerSettings.php:11 admin/widgets/welcomeWidget.php:40
 msgid "Aquila"
-msgstr "Aquila"
+msgstr ""
 
 #. Name of the plugin
 msgid "Aquila Admin Theme"
-msgstr "Aquila Admin Theme"
+msgstr ""
 
 #: admin/options/createOptionsPage.php:6 admin/options/registerSettings.php:10
 msgid "Aquila Settings"
-msgstr "Impostazioni Aquila"
+msgstr ""
 
 #: admin/adminBar/adminBarLinks.php:69
 msgid "Aquila Support"
-msgstr "Aiuto per Aquila"
+msgstr ""
 
 #: admin/options/help.php:17
 msgid "Ask a question"
-msgstr "Fai una domanda"
+msgstr ""
 
 #: admin/functions/postToBlog.php:14 admin/functions/postToBlog.php:27
 #: admin/functions/postToBlog.php:38 admin/functions/postToBlog.php:39
 msgid "Blog"
-msgstr "Blog"
+msgstr ""
 
 #: admin/functions/postToBlog.php:28 admin/functions/postToBlog.php:32
 msgid "Blog Post"
-msgstr "Post Blog"
+msgstr ""
 
 #: admin/functions/postToBlog.php:20
 msgid "Blog Tags"
-msgstr "Tag Blog"
+msgstr ""
 
 #: admin/options/callbacks.php:11
 msgid "Choose a custom logo for your admin area."
-msgstr "Scegli un logo personalizzato per la tua area di amministrazione."
+msgstr ""
 
 #: admin/options/createOptionsPage.php:14 admin/options/registerSettings.php:47
 msgid "Color Scheme"
-msgstr "Combinazione di colori"
+msgstr ""
 
 #: admin/options/createOptionsPage.php:13 admin/options/registerSettings.php:41
 msgid "Custom Logo"
-msgstr "Logo Personalizzato"
+msgstr ""
 
 #: admin/options/registerSettings.php:121
 msgid "Custom logo"
-msgstr "Logo personalizzato"
+msgstr ""
 
 #: admin/options/registerSettings.php:128
 msgid "Custom logo (square) <br/><em>Used in the \"folded\" menu</em>"
 msgstr ""
-"Logo personalizzato (quadrato) <br/><em> Utilizzato nel menu \"piegato\" "
-"</em>"
 
 #: admin/options/registerSettings.php:29
 msgid "Dashboard"
-msgstr "Bacheca"
+msgstr ""
 
 #: admin/options/registerSettings.php:82
 msgid "Do not rename <strong>Posts</strong> to <strong>Blog</strong>"
-msgstr "Non rinominare <strong>Post</strong> in <strong>Blog</strong>"
+msgstr ""
 
 #: admin/options/help.php:62
 msgid "Donate towards this plugin"
-msgstr "Dona a questo plugin"
+msgstr ""
 
 #: admin/options/help.php:48
 msgid "Download an older version of the plugin."
-msgstr "Scarica una versione precedente del plugin."
+msgstr ""
 
 #: admin/functions/postToBlog.php:31
 msgid "Edit Blog Post"
-msgstr "Modifica post del blog"
+msgstr ""
 
 #: admin/options/createOptionsPage.php:12
 msgid "General Settings"
-msgstr "Impostazioni Generali"
+msgstr ""
 
 #. Author of the plugin
 msgid "Guy Primavera"
-msgstr "Guy Primavera"
+msgstr ""
 
 #: admin/options/createOptionsPage.php:15
 msgid "Help"
-msgstr "Aiuto"
+msgstr ""
 
 #: admin/options/registerSettings.php:89
 msgid "Hide <strong>Footer credit</strong> link."
-msgstr "Nascondi il link <strong>Footer credit</strong>."
+msgstr ""
 
 #. Author URI of the plugin
 msgid "https://guyprimavera.com/"
-msgstr "https://guyprimavera.com/"
+msgstr ""
 
 #. URI of the plugin
 msgid "https://wordpress.org/plugins/aquila-admin-theme/"
-msgstr "https://wordpress.org/plugins/aquila-admin-theme/"
+msgstr ""
 
 #: admin/options/help.php:33
 msgid "It's a hub for gits."
-msgstr "È un hub per gits."
+msgstr ""
 
 #: admin/options/help.php:28
 msgid "Je voudrais un sandwich."
-msgstr "The cat is on the table."
+msgstr ""
 
 #: admin/options/help.php:57
 msgid "Leave a review"
-msgstr "Lascia una recensione"
+msgstr ""
 
 #: admin/options/help.php:58
 msgid "Let me know what you think!"
-msgstr "Fatemi sapere cosa ne pensate!"
+msgstr ""
 
 #: admin/widgets/welcomeWidget.php:44
 msgid "Memory Usage"
-msgstr "Utilizzo della memoria"
+msgstr ""
 
 #: admin/options/registerSettings.php:167
 msgid "Menu Background Color"
-msgstr "Colore di sfondo del menu"
+msgstr ""
 
 #: admin/options/registerSettings.php:174
 msgid "Menu Text Color"
-msgstr "Colore testo menu"
+msgstr ""
 
 #: admin/functions/postToBlog.php:35
 msgid "No Blog Posts found"
-msgstr "Nessun post sul blog trovato"
+msgstr ""
 
 #: admin/functions/postToBlog.php:36
 msgid "No Blog Posts found in Trash"
-msgstr "Nessun post sul blog trovato nel Cestino"
+msgstr ""
 
 #: admin/options/help.php:53
 msgid "On GuyPrimavera.com."
-msgstr "Su GuyPrimavera.com."
+msgstr ""
 
 #: admin/options/help.php:13 admin/options/help.php:43
 msgid "On WordPress.org."
-msgstr "Su WordPress.org."
+msgstr ""
 
 #: admin/widgets/welcomeWidget.php:43
 msgid "PHP"
-msgstr "PHP"
+msgstr ""
 
 #: admin/functions/pluginList.php:3
 msgid "Plugins Support"
-msgstr "Supporto per i plugin"
+msgstr ""
 
 #: admin/options/help.php:47
 msgid "Previous versions"
-msgstr "Versione precedente"
+msgstr ""
 
 #: admin/options/registerSettings.php:137
 msgid "Primary Color"
-msgstr "Colore primario"
+msgstr ""
 
 #: admin/options/helpers.php:31
 msgid "Remove logo"
-msgstr "Rimuovi logo"
+msgstr ""
 
 #: admin/functions/postToBlog.php:34
 msgid "Search Blog Posts"
-msgstr "Cerca post di blog"
+msgstr ""
 
 #: admin/options/registerSettings.php:144
 msgid "Secondary Color"
-msgstr "Colore secondario"
+msgstr ""
 
 #: admin/options/help.php:22
 msgid "See the ChangeLog"
-msgstr "Vedi il ChangeLog"
+msgstr ""
 
 #: admin/options/help.php:8
 msgid "See the features and recent updates."
-msgstr "Vedi le caratteristiche e gli aggiornamenti recenti."
+msgstr ""
 
 #: admin/options/help.php:23
 msgid "See what's changed."
-msgstr "Guarda cosa è cambiato."
+msgstr ""
 
 #: admin/options/callbacks.php:14
 msgid "Select a new color scheme for the admin area."
 msgstr ""
-"Seleziona una nuova combinazione di colori per l'area di amministrazione."
 
 #: admin/options/callbacks.php:17
 msgid "Select colors for the admin menu and admin bar."
 msgstr ""
-"Seleziona i colori per il menu di amministrazione e la barra di "
-"amministrazione."
 
 #: admin/widgets/welcomeWidget.php:42
 msgid "Server IP"
-msgstr "IP del server"
+msgstr ""
 
 #: admin/options/registerSettings.php:191
 msgid "Settings"
-msgstr "Impostazioni"
+msgstr ""
 
 #: admin/options/registerSettings.php:105
 msgid "Show <strong>Adminbar</strong> links?"
-msgstr "Mostra i link <strong>Adminbar</strong>?"
+msgstr ""
 
 #: admin/options/registerSettings.php:112
 msgid "Show <strong>Full Adminbar</strong> by default on front-end?"
 msgstr ""
-"Mostra <strong> Full Adminbar</strong> per impostazione predefinita sul "
-"front-end?"
 
 #: admin/options/registerSettings.php:96
 msgid "Show <strong>WordPress Update</strong> notices."
-msgstr "Mostra le notifiche <strong>Aggiornamento di WordPress</strong>."
+msgstr ""
 
 #: admin/options/registerSettings.php:75
 msgid "Show all other <strong>Dashboard metaboxes</strong>?"
-msgstr "Mostra tutti gli altri <strong>metabox della bacheca</strong>?"
+msgstr ""
 
 #: admin/options/registerSettings.php:68
 msgid "Show Editors <strong>Plugins Support</strong> metabox?"
-msgstr "Mostra ai editor <strong>Supporto per i plug-in</strong>?"
+msgstr ""
 
 #: admin/options/help.php:38
 msgid "Similar to GitHub."
-msgstr "Simile a GitHub."
+msgstr ""
 
 #: admin/options/help.php:18
 msgid "Something not working? Let me know."
-msgstr "Qualcosa non funziona? Fammi sapere."
+msgstr ""
 
 #. Description of the plugin
 msgid "The Aquila Admin Theme"
-msgstr "Il tema Admin dell'Aquila"
+msgstr ""
 
 #: admin/options/help.php:63
 msgid "This full-version is free to use, but every little helps!"
-msgstr "Questa versione completa è gratuita, ma ogni piccolo aiuto!"
+msgstr ""
 
 #: admin/options/help.php:27
 msgid "Translate into your language"
-msgstr "Traduci nella tua lingua"
+msgstr ""
 
 #: admin/options/helpers.php:30
 msgid "Upload logo"
-msgstr "Carica logo"
+msgstr ""
 
 #: admin/functions/postToBlog.php:33
 msgid "View Blog Post"
-msgstr "Visualizza post del blog"
+msgstr ""
 
 #: admin/options/help.php:42
 msgid "View the development log"
-msgstr "Visualizza il registro di sviluppo"
+msgstr ""
 
 #: admin/options/help.php:52
 msgid "View the plugin's web page"
-msgstr "Visualizza la pagina web del plugin"
+msgstr ""
 
 #: admin/options/help.php:32
 msgid "View the source code on GitHub"
-msgstr "Visualizza il codice sorgente su GitHub"
+msgstr ""
 
 #: admin/options/help.php:37
 msgid "View the source code on WP Trac"
-msgstr "Visualizza il codice sorgente su WP Trac"
+msgstr ""
 
 #: admin/options/help.php:12
 msgid "View the support forum"
-msgstr "Visualizza il forum di supporto"
+msgstr ""
 
 #: admin/options/help.php:7
 msgid "View this plugin on WordPress.org"
-msgstr "Visualizza questo plugin su WordPress.org"
+msgstr ""
 
 #: admin/widgets/pluginWidget.php:33
 #, php-format
 msgid "Visible to <a href=\"%s\"><strong>Administrators</strong></a> only"
-msgstr "Visibile solo agli <a href=\"%s\"><strong>amministratori</strong></a>"
+msgstr ""
 
 #: admin/widgets/welcomeWidget.php:39
 msgid "WordPress"
-msgstr "WordPress"
+msgstr ""
 
 #: admin/adminBar/adminBarLinks.php:47
 msgid "WordPress Lessons"
-msgstr "Lezioni di WordPress"
+msgstr ""
 
 #: admin/adminBar/adminBarLinks.php:58
 msgid "WordPress User Guide"
-msgstr "Guida dell'utente di WordPress"
+msgstr ""
