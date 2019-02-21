@@ -2507,8 +2507,7 @@ body.wp-admin .add-new-h2:active,
 body.wp-admin .page-title-action,
 .wp-core-ui .page-title-action:active,
 body.wp-admin .page-title-action:active {
-  -webkit-border-radius: 0px;
-  border-radius: 0;
+  border-radius: 2px;
   outline: 0;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -2517,6 +2516,7 @@ body.wp-admin .page-title-action:active {
   border: none!important;
   box-shadow: none!important;
   text-shadow: none!important;
+  height: 35px;
   transition: 0.2s all linear;
   -webkit-transition: 0.2s all linear;
   -moz-transition: 0.2s all linear;
@@ -3656,7 +3656,7 @@ body.wp-admin.is-fullscreen-mode .components-notice-list {
   left: 0 !important;
 }
 .media-frame.mode-grid .media-toolbar {
-  height: 50px;
+  padding: 10px;
 }
 .media-frame .attachments-browser {
   overflow: scroll;

@@ -42,36 +42,25 @@ function aquila_remove_wp_logo_nodes() {
 add_action('admin_bar_menu', 'aquila_wp_logo_links', 100);
 function aquila_wp_logo_links($admin_bar){
     $admin_bar->add_menu( array(
-        'id'    => 'wpLessons',
+        'id'    => 'pmsupport',
         'parent'=> 'wp-logo',
-        'title' => __( 'WordPress Lessons', 'aquila-admin-theme' ),
-        'href'  => 'https://codex.wordpress.org/WordPress_Lessons',
+        'title' => __( 'Purple Manager', 'aquila-admin-theme' ),
+        'href'  => 'https://purplemanager.com',
         'meta'  => array(
-            'title' => __(''),          
-            'class' => __(''), 
-            'target' => __('_blank'),                        
+            'title' => __(''),
+            'class' => __(''),
+            'target' => __('_blank'),
         ),
     ));
     $admin_bar->add_menu( array(
-        'id'    => 'wpGuide',
+        'id'    => 'pmsupport',
         'parent'=> 'wp-logo',
-        'title' => __( 'WordPress User Guide', 'aquila-admin-theme' ),
-        'href'  => 'http://easywpguide.com/wordpress-manual/',
+        'title' => __( 'Support', 'aquila-admin-theme' ),
+        'href'  => 'https://support.sprylab.com/',
         'meta'  => array(
-            'title' => __(''),          
-            'class' => __(''),            
-            'target' => __('_blank'),                        
-        ),
-    ));
-    $admin_bar->add_menu( array(
-        'id'    => 'mitoSupport',
-        'parent'=> 'wp-logo-external',
-        'title' => __( 'Aquila Support', 'aquila-admin-theme' ),
-        'href'  => 'https://designbymito.com/support/',
-        'meta'  => array(
-            'title' => __(''),          
-            'class' => __(''),            
-            'target' => __('_blank'),                        
+            'title' => __(''),
+            'class' => __(''),
+            'target' => __('_blank'),
         ),
     ));
 }

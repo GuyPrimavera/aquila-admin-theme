@@ -135,6 +135,7 @@ echo $less->compile('
 
 /* Core UI */
 body.wp-core-ui {
+  .is-button,  
   .button {
     background: @sec;
     color: @secText;
@@ -146,6 +147,7 @@ body.wp-core-ui {
       border: none;
     }
   }
+  .is-button.is-primary,
   .button-primary {
     background: @pri;
     color: @priText;

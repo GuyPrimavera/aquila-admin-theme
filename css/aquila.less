@@ -119,8 +119,7 @@ html.wp-toolbar {
 
 .wp-core-ui, body.wp-admin {
 	.button, .button-primary, .button-secondary, .add-new-h2, .add-new-h2:active, .page-title-action, .page-title-action:active {
-    -webkit-border-radius: 0px;
-    border-radius: 0;
+    border-radius: 2px;
     outline: 0;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -129,6 +128,7 @@ html.wp-toolbar {
     border: none!important;
     box-shadow: none!important;
     text-shadow: none!important;
+	height: 35px;
     .trans;
     &.wpo_primary_big {
     	line-height: initial;
@@ -1182,7 +1182,7 @@ body.wp-admin {
 // Temp fixes 
 
 .media-frame.mode-grid .media-toolbar {
-	height: 50px;
+	padding: 10px;
 }
 .media-frame .attachments-browser {
 	overflow: scroll;
