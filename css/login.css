@@ -1,5 +1,22 @@
 /* LESS Elements 0.9 */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext');
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fChc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfChc9.ttf) format('truetype');
+}
 .fontAwesome {
   font-family: "fontAwesome" !important;
 }
@@ -153,6 +170,7 @@ body.login #login:before {
   position: relative;
   float: left;
   padding-top: 10px;
+  display: none;
 }
 body.login #login #login_error,
 body.login #login .message {
@@ -165,6 +183,11 @@ body.login #login .message {
 }
 body.login #login h1 a {
   display: none!important;
+  background-image: url(../images/logo_full.png);
+  height: 65px;
+  width: 100%;
+  display: block !important;
+  background-size: contain;
 }
 body.login #login a {
   opacity: 0.8;

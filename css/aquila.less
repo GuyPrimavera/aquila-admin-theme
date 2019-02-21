@@ -37,7 +37,6 @@ html.wp-toolbar {
 		#wpcontent {
 			#wpbody {
 				h1, h2, h3, h4, h5, h6 {
-					text-transform: uppercase;
 					font-weight: 400;
 					.sans;
 				}
@@ -147,10 +146,7 @@ html.wp-toolbar {
 }
 .wp-core-ui {
   input[type=text], input[type=search], input[type=tel], input[type=time], input[type=url], input[type=week], input[type=password], input[type=color], input[type=date], input[type=datetime], input[type=datetime-local], input[type=email], input[type=month], input[type=number], select, textarea {
-    background: none;
     box-shadow: none;
-    border: none;
-    border-bottom: 2px solid transparent;
     .trans;
 		&:hover, &:active, &:target, &:focus {
 			.mdShadow;
@@ -219,18 +215,6 @@ input[type=radio]:checked:before {
 	box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.25), 5px 0px 10px rgba(0, 0, 0, 0.22);
 }
 
-/* Admin Menu: submenu */
-
-#adminmenu .wp-submenu a,
-#adminmenu .wp-has-current-submenu .wp-submenu a,
-.folded #adminmenu .wp-has-current-submenu .wp-submenu a,
-#adminmenu a.wp-has-current-submenu:focus + .wp-submenu a,
-#adminmenu .wp-has-current-submenu.opensub .wp-submenu a {
-  letter-spacing: 1px;
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: 400!important;
-}
 
 /* Admin Menu: bubble */
 
@@ -350,7 +334,6 @@ ul#adminmenu {
 	}
 	div.wp-menu-name {
 		padding: 12px 10px 12px 0px;
-		text-transform: uppercase;
 		letter-spacing: 1px;
 		line-height: 1.5;
 		font-size: 13px;
