@@ -1,7 +1,23 @@
 /* LESS Elements 0.9 */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext');
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fChc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfChc9.ttf) format('truetype');
+}
 .fontAwesome {
   font-family: "fontAwesome" !important;
 }
@@ -2353,6 +2369,10 @@ body.admin-bar #wpadminbar .noticon {
   left: 10px;
   background-color: #000000;
   background-color: rgba(0, 0, 0, 0.5);
+  background-image: url('../images/logo_round.png');
+  background-size: 85%;
+  background-position: 50%;
+  background-repeat: no-repeat;
   color: #fff;
   height: 45px;
   width: 45px;
@@ -2370,13 +2390,13 @@ body.admin-bar #wpadminbar .noticon {
 }
 .aquilaFront #aquilaAdminbarIcon:before {
   font-family: 'Aquila' !important;
+  display: none;
   content: "\a002";
   font-size: 30px;
   line-height: 49px;
   width: 45px;
   text-align: center;
   position: relative;
-  display: block;
   height: 45px;
 }
 .aquilaFront #aquilaAdminbarIcon:hover,
@@ -2391,6 +2411,9 @@ body.admin-bar #wpadminbar .noticon {
   -moz-box-shadow: none;
   box-shadow: none;
 }
+.folded #wpadminbar > #wp-toolbar > #wp-admin-bar-root-default li#wp-admin-bar-wp-logo .ab-icon {
+  background-image: url('../images/logo_round.png') !important;
+}
 #wpadminbar {
   height: 65px;
   -webkit-box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.25), 5px 0px 10px rgba(0, 0, 0, 0.22);
@@ -2402,6 +2425,12 @@ body.admin-bar #wpadminbar .noticon {
 #wpadminbar .ab-item:before,
 #wpadminbar > #wp-toolbar > #wp-admin-bar-root-default .ab-icon {
   font-family: dashicons!important;
+}
+#wpadminbar > #wp-toolbar > #wp-admin-bar-root-default li#wp-admin-bar-wp-logo .ab-icon {
+  background-image: url('../images/logo_horiz.png') !important;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar > a img {
   border-radius: 50%;
@@ -2461,6 +2490,7 @@ body.admin-bar #wpadminbar .noticon {
 #wpadminbar li#wp-admin-bar-wp-logo > .ab-item .ab-icon:before {
   font-family: 'Aquila' !important;
   content: "\a002";
+  display: none;
   content: "\e918";
   font-size: 72px;
   line-height: 0.95;

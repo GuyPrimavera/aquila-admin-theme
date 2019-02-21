@@ -267,7 +267,7 @@ function aquila_primary_colour_render() {
 	if ( isset ( $options['aquila_primary_colour'] ) && ( $options['aquila_primary_colour'] !== '' ) ) { 
 		$aquilaPrimaryColour = $options['aquila_primary_colour']; 
 	} else { 
-		$aquilaPrimaryColour = '#ffee58'; 
+		$aquilaPrimaryColour = '#0091ea';
 	};
 	?>
 
@@ -282,7 +282,7 @@ function aquila_secondary_colour_render() {
 	if ( isset ( $options['aquila_secondary_colour'] ) && ( $options['aquila_secondary_colour'] !== '' ) ) { 
 		$aquilaSecondaryColour = $options['aquila_secondary_colour']; 
 	} else { 
-		$aquilaSecondaryColour = '#0091ea'; 
+		$aquilaSecondaryColour = '#e0e0e0';
 	};
 	?>
 
@@ -297,7 +297,7 @@ function aquila_menu_back_colour_render() {
 	if ( isset ( $options['aquila_menu_back_colour'] ) && ( $options['aquila_menu_back_colour'] !== '' ) ) { 
 		$aquilaMenuBackColour = $options['aquila_menu_back_colour']; 
 	} else { 
-		$aquilaMenuBackColour = '#616161'; 
+		$aquilaMenuBackColour = '#000000';
 	};
 	?>
 

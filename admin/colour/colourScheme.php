@@ -23,7 +23,7 @@ $aquilaMenuText = $aquilaColourSettings['aquila_menu_text_colour'];
 if ( $aquilaPrimary ) {
   $pri = $priNew = $aquilaPrimary;
 } else {
-  $pri = $mdYellow400;
+  $pri = $mdLightBlueA700;
   $priNew = $pri;
 }
 
@@ -37,7 +37,7 @@ if ( $aquilaSecondary ) {
     $secNew = $sec;
   }*/
 } else {
-  $sec = $mdLightBlueA700;
+  $sec = $mdGrey300;
   $secNew = $sec;
 }
 
@@ -51,7 +51,7 @@ if ( $aquilaMenuBack ) {
     $menuNew = $menu;
   }*/
 } else {
-  $menu = $mdGrey700;
+  $menu = $mdBlack;
   $menuNew = $menu;
 }
 if ( $aquilaMenuText ) {
@@ -169,6 +169,45 @@ body.wp-core-ui {
     &.button-hero:active {
       -webkit-box-shadow: inset 0 3px 0 @pri2 !important;
       box-shadow: inset 0 3px 0 @pri2 !important;
+    }
+  }
+  
+  #split-page-title-action {
+    a {
+        background: @pri;
+        color: @priText;
+    }
+  }
+  
+  table tbody .row-actions, .subsubsub {
+  
+    span, li {
+        a {
+            background: @sec;
+            color: @secText;
+            
+            &:hover {
+                background: @sec2;
+            }
+        }
+    }
+  
+  }
+  
+  tbody, thead {
+    td, th {
+        .row-actions {
+            span.edit {
+                a {
+                    background: @pri;
+                    color: @priText;
+                }
+                
+                a:hover {
+                    background: @pri2;
+                }
+            }
+        }
     }
   }
   .button-secondary {

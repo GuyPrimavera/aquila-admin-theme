@@ -1,6 +1,23 @@
 /* LESS Elements 0.9 */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext');
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fChc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfChc9.ttf) format('truetype');
+}
 .fontAwesome {
   font-family: "fontAwesome" !important;
 }
@@ -2351,7 +2368,6 @@ html.wp-toolbar body.wp-admin #wpcontent #wpbody h3,
 html.wp-toolbar body.wp-admin #wpcontent #wpbody h4,
 html.wp-toolbar body.wp-admin #wpcontent #wpbody h5,
 html.wp-toolbar body.wp-admin #wpcontent #wpbody h6 {
-  text-transform: uppercase;
   font-weight: 400;
   font-family: 'Roboto', sans-serif !important;
 }
@@ -2555,10 +2571,7 @@ body.wp-admin .page-title-action.cpac-edit {
 .wp-core-ui input[type=number],
 .wp-core-ui select,
 .wp-core-ui textarea {
-  background: none;
   box-shadow: none;
-  border: none;
-  border-bottom: 2px solid transparent;
   transition: 0.2s all linear;
   -webkit-transition: 0.2s all linear;
   -moz-transition: 0.2s all linear;
@@ -2686,17 +2699,6 @@ input[type=radio]:checked:before {
 /* Admin Menu */
 #adminmenuback {
   box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.25), 5px 0px 10px rgba(0, 0, 0, 0.22);
-}
-/* Admin Menu: submenu */
-#adminmenu .wp-submenu a,
-#adminmenu .wp-has-current-submenu .wp-submenu a,
-.folded #adminmenu .wp-has-current-submenu .wp-submenu a,
-#adminmenu a.wp-has-current-submenu:focus + .wp-submenu a,
-#adminmenu .wp-has-current-submenu.opensub .wp-submenu a {
-  letter-spacing: 1px;
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: 400!important;
 }
 /* Admin Menu: bubble */
 #adminmenu .awaiting-mod,
@@ -2837,7 +2839,6 @@ ul#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after {
 }
 ul#adminmenu div.wp-menu-name {
   padding: 12px 10px 12px 0px;
-  text-transform: uppercase;
   letter-spacing: 1px;
   line-height: 1.5;
   font-size: 13px;
@@ -3251,7 +3252,7 @@ body.wp-admin .update-nag {
 }
 #adminmenu #toplevel_page_site-migration-export .wp-menu-image:before {
   content: "\f0e2";
-  line-height: 1.6!important;
+  line-height: 1.6 !important;
 }
 #adminmenu #toplevel_page_edit-post_type-acf .wp-menu-image:before {
   content: "\f036";
