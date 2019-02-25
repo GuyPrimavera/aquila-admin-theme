@@ -86,9 +86,6 @@ body.admin-bar {
 
 #wpadminbar {
 	height: @barHeight;
-	-webkit-box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.25), 5px 0px 10px rgba(0, 0, 0, 0.22);
-	-moz-box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.25), 5px 0px 10px rgba(0, 0, 0, 0.22);
-	box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.25), 5px 0px 10px rgba(0, 0, 0, 0.22);
 	.ab-icon,
 	.ab-item:before,
 	&>#wp-toolbar>#wp-admin-bar-root-default .ab-icon {
@@ -97,8 +94,8 @@ body.admin-bar {
 
 	&>#wp-toolbar>#wp-admin-bar-root-default li#wp-admin-bar-wp-logo .ab-icon {
 		background-image: url('../images/logo_horiz.png') !important;
-		background-size: 80%;
-		background-position: center;
+		background-size: 60%;
+		background-position: 25px;
 		background-repeat: no-repeat;
 	}
 
@@ -139,7 +136,8 @@ body.admin-bar {
 		padding-right: 20px;
 	}
 	li#wp-admin-bar-wp-logo {
-		margin-right: 20px!important;
+		margin-right: 0 !important;
+		width: 250px;
 		body.aquilaFront & {
 			//.dNI;
 		}
@@ -147,7 +145,7 @@ body.admin-bar {
 			margin-right: 0px!important;
 		}
 		&>.ab-item {
-			padding: 0;
+			padding: 0 !important;
 			.ab-icon {
 				width: @sideWidth;
 				padding: 0!important;
@@ -209,6 +207,7 @@ body.admin-bar {
 	}
 	li.screenLink {
 		float: right;
+		display: none;
 		.ab-item {
 			&:before {
 				.fontAwesome;
@@ -242,6 +241,10 @@ body.admin-bar {
 	&.openBar {
 		height: @barHeight;
 	}
+}
+
+.ab-item {
+	padding: 0 20px !important;
 }
 
 @media screen and (max-width: 782px) {

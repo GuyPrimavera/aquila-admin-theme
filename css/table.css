@@ -557,7 +557,7 @@ html.wp-toolbar body.wp-admin #wpcontent .wrap .page-title-action,
 #split-page-title-action a,
 a.page-title-action {
   border-radius: 2px;
-  padding: 4px 8px;
+  padding: 4px 15px;
   box-sizing: border-box;
   line-height: 2;
   display: inline-block;
@@ -586,7 +586,7 @@ table tbody .row-actions > li a,
 .subsubsub > li a {
   border-radius: 2px;
   color: black;
-  padding: 4px 8px;
+  padding: 4px 15px;
   background-color: #eee;
   text-transform: uppercase;
   font-weight: 700;
@@ -665,7 +665,7 @@ table.widefat {
 .wrap,
 .wrap + #poststuff {
   margin: 0;
-  padding: 36px 72px;
+  padding: 35px;
   clear: both;
 }
 html.wp-toolbar .notice {
@@ -814,11 +814,12 @@ hr.wp-header-end {
 }
 ul#adminmenu li div.wp-menu-name {
   text-transform: none;
-  opacity: 0.8;
   font-weight: 300;
-  font-size: 17px;
+  font-size: 1em;
+  margin-left: 65px;
 }
 body ul#adminmenu div.wp-menu-image {
+  margin-left: 15px;
   width: 40px;
 }
 body ul#adminmenu li.wp-has-current-submenu + ul.wp-submenu li a,
@@ -855,14 +856,13 @@ body #adminmenu li.wp-menu-separator {
   height: 1px;
   background-color: white;
   opacity: 0.3;
-  margin: 10px 0;
+  margin: 0;
 }
 body.wp-admin ul#adminmenu .wp-submenu li a {
   text-transform: none;
   font-weight: 300 !important;
-  font-size: 15px;
-  opacity: 0.6;
-  padding-left: 40px;
+  font-size: 1em;
+  padding-left: 25px;
 }
 body.wp-admin ul#adminmenu .wp-submenu li a:hover,
 body.wp-admin ul#adminmenu .wp-submenu li a:focus {
@@ -879,6 +879,9 @@ body.wp-admin ul#adminmenu .wp-submenu li.current a:focus {
 }
 .split-page-title-action .expander {
   display: none;
+}
+table.widefat {
+  box-shadow: none;
 }
 @media (min-width: 782px) {
   .edit-post-layout .editor-post-publish-panel {
@@ -1027,6 +1030,11 @@ span.tablenav-paging-text {
   width: auto;
   padding: 0;
   margin-left: 0.5em;
+}
+@media (min-width: 782px) and (min-width: 960px) {
+  body.auto-fold .edit-post-layout__content {
+    margin-left: 250px;
+  }
 }
 @media (max-width: 1024px) {
   .wrap,

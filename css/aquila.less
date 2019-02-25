@@ -212,7 +212,7 @@ input[type=radio]:checked:before {
 /* Admin Menu */
 
 #adminmenuback {
-	box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.25), 5px 0px 10px rgba(0, 0, 0, 0.22);
+
 }
 
 
@@ -264,6 +264,10 @@ input[type=radio]:checked:before {
 }
 
 /// Admin Menu
+
+#adminmenu {
+	margin: 0;
+}
 
 #adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
 	width: @sideWidth;
@@ -334,7 +338,6 @@ ul#adminmenu {
 	}
 	div.wp-menu-name {
 		padding: 12px 10px 12px 0px;
-		letter-spacing: 1px;
 		line-height: 1.5;
 		font-size: 13px;
 	}
@@ -454,11 +457,9 @@ body.folded {
 
 body.wp-admin {
 	.postbox, .stuffbox {
-		border: none;
+		border: 1px solid #e8e8e8;
 		border-radius: 3px;
-		.mdShadow;
 		&:hover, &:active, &:target, &:focus {
-			.mdShadowHover;
 		}
 		.hndle {
 			border-bottom: none;

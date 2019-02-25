@@ -2697,9 +2697,6 @@ input[type=radio]:checked:before {
   -o-transition: 0.2s all linear;
 }
 /* Admin Menu */
-#adminmenuback {
-  box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.25), 5px 0px 10px rgba(0, 0, 0, 0.22);
-}
 /* Admin Menu: bubble */
 #adminmenu .awaiting-mod,
 #adminmenu .update-plugins {
@@ -2736,6 +2733,9 @@ body.auto-fold #adminmenu .update-plugins .plugin-count {
 }
 .wp-responsive-open div#wp-responsive-toggle a {
   border-color: transparent;
+}
+#adminmenu {
+  margin: 0;
 }
 #adminmenu,
 #adminmenu .wp-submenu,
@@ -2839,7 +2839,6 @@ ul#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after {
 }
 ul#adminmenu div.wp-menu-name {
   padding: 12px 10px 12px 0px;
-  letter-spacing: 1px;
   line-height: 1.5;
   font-size: 13px;
 }
@@ -2976,20 +2975,8 @@ body.folded.no-js #adminmenu .wp-has-submenu:hover .wp-submenu {
 }
 body.wp-admin .postbox,
 body.wp-admin .stuffbox {
-  border: none;
+  border: 1px solid #e8e8e8;
   border-radius: 3px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-body.wp-admin .postbox:hover,
-body.wp-admin .stuffbox:hover,
-body.wp-admin .postbox:active,
-body.wp-admin .stuffbox:active,
-body.wp-admin .postbox:target,
-body.wp-admin .stuffbox:target,
-body.wp-admin .postbox:focus,
-body.wp-admin .stuffbox:focus {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 body.wp-admin .postbox .hndle,
 body.wp-admin .stuffbox .hndle {

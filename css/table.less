@@ -26,7 +26,6 @@ table.tags {
   }
 }
 
-
 table.posts,
 table.users,
 table.pages,
@@ -109,7 +108,6 @@ table, table.widefat {
         margin-bottom: 0;
       }
 
-
     }
     .row-title,
     td.column-primary {
@@ -153,7 +151,7 @@ html.wp-toolbar body.wp-admin #wpcontent .wrap .page-title-action,
 #split-page-title-action a,
 a.page-title-action {
   border-radius: 2px;
-  padding: 4px 8px;
+  padding: 4px 15px;
   box-sizing: border-box;
   line-height: 2;
   display: inline-block;
@@ -177,7 +175,7 @@ table tbody .row-actions, .subsubsub {
     a {
       border-radius: 2px;
       color: black;
-      padding: 4px 8px;
+      padding: 4px 15px;
       background-color: #eee;
       text-transform: uppercase;
       font-weight: 700;
@@ -243,10 +241,9 @@ table tbody .row-actions, .subsubsub {
 
 .wrap, .wrap + #poststuff {
   margin: 0;
-  padding: 36px 72px;
+  padding: 35px;
   clear: both;
 }
-
 
 html.wp-toolbar .notice {
   display: none;
@@ -409,18 +406,19 @@ hr.wp-header-end {
 
 ul#adminmenu li div.wp-menu-name {
   text-transform: none;
-  opacity: 0.8;
   font-weight: 300;
-  font-size: 17px;
+  font-size: 1em;
+  margin-left: 65px;
 }
 
 body ul#adminmenu div.wp-menu-image {
+  margin-left: 15px;
   width: 40px;
 }
 
 body ul#adminmenu li.wp-has-current-submenu {
   &, &:focus, &:hover, a.wp-has-current-submenu:focus, a.wp-has-current-submenu:hover {
-    &+ul.wp-submenu,
+    & + ul.wp-submenu,
     ul.wp-submenu {
       li a {
         &, &.current {
@@ -444,18 +442,16 @@ body #adminmenu li.wp-menu-separator {
   height: 1px;
   background-color: white;
   opacity: 0.3;
-  margin: 10px 0;
+  margin: 0;
 }
-
 
 body.wp-admin ul#adminmenu .wp-submenu {
   li {
     a {
       text-transform: none;
       font-weight: 300 !important;
-      font-size: 15px;
-      opacity: 0.6;
-      padding-left: 40px;
+      font-size: 1em;
+      padding-left: 25px;
 
       &:hover, &:focus {
         font-weight: 300 !important;
@@ -471,7 +467,6 @@ body.wp-admin ul#adminmenu .wp-submenu {
       &:hover, &:focus {
         font-weight: 300 !important;
 
-
       }
     }
   }
@@ -479,6 +474,10 @@ body.wp-admin ul#adminmenu .wp-submenu {
 
 .split-page-title-action .expander {
   display: none;
+}
+
+table.widefat {
+  box-shadow: none;
 }
 
 @media (min-width: 782px) {
@@ -592,10 +591,10 @@ table.publish-channel-column tbody td {
   height: 15px;
 
   &:before {
-      font-family: dashicons;
-      font-size: 30px;
-      position: absolute;
-      line-height: 0.5;
+    font-family: dashicons;
+    font-size: 30px;
+    position: absolute;
+    line-height: 0.5;
   }
 
   &.published-app:before {
@@ -662,6 +661,12 @@ span.tablenav-paging-text {
   margin-left: 0.5em;
 }
 
+@media (min-width: 782px) and (min-width: 960px) {
+  body.auto-fold .edit-post-layout__content {
+    margin-left: 250px;
+  }
+
+}
 
 @media (max-width: 1024px) {
   .wrap, .wrap + #poststuff {
@@ -677,7 +682,6 @@ span.tablenav-paging-text {
   .wp-list-table td.column-primary {
     padding-right: 50px !important;
   }
-
 
   .tablenav .tablenav-pages {
     margin: 0 0 25px;
