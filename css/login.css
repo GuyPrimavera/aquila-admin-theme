@@ -153,7 +153,8 @@ body.login {
 }
 body.login #login {
   width: 100%;
-  padding: 0;
+  padding: 30px;
+  box-sizing: border-box;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -274,11 +275,6 @@ body.login #login form input[type=text] {
   -moz-transition: 0.2s all linear;
   -o-transition: 0.2s all linear;
   font-weight: 400;
-}
-body.login #login form .input:focus,
-body.login #login form input[type=checkbox]:focus,
-body.login #login form input[type=text]:focus {
-  width: 100%;
 }
 body.login #login form .input#aiowps-captcha-answer,
 body.login #login form input[type=checkbox]#aiowps-captcha-answer,
