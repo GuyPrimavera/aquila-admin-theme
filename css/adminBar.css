@@ -2413,6 +2413,7 @@ body.admin-bar #wpadminbar .noticon {
 }
 .folded #wpadminbar > #wp-toolbar > #wp-admin-bar-root-default li#wp-admin-bar-wp-logo .ab-icon {
   background-image: url('../images/logo_round.png') !important;
+  background-position: center;
 }
 #wpadminbar {
   height: 65px;
@@ -2469,7 +2470,6 @@ body.admin-bar #wpadminbar .noticon {
 }
 #wpadminbar li#wp-admin-bar-wp-logo {
   margin-right: 0 !important;
-  width: 250px;
 }
 @media only screen and (max-width: 782px) {
   #wpadminbar li#wp-admin-bar-wp-logo {

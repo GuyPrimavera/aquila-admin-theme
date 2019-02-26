@@ -2509,9 +2509,7 @@ body.wp-admin .page-title-action,
 body.wp-admin .page-title-action:active {
   border-radius: 2px;
   outline: 0;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: normal;
   line-height: 2.3;
   border: none!important;
   box-shadow: none!important;
@@ -2943,6 +2941,7 @@ body.folded #adminmenuback,
 body.folded #adminmenuwrap,
 body.folded #adminmenu div.wp-menu-image {
   width: 60px;
+  margin: 0;
 }
 @media only screen and (max-width: 782px) {
   body.folded #adminmenu,

@@ -121,9 +121,7 @@ html.wp-toolbar {
 	.button, .button-primary, .button-secondary, .add-new-h2, .add-new-h2:active, .page-title-action, .page-title-action:active {
     border-radius: 2px;
     outline: 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
+    font-weight: normal;
     line-height: 2.3;
     border: none!important;
     box-shadow: none!important;
@@ -439,6 +437,7 @@ ul#adminmenu {
 body.folded {
 	#adminmenu, #adminmenu li.menu-top, #adminmenuback, #adminmenuwrap, #adminmenu div.wp-menu-image {
 		width: @sideWidthFolded;
+		margin: 0;
 		@media @mobile {
 			width: @sideWidth;
 		}

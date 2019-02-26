@@ -564,6 +564,15 @@ a.page-title-action {
   height: 35px;
   border: none;
 }
+.subsubsub > span a,
+.subsubsub > li a {
+  background: transparent !important;
+  border: 1px solid #d0d0d0;
+}
+.subsubsub > span a.current,
+.subsubsub > li a.current {
+  background: #e0e0e0 !important;
+}
 table tbody .row-actions,
 .subsubsub {
   clear: both;
@@ -588,8 +597,7 @@ table tbody .row-actions > li a,
   color: black;
   padding: 4px 15px;
   background-color: #eee;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-weight: normal;
   display: inline-block;
   box-sizing: border-box;
   white-space: nowrap !important;
@@ -713,7 +721,10 @@ select {
 .tablenav .actions .button {
   padding: 10px 22.5px !important;
   line-height: initial;
-  height: 35px !important;
+  height: auto;
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: normal;
 }
 .wp-core-ui .button,
 body.wp-admin .button,
@@ -723,8 +734,7 @@ body.wp-admin .is-button {
   box-shadow: none !important;
   text-shadow: none;
   border: none;
-  font-weight: bold !important;
-  text-transform: uppercase;
+  font-weight: bold;
   font-size: 13px;
   line-height: 2.6;
 }
@@ -979,9 +989,10 @@ table.publish-channel-column tbody td {
 }
 .published-channel:before {
   font-family: dashicons;
-  font-size: 30px;
+  font-size: 25px;
   position: absolute;
   line-height: 0.5;
+  top: 5px;
 }
 .published-channel.published-app:before {
   content: "\f470";
@@ -1030,6 +1041,13 @@ span.tablenav-paging-text {
   width: auto;
   padding: 0;
   margin-left: 0.5em;
+}
+.column-comments .comment-count-approved,
+.column-comments .comment-count-no-comments,
+.column-response .comment-count-approved,
+.column-response .comment-count-no-comments {
+  font-size: 8px;
+  line-height: 17px;
 }
 @media (min-width: 782px) and (min-width: 960px) {
   body.auto-fold .edit-post-layout__content {
