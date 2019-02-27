@@ -604,6 +604,7 @@ table tbody .row-actions > li button.button-link,
   max-width: 100%;
   font-size: 13px;
   line-height: 1.5;
+  vertical-align: middle;
 }
 table tbody .row-actions > span a span,
 .subsubsub > span a span,

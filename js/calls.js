@@ -76,7 +76,7 @@ $j(document).ready(function() {
 			if ($el.is(':hover')) {
                 $el.addClass('hovered');
 			}
-		}, 1);
+		}, 400);
 	});
 
 	$j('tbody tr').on('click', function() {
