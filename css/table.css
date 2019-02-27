@@ -350,20 +350,6 @@ table.tags tfoot th .row-actions {
   max-height: 0;
   opacity: 0;
 }
-table.posts tbody td.column-primary strong,
-table.users tbody td.column-primary strong,
-table.pages tbody td.column-primary strong,
-table.tags tbody td.column-primary strong,
-table.posts thead td.column-primary strong,
-table.users thead td.column-primary strong,
-table.pages thead td.column-primary strong,
-table.tags thead td.column-primary strong,
-table.posts tfoot td.column-primary strong,
-table.users tfoot td.column-primary strong,
-table.pages tfoot td.column-primary strong,
-table.tags tfoot td.column-primary strong {
-  font-size: 0 !important;
-}
 table.posts tbody td.column-date,
 table.users tbody td.column-date,
 table.pages tbody td.column-date,
@@ -1069,6 +1055,9 @@ span.tablenav-paging-text {
 .column-response .comment-count-no-comments {
   font-size: 8px;
   line-height: 17px;
+}
+.column-comments .post-com-count-approved {
+  margin-top: 0;
 }
 @media (min-width: 782px) and (min-width: 960px) {
   body.auto-fold .edit-post-layout__content {
