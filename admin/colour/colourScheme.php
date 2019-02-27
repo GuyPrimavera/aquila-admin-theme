@@ -184,11 +184,12 @@ body.wp-core-ui {
   table tbody .row-actions, .subsubsub {
   
     span, li {
-        a {
+        a, button {
             background: @sec;
             color: @secText;
             
             &:hover {
+                color: @secText;
                 background: @sec2;
             }
         }

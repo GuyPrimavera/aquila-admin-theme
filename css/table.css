@@ -498,7 +498,11 @@ table.widefat tbody th .row-title,
 table tbody td a,
 table.widefat tbody td a,
 table tbody th a,
-table.widefat tbody th a {
+table.widefat tbody th a,
+table tbody td button,
+table.widefat tbody td button,
+table tbody th button,
+table.widefat tbody th button {
   font-size: 15px !important;
   color: #aaa;
   margin-bottom: 0;
@@ -592,7 +596,15 @@ table tbody .row-actions > li,
 table tbody .row-actions > span a,
 .subsubsub > span a,
 table tbody .row-actions > li a,
-.subsubsub > li a {
+.subsubsub > li a,
+table tbody .row-actions > span button,
+.subsubsub > span button,
+table tbody .row-actions > li button,
+.subsubsub > li button,
+table tbody .row-actions > span button.button-link,
+.subsubsub > span button.button-link,
+table tbody .row-actions > li button.button-link,
+.subsubsub > li button.button-link {
   border-radius: 2px;
   color: black;
   padding: 4px 15px;
@@ -605,11 +617,20 @@ table tbody .row-actions > li a,
   overflow: hidden;
   max-width: 100%;
   font-size: 13px;
+  line-height: 1.5;
 }
 table tbody .row-actions > span a span,
 .subsubsub > span a span,
 table tbody .row-actions > li a span,
-.subsubsub > li a span {
+.subsubsub > li a span,
+table tbody .row-actions > span button span,
+.subsubsub > span button span,
+table tbody .row-actions > li button span,
+.subsubsub > li button span,
+table tbody .row-actions > span button.button-link span,
+.subsubsub > span button.button-link span,
+table tbody .row-actions > li button.button-link span,
+.subsubsub > li button.button-link span {
   font-size: 13px;
 }
 table tbody .row-actions > span:last-child,
