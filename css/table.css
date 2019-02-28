@@ -967,7 +967,7 @@ body.wp-admin input[type=checkbox]:checked:before {
   width: 20px;
   font-size: 25px;
   margin: -3px 0 0 -4px;
-  color: #fff !important;
+  color: #333;
 }
 body.wp-admin .tablenav .tablenav-pages a:hover {
   color: black !important;
