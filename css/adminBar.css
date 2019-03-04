@@ -27,7 +27,7 @@
   line-height: 1.6;
 }
 .sans {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto', sans-serif;
 }
 .heading {
   font-family: 'Roboto', sans-serif;
@@ -2340,10 +2340,10 @@
   content: "\f166";
 }
 body.admin-bar #wpadminbar {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto', sans-serif;
 }
 body.admin-bar #wpadminbar * {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto', sans-serif;
   user-select: none;
   transition: 0.2s all linear;
   -webkit-transition: 0.2s all linear;

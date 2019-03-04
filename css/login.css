@@ -26,7 +26,7 @@
   line-height: 1.6;
 }
 .sans {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto', sans-serif;
 }
 .heading {
   font-family: 'Roboto', sans-serif;
@@ -149,7 +149,7 @@
   -o-transition: none!important;
 }
 body.login {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto', sans-serif;
 }
 body.login #login {
   width: 100%;

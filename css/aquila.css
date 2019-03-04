@@ -27,7 +27,7 @@
   line-height: 1.6;
 }
 .sans {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto', sans-serif;
 }
 .heading {
   font-family: 'Roboto', sans-serif;
@@ -2360,7 +2360,7 @@ html.wp-toolbar {
   }
 }
 html.wp-toolbar body.wp-admin {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto', sans-serif;
 }
 html.wp-toolbar body.wp-admin #wpcontent #wpbody h1,
 html.wp-toolbar body.wp-admin #wpcontent #wpbody h2,
@@ -2369,7 +2369,7 @@ html.wp-toolbar body.wp-admin #wpcontent #wpbody h4,
 html.wp-toolbar body.wp-admin #wpcontent #wpbody h5,
 html.wp-toolbar body.wp-admin #wpcontent #wpbody h6 {
   font-weight: 400;
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto', sans-serif;
 }
 html.wp-toolbar body.wp-admin #wpcontent #wpbody #screen-meta-links {
   display: none!important;
