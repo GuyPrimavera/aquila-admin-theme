@@ -701,7 +701,7 @@ select {
   background-position: right 1em center;
   border-radius: 2px;
   text-overflow: ellipsis;
-  height: 35px !important;
+  height: 35px;
   padding-right: 2.25em !important;
   -webkit-padding-end: 2.25em;
   padding-left: 0.75em !important;
