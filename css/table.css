@@ -462,6 +462,20 @@ table.pages tfoot tr.hovered td.column-date,
 table.tags tfoot tr.hovered td.column-date {
   font-size: 15px !important;
 }
+table.posts tbody tr td,
+table.users tbody tr td,
+table.pages tbody tr td,
+table.tags tbody tr td,
+table.posts thead tr td,
+table.users thead tr td,
+table.pages thead tr td,
+table.tags thead tr td,
+table.posts tfoot tr td,
+table.users tfoot tr td,
+table.pages tfoot tr td,
+table.tags tfoot tr td {
+  white-space: normal;
+}
 table tbody td,
 table.widefat tbody td,
 table tbody th,
