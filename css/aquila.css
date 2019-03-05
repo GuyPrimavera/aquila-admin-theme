@@ -3647,3 +3647,6 @@ body.wp-admin.is-fullscreen-mode .components-notice-list {
 .media-frame .attachments-browser {
   overflow: scroll;
 }
+#footer-thankyou {
+  display: none;
+}
