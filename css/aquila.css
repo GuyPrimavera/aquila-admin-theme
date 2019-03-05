@@ -2368,7 +2368,6 @@ html.wp-toolbar body.wp-admin #wpcontent #wpbody h3,
 html.wp-toolbar body.wp-admin #wpcontent #wpbody h4,
 html.wp-toolbar body.wp-admin #wpcontent #wpbody h5,
 html.wp-toolbar body.wp-admin #wpcontent #wpbody h6 {
-  font-weight: 400;
   font-family: 'Roboto', sans-serif;
 }
 html.wp-toolbar body.wp-admin #wpcontent #wpbody #screen-meta-links {
