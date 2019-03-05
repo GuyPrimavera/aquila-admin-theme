@@ -721,6 +721,10 @@ select {
 }
 .tablenav .actions select {
   margin-bottom: 4px;
+  height: 35px;
+}
+.media-frame.mode-grid .media-toolbar select {
+  height: 35px;
 }
 .tablenav {
   clear: left;
