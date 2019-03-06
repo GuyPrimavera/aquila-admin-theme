@@ -97,7 +97,7 @@ table.tags {
   }
 }
 
-table, table.widefat {
+table:not(.CalendarMonth_table), table.widefat {
   tbody {
     td, th {
       box-shadow: none !important;
@@ -286,6 +286,7 @@ select {
   border-radius: 2px;
   text-overflow: ellipsis;
   height: 35px;
+  min-height: 35px;
   padding-right: 2.25em !important;
   -webkit-padding-end: 2.25em;
   padding-left: .75em !important;

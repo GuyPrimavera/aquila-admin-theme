@@ -476,9 +476,9 @@ table.pages tfoot tr td,
 table.tags tfoot tr td {
   white-space: normal;
 }
-table tbody td,
+table:not(.CalendarMonth_table) tbody td,
 table.widefat tbody td,
-table tbody th,
+table:not(.CalendarMonth_table) tbody th,
 table.widefat tbody th {
   box-shadow: none !important;
   border-top: 1px solid #e8e8e8 !important;
@@ -487,73 +487,73 @@ table.widefat tbody th {
   font-size: 15px;
   color: #aaa;
 }
-table tbody td strong,
+table:not(.CalendarMonth_table) tbody td strong,
 table.widefat tbody td strong,
-table tbody th strong,
+table:not(.CalendarMonth_table) tbody th strong,
 table.widefat tbody th strong,
-table tbody td .row-title,
+table:not(.CalendarMonth_table) tbody td .row-title,
 table.widefat tbody td .row-title,
-table tbody th .row-title,
+table:not(.CalendarMonth_table) tbody th .row-title,
 table.widefat tbody th .row-title,
-table tbody td a,
+table:not(.CalendarMonth_table) tbody td a,
 table.widefat tbody td a,
-table tbody th a,
+table:not(.CalendarMonth_table) tbody th a,
 table.widefat tbody th a,
-table tbody td button,
+table:not(.CalendarMonth_table) tbody td button,
 table.widefat tbody td button,
-table tbody th button,
+table:not(.CalendarMonth_table) tbody th button,
 table.widefat tbody th button {
   font-size: 15px !important;
   color: #aaa;
   margin-bottom: 0;
 }
-table tbody .row-title,
+table:not(.CalendarMonth_table) tbody .row-title,
 table.widefat tbody .row-title,
-table tbody td.column-primary,
+table:not(.CalendarMonth_table) tbody td.column-primary,
 table.widefat tbody td.column-primary {
   color: black;
 }
-table tbody .row-title strong,
+table:not(.CalendarMonth_table) tbody .row-title strong,
 table.widefat tbody .row-title strong,
-table tbody td.column-primary strong,
+table:not(.CalendarMonth_table) tbody td.column-primary strong,
 table.widefat tbody td.column-primary strong {
   color: black;
 }
-table tbody .row-title strong a,
+table:not(.CalendarMonth_table) tbody .row-title strong a,
 table.widefat tbody .row-title strong a,
-table tbody td.column-primary strong a,
+table:not(.CalendarMonth_table) tbody td.column-primary strong a,
 table.widefat tbody td.column-primary strong a {
   color: black;
 }
-table tbody td.colspanchange,
+table:not(.CalendarMonth_table) tbody td.colspanchange,
 table.widefat tbody td.colspanchange {
   border-top: none !important;
 }
-table tbody tr.no-items td.colspanchange,
+table:not(.CalendarMonth_table) tbody tr.no-items td.colspanchange,
 table.widefat tbody tr.no-items td.colspanchange {
   padding: 15px !important;
 }
-table tbody td,
+table:not(.CalendarMonth_table) tbody td,
 table.widefat tbody td,
-table thead td,
+table:not(.CalendarMonth_table) thead td,
 table.widefat thead td,
-table tfoot td,
+table:not(.CalendarMonth_table) tfoot td,
 table.widefat tfoot td,
-table tbody th,
+table:not(.CalendarMonth_table) tbody th,
 table.widefat tbody th,
-table thead th,
+table:not(.CalendarMonth_table) thead th,
 table.widefat thead th,
-table tfoot th,
+table:not(.CalendarMonth_table) tfoot th,
 table.widefat tfoot th {
   padding: 15px !important;
   padding-bottom: 10px !important;
   position: relative;
 }
-table tbody td.colspanchange,
+table:not(.CalendarMonth_table) tbody td.colspanchange,
 table.widefat tbody td.colspanchange,
-table thead td.colspanchange,
+table:not(.CalendarMonth_table) thead td.colspanchange,
 table.widefat thead td.colspanchange,
-table tfoot td.colspanchange,
+table:not(.CalendarMonth_table) tfoot td.colspanchange,
 table.widefat tfoot td.colspanchange {
   padding: 0 !important;
 }
@@ -716,6 +716,7 @@ select {
   border-radius: 2px;
   text-overflow: ellipsis;
   height: 35px;
+  min-height: 35px;
   padding-right: 2.25em !important;
   -webkit-padding-end: 2.25em;
   padding-left: 0.75em !important;
