@@ -2353,6 +2353,13 @@ body.admin-bar #wpadminbar * {
 body.admin-bar #wpadminbar #wp-admin-bar-search {
   display: none!important;
 }
+body.admin-bar #wpadminbar .screen-reader-shortcut {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  color: #FFF;
+  transform: translateY(-50%);
+}
 body.admin-bar #wpadminbar .noticon {
   font-family: "Noticons" !important;
   -webkit-font-smoothing: antialiased;
