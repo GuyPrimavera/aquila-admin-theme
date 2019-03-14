@@ -2356,6 +2356,11 @@ body.admin-bar #wpadminbar #wp-admin-bar-search {
 body.admin-bar #wpadminbar #wp-admin-bar-top-secondary {
   background: #141414;
 }
+body.admin-bar #wpadminbar #wp-admin-bar-screenOptions {
+  display: block;
+  background: #141414;
+  height: 65px;
+}
 body.admin-bar #wpadminbar .screen-reader-shortcut,
 body.admin-bar #wpadminbar .screen-reader-shortcut:focus {
   position: absolute;
