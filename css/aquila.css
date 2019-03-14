@@ -3526,6 +3526,14 @@ ul#aquilaHelp li a h3 {
 ul#aquilaHelp li a h4 {
   opacity: 1;
 }
+#screen-meta {
+  display: block;
+  margin: 0 35px;
+  box-shadow: none;
+}
+#screen-meta #screen-options-wrap {
+  box-shadow: none;
+}
 body.wp-admin {
   /* Sidebar manually collapsed. */
   /* Mobile menu opened. */
