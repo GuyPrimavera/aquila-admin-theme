@@ -2360,6 +2360,7 @@ body.admin-bar #wpadminbar #wp-admin-bar-screenOptions {
   display: block;
   background: #141414;
   height: 65px;
+  margin-right: 65px;
 }
 body.admin-bar #wpadminbar .screen-reader-shortcut,
 body.admin-bar #wpadminbar .screen-reader-shortcut:focus {
