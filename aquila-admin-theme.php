@@ -1,10 +1,8 @@
 <?php
 /**
- * Plugin Name: Aquila Admin Theme
- * Plugin URI: https://wordpress.org/plugins/aquila-admin-theme/
- * Description: The Aquila Admin Theme
- * Author: Guy Primavera
- * Author URI: https://guyprimavera.com/
+ * Plugin Name: Purple DS HUB - Admin Theme
+ * Description: Purple DS HUB Admin Theme - derived from The Aquila Admin Theme by Guy Primavera
+ * Author: sprylab technologies
  * Version: 2.4
  * Text Domain: aquila-admin-theme
  * Domain Path: /lang/
