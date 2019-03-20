@@ -3,7 +3,7 @@
  * Plugin Name: Purple DS HUB - Admin Theme
  * Description: Purple DS HUB Admin Theme - derived from The Aquila Admin Theme by Guy Primavera
  * Author: sprylab technologies
- * Version: 2.4
+ * Version: 1.0 - SNAPSHOT
  * Text Domain: aquila-admin-theme
  * Domain Path: /lang/
  * License: GPL2
