@@ -41,19 +41,19 @@ function aquila_colour_picker( $optionGroup, $optionName ) {
 	} else { 
 		switch ($optionName) {
 		case 'aquila_primary_colour':
-			$colour = '#ffee58'; 
+			$colour = '#0091ea';
 			break;
 		case 'aquila_secondary_colour':
-			$colour = '#0091ea'; 
+			$colour = '#e0e0e0';
 			break;
 		case 'aquila_background_colour':
-			$colour = '#f5f5f5'; 
+			$colour = '#f5f5f5';
 			break;
 		case 'aquila_text_colour':
 			$colour = '#23282d'; 
 			break;
 		case 'aquila_menu_back_colour':
-			$colour = '#616161'; 
+			$colour = '#000000';
 			break;
 		case 'aquila_menu_text_colour':
 			$colour = '#ffffff'; 

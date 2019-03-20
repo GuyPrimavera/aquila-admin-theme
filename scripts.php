@@ -10,6 +10,8 @@ function aquila_global_load_style() {
 		wp_enqueue_style( 'aquila-admin-icons' );
 		wp_register_style( 'aquila-adminBar-style', plugins_url( 'aquila-admin-theme/css/adminBar.css' ), array(), $aquilaVer );
 		wp_enqueue_style( 'aquila-adminBar-style' );
+		wp_register_style( 'aquila-table-style', plugins_url( 'aquila-admin-theme/css/table.css' ), array(), $aquilaVer );
+		wp_enqueue_style( 'aquila-table-style');
 		wp_register_script( 'aquilaCalls', plugins_url( '/js/calls.js', __FILE__ ), array('jquery'), $aquilaVer, true );
 		wp_enqueue_script( 'aquilaCalls');
 	}
@@ -21,6 +23,7 @@ add_action( 'login_enqueue_scripts', 'aquila_global_load_style' );
 // Admin scripts
 function aquila_admin_load_style() {
 	global $aquilaVer;
+	wp_register_style( 'aquila-admin-style', plugins_url( 'aquila-admin-theme/css/aquila.css' ), array(), $aquilaVer );
 	wp_register_style( 'aquila-admin-style', plugins_url( 'aquila-admin-theme/css/aquila.css' ), array(), $aquilaVer );
 	wp_enqueue_style( 'aquila-admin-style' );
 	wp_enqueue_style( 'wp-color-picker');

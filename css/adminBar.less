@@ -1,7 +1,7 @@
 @import "vars.less";
 @import "/../icons/faVars.less";
 @import "/../icons/variables.less";
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext');
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 
 // Admin Bar
@@ -17,6 +17,31 @@ body.admin-bar {
 		#wp-admin-bar-search {
 			.dNI;
 		}
+
+		#wp-admin-bar-top-secondary {
+			background: #141414;
+		}
+
+		#wp-admin-bar-screenOptions {
+			display: block;
+			background: #141414;
+			height: 65px;
+			margin-right: 65px;
+		}
+
+		.screen-reader-shortcut, .screen-reader-shortcut:focus {
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			left: auto;
+			color: #FFF;
+			transform: translateY(-50%);
+			padding: 0;
+			background: none;
+			font-weight: normal;
+			box-shadow: none;
+		}
+
 		.noticon {
 	    font-family: "Noticons" !important;
 	    -webkit-font-smoothing: antialiased;
@@ -32,12 +57,16 @@ body.admin-bar {
 		padding-left: 65px;
 	}
 	#aquilaAdminbarIcon {
-		overflow: hidden;
+	overflow: hidden;
 	  position: fixed;
 	  top: 10px;
 	  left: 10px;
 	  background-color: #000000;
 	  background-color: rgba(0,0,0,0.5);
+	  background-image: url('../images/logo_round.png');
+		background-size: 85%;
+		background-position: 50%;
+		background-repeat: no-repeat;
 	  color: #fff;
 	  //color: rgba(255,255,255,0.5);
 	  height: 45px;
@@ -52,13 +81,13 @@ body.admin-bar {
 		.trans;
 		&:before {
 			.icoAquila;
+			display: none;
 			content: @aquila-aquila;
 			font-size: 30px;
 	    line-height: 49px;
 	    width: 45px;
 	    text-align: center;
 	    position: relative;
-	    display: block;
 	    height: 45px;
 		}
 		&:hover, &:target, &:focus, &:active {
@@ -74,15 +103,26 @@ body.admin-bar {
 }
 /// Admin Bar
 
+.folded #wpadminbar {
+	&>#wp-toolbar>#wp-admin-bar-root-default li#wp-admin-bar-wp-logo .ab-icon {
+		background-image: url('../images/logo_round.png') !important;
+		background-position: center;
+	}
+}
+
 #wpadminbar {
 	height: @barHeight;
-	-webkit-box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.25), 5px 0px 10px rgba(0, 0, 0, 0.22);
-	-moz-box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.25), 5px 0px 10px rgba(0, 0, 0, 0.22);
-	box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.25), 5px 0px 10px rgba(0, 0, 0, 0.22);
 	.ab-icon,
 	.ab-item:before,
 	&>#wp-toolbar>#wp-admin-bar-root-default .ab-icon {
 	  font-family: dashicons!important;
+	}
+
+	&>#wp-toolbar>#wp-admin-bar-root-default li#wp-admin-bar-wp-logo .ab-icon {
+		background-image: url('../images/logo_horiz.png') !important;
+		background-size: 60%;
+		background-position: 25px;
+		background-repeat: no-repeat;
 	}
 
 	/* Admin Bar: my account */
@@ -122,7 +162,7 @@ body.admin-bar {
 		padding-right: 20px;
 	}
 	li#wp-admin-bar-wp-logo {
-		margin-right: 20px!important;
+		margin-right: 0 !important;
 		body.aquilaFront & {
 			//.dNI;
 		}
@@ -130,7 +170,7 @@ body.admin-bar {
 			margin-right: 0px!important;
 		}
 		&>.ab-item {
-			padding: 0;
+			padding: 0 !important;
 			.ab-icon {
 				width: @sideWidth;
 				padding: 0!important;
@@ -138,6 +178,7 @@ body.admin-bar {
 				.tac;
 				&:before {
 					.icoAquila;
+					display: none;
 					content: @aquila-aquila_full;
 					font-size: 72px;
 					line-height: 0.95;
@@ -191,6 +232,7 @@ body.admin-bar {
 	}
 	li.screenLink {
 		float: right;
+		display: none;
 		.ab-item {
 			&:before {
 				.fontAwesome;
@@ -224,6 +266,10 @@ body.admin-bar {
 	&.openBar {
 		height: @barHeight;
 	}
+}
+
+.ab-item {
+	padding: 0 20px !important;
 }
 
 @media screen and (max-width: 782px) {

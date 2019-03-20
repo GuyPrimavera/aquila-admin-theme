@@ -1,0 +1,1104 @@
+/* LESS Elements 0.9 */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fChc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfChc9.ttf) format('truetype');
+}
+.fontAwesome {
+  font-family: "fontAwesome" !important;
+}
+.menuFA {
+  font-family: "fontAwesome" !important;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.sans {
+  font-family: 'Roboto', sans-serif;
+}
+.heading {
+  font-family: 'Roboto', sans-serif;
+}
+.bgCov {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+}
+.icoAquila {
+  font-family: 'Aquila' !important;
+  content: "\a002";
+}
+.tac {
+  text-align: center;
+}
+.va {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.abs {
+  position: absolute;
+}
+.absFull {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.fix {
+  position: fixed;
+}
+.rel {
+  position: relative;
+}
+.dN {
+  display: none;
+}
+.dNI {
+  display: none!important;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.z0 {
+  z-index: 0;
+}
+.z1 {
+  z-index: 1;
+}
+.z10 {
+  z-index: 10;
+}
+.z99 {
+  z-index: 99;
+}
+.z999 {
+  z-index: 999;
+}
+/* Widths & Heights */
+.w0 {
+  width: 0%;
+}
+.w25 {
+  width: 25%;
+}
+.w50 {
+  width: 50%;
+}
+.w75 {
+  width: 75%;
+}
+.w100 {
+  width: 100%;
+}
+.mw100 {
+  max-width: 100%;
+}
+.h0 {
+  height: 0%;
+}
+.h25 {
+  height: 25%;
+}
+.h50 {
+  height: 50%;
+}
+.h75 {
+  height: 75%;
+}
+.h100 {
+  height: 100%;
+}
+.mh100 {
+  max-height: 100%;
+}
+/* Other */
+.borderBox {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.trans {
+  transition: 0.2s all linear;
+  -webkit-transition: 0.2s all linear;
+  -moz-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+}
+.transNone {
+  transition: none!important;
+  -webkit-transition: none!important;
+  -moz-transition: none!important;
+  -o-transition: none!important;
+}
+.alternate,
+table.striped > tbody > :nth-child(odd) {
+  background: 0 0;
+}
+table.posts tbody td strong,
+table.pages tbody td strong,
+table.tags tbody td strong,
+table.posts thead td strong,
+table.pages thead td strong,
+table.tags thead td strong,
+table.posts tfoot td strong,
+table.pages tfoot td strong,
+table.tags tfoot td strong,
+table.posts tbody th strong,
+table.pages tbody th strong,
+table.tags tbody th strong,
+table.posts thead th strong,
+table.pages thead th strong,
+table.tags thead th strong,
+table.posts tfoot th strong,
+table.pages tfoot th strong,
+table.tags tfoot th strong,
+table.posts tbody td a,
+table.pages tbody td a,
+table.tags tbody td a,
+table.posts thead td a,
+table.pages thead td a,
+table.tags thead td a,
+table.posts tfoot td a,
+table.pages tfoot td a,
+table.tags tfoot td a,
+table.posts tbody th a,
+table.pages tbody th a,
+table.tags tbody th a,
+table.posts thead th a,
+table.pages thead th a,
+table.tags thead th a,
+table.posts tfoot th a,
+table.pages tfoot th a,
+table.tags tfoot th a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 100%;
+  max-height: 20px;
+}
+table.posts tbody td,
+table.users tbody td,
+table.pages tbody td,
+table.tags tbody td,
+table.posts thead td,
+table.users thead td,
+table.pages thead td,
+table.tags thead td,
+table.posts tfoot td,
+table.users tfoot td,
+table.pages tfoot td,
+table.tags tfoot td,
+table.posts tbody th,
+table.users tbody th,
+table.pages tbody th,
+table.tags tbody th,
+table.posts thead th,
+table.users thead th,
+table.pages thead th,
+table.tags thead th,
+table.posts tfoot th,
+table.users tfoot th,
+table.pages tfoot th,
+table.tags tfoot th {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+table.posts tbody td strong .sorting-indicator,
+table.users tbody td strong .sorting-indicator,
+table.pages tbody td strong .sorting-indicator,
+table.tags tbody td strong .sorting-indicator,
+table.posts thead td strong .sorting-indicator,
+table.users thead td strong .sorting-indicator,
+table.pages thead td strong .sorting-indicator,
+table.tags thead td strong .sorting-indicator,
+table.posts tfoot td strong .sorting-indicator,
+table.users tfoot td strong .sorting-indicator,
+table.pages tfoot td strong .sorting-indicator,
+table.tags tfoot td strong .sorting-indicator,
+table.posts tbody th strong .sorting-indicator,
+table.users tbody th strong .sorting-indicator,
+table.pages tbody th strong .sorting-indicator,
+table.tags tbody th strong .sorting-indicator,
+table.posts thead th strong .sorting-indicator,
+table.users thead th strong .sorting-indicator,
+table.pages thead th strong .sorting-indicator,
+table.tags thead th strong .sorting-indicator,
+table.posts tfoot th strong .sorting-indicator,
+table.users tfoot th strong .sorting-indicator,
+table.pages tfoot th strong .sorting-indicator,
+table.tags tfoot th strong .sorting-indicator,
+table.posts tbody td a .sorting-indicator,
+table.users tbody td a .sorting-indicator,
+table.pages tbody td a .sorting-indicator,
+table.tags tbody td a .sorting-indicator,
+table.posts thead td a .sorting-indicator,
+table.users thead td a .sorting-indicator,
+table.pages thead td a .sorting-indicator,
+table.tags thead td a .sorting-indicator,
+table.posts tfoot td a .sorting-indicator,
+table.users tfoot td a .sorting-indicator,
+table.pages tfoot td a .sorting-indicator,
+table.tags tfoot td a .sorting-indicator,
+table.posts tbody th a .sorting-indicator,
+table.users tbody th a .sorting-indicator,
+table.pages tbody th a .sorting-indicator,
+table.tags tbody th a .sorting-indicator,
+table.posts thead th a .sorting-indicator,
+table.users thead th a .sorting-indicator,
+table.pages thead th a .sorting-indicator,
+table.tags thead th a .sorting-indicator,
+table.posts tfoot th a .sorting-indicator,
+table.users tfoot th a .sorting-indicator,
+table.pages tfoot th a .sorting-indicator,
+table.tags tfoot th a .sorting-indicator {
+  float: none;
+}
+table.posts tbody td strong .sorting-indicator:before,
+table.users tbody td strong .sorting-indicator:before,
+table.pages tbody td strong .sorting-indicator:before,
+table.tags tbody td strong .sorting-indicator:before,
+table.posts thead td strong .sorting-indicator:before,
+table.users thead td strong .sorting-indicator:before,
+table.pages thead td strong .sorting-indicator:before,
+table.tags thead td strong .sorting-indicator:before,
+table.posts tfoot td strong .sorting-indicator:before,
+table.users tfoot td strong .sorting-indicator:before,
+table.pages tfoot td strong .sorting-indicator:before,
+table.tags tfoot td strong .sorting-indicator:before,
+table.posts tbody th strong .sorting-indicator:before,
+table.users tbody th strong .sorting-indicator:before,
+table.pages tbody th strong .sorting-indicator:before,
+table.tags tbody th strong .sorting-indicator:before,
+table.posts thead th strong .sorting-indicator:before,
+table.users thead th strong .sorting-indicator:before,
+table.pages thead th strong .sorting-indicator:before,
+table.tags thead th strong .sorting-indicator:before,
+table.posts tfoot th strong .sorting-indicator:before,
+table.users tfoot th strong .sorting-indicator:before,
+table.pages tfoot th strong .sorting-indicator:before,
+table.tags tfoot th strong .sorting-indicator:before,
+table.posts tbody td a .sorting-indicator:before,
+table.users tbody td a .sorting-indicator:before,
+table.pages tbody td a .sorting-indicator:before,
+table.tags tbody td a .sorting-indicator:before,
+table.posts thead td a .sorting-indicator:before,
+table.users thead td a .sorting-indicator:before,
+table.pages thead td a .sorting-indicator:before,
+table.tags thead td a .sorting-indicator:before,
+table.posts tfoot td a .sorting-indicator:before,
+table.users tfoot td a .sorting-indicator:before,
+table.pages tfoot td a .sorting-indicator:before,
+table.tags tfoot td a .sorting-indicator:before,
+table.posts tbody th a .sorting-indicator:before,
+table.users tbody th a .sorting-indicator:before,
+table.pages tbody th a .sorting-indicator:before,
+table.tags tbody th a .sorting-indicator:before,
+table.posts thead th a .sorting-indicator:before,
+table.users thead th a .sorting-indicator:before,
+table.pages thead th a .sorting-indicator:before,
+table.tags thead th a .sorting-indicator:before,
+table.posts tfoot th a .sorting-indicator:before,
+table.users tfoot th a .sorting-indicator:before,
+table.pages tfoot th a .sorting-indicator:before,
+table.tags tfoot th a .sorting-indicator:before {
+  left: 0;
+}
+table.posts tbody td .row-actions,
+table.users tbody td .row-actions,
+table.pages tbody td .row-actions,
+table.tags tbody td .row-actions,
+table.posts thead td .row-actions,
+table.users thead td .row-actions,
+table.pages thead td .row-actions,
+table.tags thead td .row-actions,
+table.posts tfoot td .row-actions,
+table.users tfoot td .row-actions,
+table.pages tfoot td .row-actions,
+table.tags tfoot td .row-actions,
+table.posts tbody th .row-actions,
+table.users tbody th .row-actions,
+table.pages tbody th .row-actions,
+table.tags tbody th .row-actions,
+table.posts thead th .row-actions,
+table.users thead th .row-actions,
+table.pages thead th .row-actions,
+table.tags thead th .row-actions,
+table.posts tfoot th .row-actions,
+table.users tfoot th .row-actions,
+table.pages tfoot th .row-actions,
+table.tags tfoot th .row-actions {
+  max-height: 0;
+  opacity: 0;
+}
+table.posts tbody td.column-date,
+table.users tbody td.column-date,
+table.pages tbody td.column-date,
+table.tags tbody td.column-date,
+table.posts thead td.column-date,
+table.users thead td.column-date,
+table.pages thead td.column-date,
+table.tags thead td.column-date,
+table.posts tfoot td.column-date,
+table.users tfoot td.column-date,
+table.pages tfoot td.column-date,
+table.tags tfoot td.column-date {
+  font-size: 0 !important;
+}
+table.posts tbody td.column-date abbr,
+table.users tbody td.column-date abbr,
+table.pages tbody td.column-date abbr,
+table.tags tbody td.column-date abbr,
+table.posts thead td.column-date abbr,
+table.users thead td.column-date abbr,
+table.pages thead td.column-date abbr,
+table.tags thead td.column-date abbr,
+table.posts tfoot td.column-date abbr,
+table.users tfoot td.column-date abbr,
+table.pages tfoot td.column-date abbr,
+table.tags tfoot td.column-date abbr {
+  line-height: 1.5;
+  font-size: 15px !important;
+}
+table.posts tbody tr.hovered td,
+table.users tbody tr.hovered td,
+table.pages tbody tr.hovered td,
+table.tags tbody tr.hovered td,
+table.posts thead tr.hovered td,
+table.users thead tr.hovered td,
+table.pages thead tr.hovered td,
+table.tags thead tr.hovered td,
+table.posts tfoot tr.hovered td,
+table.users tfoot tr.hovered td,
+table.pages tfoot tr.hovered td,
+table.tags tfoot tr.hovered td {
+  white-space: normal;
+}
+table.posts tbody tr.hovered td strong,
+table.users tbody tr.hovered td strong,
+table.pages tbody tr.hovered td strong,
+table.tags tbody tr.hovered td strong,
+table.posts thead tr.hovered td strong,
+table.users thead tr.hovered td strong,
+table.pages thead tr.hovered td strong,
+table.tags thead tr.hovered td strong,
+table.posts tfoot tr.hovered td strong,
+table.users tfoot tr.hovered td strong,
+table.pages tfoot tr.hovered td strong,
+table.tags tfoot tr.hovered td strong,
+table.posts tbody tr.hovered td .row-title,
+table.users tbody tr.hovered td .row-title,
+table.pages tbody tr.hovered td .row-title,
+table.tags tbody tr.hovered td .row-title,
+table.posts thead tr.hovered td .row-title,
+table.users thead tr.hovered td .row-title,
+table.pages thead tr.hovered td .row-title,
+table.tags thead tr.hovered td .row-title,
+table.posts tfoot tr.hovered td .row-title,
+table.users tfoot tr.hovered td .row-title,
+table.pages tfoot tr.hovered td .row-title,
+table.tags tfoot tr.hovered td .row-title,
+table.posts tbody tr.hovered td a,
+table.users tbody tr.hovered td a,
+table.pages tbody tr.hovered td a,
+table.tags tbody tr.hovered td a,
+table.posts thead tr.hovered td a,
+table.users thead tr.hovered td a,
+table.pages thead tr.hovered td a,
+table.tags thead tr.hovered td a,
+table.posts tfoot tr.hovered td a,
+table.users tfoot tr.hovered td a,
+table.pages tfoot tr.hovered td a,
+table.tags tfoot tr.hovered td a {
+  white-space: normal;
+  max-height: 200px;
+}
+table.posts tbody tr.hovered td .row-actions,
+table.users tbody tr.hovered td .row-actions,
+table.pages tbody tr.hovered td .row-actions,
+table.tags tbody tr.hovered td .row-actions,
+table.posts thead tr.hovered td .row-actions,
+table.users thead tr.hovered td .row-actions,
+table.pages thead tr.hovered td .row-actions,
+table.tags thead tr.hovered td .row-actions,
+table.posts tfoot tr.hovered td .row-actions,
+table.users tfoot tr.hovered td .row-actions,
+table.pages tfoot tr.hovered td .row-actions,
+table.tags tfoot tr.hovered td .row-actions {
+  opacity: 1;
+  max-height: 200px;
+  transition: max-height 0.3s ease, opacity 0.3s 0.1s ease;
+}
+table.posts tbody tr.hovered td.column-date,
+table.users tbody tr.hovered td.column-date,
+table.pages tbody tr.hovered td.column-date,
+table.tags tbody tr.hovered td.column-date,
+table.posts thead tr.hovered td.column-date,
+table.users thead tr.hovered td.column-date,
+table.pages thead tr.hovered td.column-date,
+table.tags thead tr.hovered td.column-date,
+table.posts tfoot tr.hovered td.column-date,
+table.users tfoot tr.hovered td.column-date,
+table.pages tfoot tr.hovered td.column-date,
+table.tags tfoot tr.hovered td.column-date {
+  font-size: 15px !important;
+}
+table.posts tbody tr td,
+table.users tbody tr td,
+table.pages tbody tr td,
+table.tags tbody tr td,
+table.posts thead tr td,
+table.users thead tr td,
+table.pages thead tr td,
+table.tags thead tr td,
+table.posts tfoot tr td,
+table.users tfoot tr td,
+table.pages tfoot tr td,
+table.tags tfoot tr td {
+  white-space: normal;
+}
+table:not(.CalendarMonth_table) tbody td,
+table.widefat tbody td,
+table:not(.CalendarMonth_table) tbody th,
+table.widefat tbody th {
+  box-shadow: none !important;
+  border-top: 1px solid #e8e8e8 !important;
+  border-bottom: 0;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  color: #aaa;
+}
+table:not(.CalendarMonth_table) tbody td strong,
+table.widefat tbody td strong,
+table:not(.CalendarMonth_table) tbody th strong,
+table.widefat tbody th strong,
+table:not(.CalendarMonth_table) tbody td .row-title,
+table.widefat tbody td .row-title,
+table:not(.CalendarMonth_table) tbody th .row-title,
+table.widefat tbody th .row-title,
+table:not(.CalendarMonth_table) tbody td a,
+table.widefat tbody td a,
+table:not(.CalendarMonth_table) tbody th a,
+table.widefat tbody th a,
+table:not(.CalendarMonth_table) tbody td button,
+table.widefat tbody td button,
+table:not(.CalendarMonth_table) tbody th button,
+table.widefat tbody th button {
+  font-size: 15px !important;
+  color: #aaa;
+  margin-bottom: 0;
+}
+table:not(.CalendarMonth_table) tbody .row-title,
+table.widefat tbody .row-title,
+table:not(.CalendarMonth_table) tbody td.column-primary,
+table.widefat tbody td.column-primary {
+  color: black;
+}
+table:not(.CalendarMonth_table) tbody .row-title strong,
+table.widefat tbody .row-title strong,
+table:not(.CalendarMonth_table) tbody td.column-primary strong,
+table.widefat tbody td.column-primary strong {
+  color: black;
+}
+table:not(.CalendarMonth_table) tbody .row-title strong a,
+table.widefat tbody .row-title strong a,
+table:not(.CalendarMonth_table) tbody td.column-primary strong a,
+table.widefat tbody td.column-primary strong a {
+  color: black;
+}
+table:not(.CalendarMonth_table) tbody td.colspanchange,
+table.widefat tbody td.colspanchange {
+  border-top: none !important;
+}
+table:not(.CalendarMonth_table) tbody tr.no-items td.colspanchange,
+table.widefat tbody tr.no-items td.colspanchange {
+  padding: 15px !important;
+}
+table:not(.CalendarMonth_table) tbody td,
+table.widefat tbody td,
+table:not(.CalendarMonth_table) thead td,
+table.widefat thead td,
+table:not(.CalendarMonth_table) tfoot td,
+table.widefat tfoot td,
+table:not(.CalendarMonth_table) tbody th,
+table.widefat tbody th,
+table:not(.CalendarMonth_table) thead th,
+table.widefat thead th,
+table:not(.CalendarMonth_table) tfoot th,
+table.widefat tfoot th {
+  padding: 15px !important;
+  padding-bottom: 10px !important;
+  position: relative;
+}
+table:not(.CalendarMonth_table) tbody td.colspanchange,
+table.widefat tbody td.colspanchange,
+table:not(.CalendarMonth_table) thead td.colspanchange,
+table.widefat thead td.colspanchange,
+table:not(.CalendarMonth_table) tfoot td.colspanchange,
+table.widefat tfoot td.colspanchange {
+  padding: 0 !important;
+}
+html.wp-toolbar body.wp-admin #wpcontent .wrap .page-title-action,
+#split-page-title-action a,
+a.page-title-action {
+  border-radius: 2px;
+  padding: 4px 15px;
+  box-sizing: border-box;
+  line-height: 2;
+  display: inline-block;
+  height: 35px;
+  border: none;
+}
+.subsubsub > span a,
+.subsubsub > li a {
+  background: transparent !important;
+  border: 1px solid #d0d0d0;
+}
+.subsubsub > span a.current,
+.subsubsub > li a.current {
+  background: #e0e0e0 !important;
+}
+table tbody .row-actions,
+.subsubsub {
+  clear: both;
+}
+table tbody .row-actions > span,
+.subsubsub > span,
+table tbody .row-actions > li,
+.subsubsub > li {
+  color: transparent;
+  display: inline-block;
+  font-size: 0;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  max-width: 100%;
+  line-height: 1.5;
+}
+table tbody .row-actions > span a,
+.subsubsub > span a,
+table tbody .row-actions > li a,
+.subsubsub > li a,
+table tbody .row-actions > span button,
+.subsubsub > span button,
+table tbody .row-actions > li button,
+.subsubsub > li button,
+table tbody .row-actions > span button.button-link,
+.subsubsub > span button.button-link,
+table tbody .row-actions > li button.button-link,
+.subsubsub > li button.button-link {
+  border-radius: 2px;
+  color: black;
+  padding: 4px 15px;
+  background-color: #eee;
+  font-weight: normal;
+  display: inline-block;
+  box-sizing: border-box;
+  white-space: nowrap !important;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+  font-size: 13px;
+  line-height: 1.5;
+  vertical-align: middle;
+}
+table tbody .row-actions > span a span,
+.subsubsub > span a span,
+table tbody .row-actions > li a span,
+.subsubsub > li a span,
+table tbody .row-actions > span button span,
+.subsubsub > span button span,
+table tbody .row-actions > li button span,
+.subsubsub > li button span,
+table tbody .row-actions > span button.button-link span,
+.subsubsub > span button.button-link span,
+table tbody .row-actions > li button.button-link span,
+.subsubsub > li button.button-link span {
+  font-size: 13px;
+}
+table tbody .row-actions > span:last-child,
+.subsubsub > span:last-child,
+table tbody .row-actions > li:last-child,
+.subsubsub > li:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+table tbody .row-actions > span a:active,
+.subsubsub > span a:active,
+table tbody .row-actions > li a:active,
+.subsubsub > li a:active {
+  outline: none;
+}
+table tbody .row-actions > span a:hover,
+.subsubsub > span a:hover,
+table tbody .row-actions > li a:hover,
+.subsubsub > li a:hover {
+  background-color: #dadada;
+}
+table tbody .row-actions > span a.submitdelete,
+.subsubsub > span a.submitdelete,
+table tbody .row-actions > li a.submitdelete,
+.subsubsub > li a.submitdelete {
+  background-color: #dc3232;
+  color: white;
+}
+table tbody .row-actions > span a.submitdelete:hover,
+.subsubsub > span a.submitdelete:hover,
+table tbody .row-actions > li a.submitdelete:hover,
+.subsubsub > li a.submitdelete:hover {
+  background-color: #eb1414;
+  color: white;
+}
+.subsubsub {
+  float: right;
+  margin-top: 0;
+}
+.subsubsub li a {
+  height: 35px;
+  line-height: 2em;
+}
+.subsubsub li a:hover {
+  color: black !important;
+}
+.subsubsub li:hover a {
+  color: black !important;
+}
+.comment-ays,
+.feature-filter,
+.imgedit-group,
+.popular-tags,
+.stuffbox,
+.widgets-holder-wrap,
+.wp-editor-container,
+p.popular-tags,
+table.widefat {
+  background: none;
+}
+.wrap,
+.wrap + #poststuff {
+  margin: 0;
+  padding: 35px;
+  clear: both;
+}
+html.wp-toolbar .notice {
+  display: none;
+}
+.update-nag,
+div.fs-notice,
+div.fs-notice.success {
+  display: none !important;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml,<svg%20xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"%20width%3D"8"%20height%3D"5"><path%20fill%3D"%23666"%20fill-rule%3D"evenodd"%20d%3D"M4%205l4-5H0"%2F><%2Fsvg>');
+  background-repeat: no-repeat;
+  background-position: right 1em center;
+  border-radius: 2px;
+  text-overflow: ellipsis;
+  height: 35px;
+  min-height: 35px;
+  padding-right: 2.25em !important;
+  -webkit-padding-end: 2.25em;
+  padding-left: 0.75em !important;
+  -webkit-padding-start: 0.75em;
+}
+.bulkactions select,
+.filter-items select,
+.media-toolbar select,
+.tablenav .actions select {
+  max-width: 150px !important;
+  color: #aaa;
+}
+.filter-items .actions,
+.tablenav .actions {
+  padding: 0;
+  overflow: visible;
+}
+.tablenav .actions select {
+  margin-bottom: 4px;
+  height: 35px;
+}
+.media-frame.mode-grid .media-toolbar select {
+  height: 35px;
+}
+.tablenav {
+  clear: left;
+  height: auto;
+}
+.tablenav .actions .button {
+  padding: 10px 22.5px !important;
+  line-height: initial;
+  height: auto;
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: normal;
+}
+.wp-core-ui .button,
+body.wp-admin .button,
+body.wp-admin .is-button {
+  height: 35px;
+  border-radius: 2px;
+  box-shadow: none !important;
+  text-shadow: none;
+  border: none;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 2.6;
+}
+p.search-box {
+  clear: both;
+  position: relative;
+  margin-bottom: 4px;
+}
+input[type=search] {
+  -webkit-appearance: textfield;
+  margin: 0 !important;
+  padding-right: 35px !important;
+  background-image: url('data:image/svg+xml,<svg%20xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"%20width%3D"14"%20height%3D"14"><path%20fill%3D"%23bbb"%20fill-rule%3D"evenodd"%20d%3D"M13.89%2011.762l-3.09-3.13c.502-.88.765-1.856.765-2.84C11.565%202.6%208.97%200%205.782%200%202.596%200%200%202.6%200%205.792c0%203.193%202.596%205.79%205.782%205.79%201.017%200%202.024-.28%202.92-.815l3.078%203.12c.07.07.167.113.266.113.098%200%20.197-.04.266-.113l1.58-1.596c.144-.15.144-.38%200-.526zM5.783%202.256c1.947%200%203.53%201.586%203.53%203.536S7.728%209.327%205.78%209.327c-1.947%200-3.53-1.585-3.53-3.535%200-1.95%201.583-3.536%203.53-3.536z"%2F><%2Fsvg>');
+  background-repeat: no-repeat;
+  background-position: right 1em center;
+}
+table input[type=search],
+table input[type=text],
+table input[type=number] {
+  height: 25px !important;
+}
+input[type=search],
+input[type=text],
+input[type=number] {
+  height: 35px !important;
+  border-radius: 2px;
+}
+input[type=checkbox] {
+  position: relative;
+  top: -2px;
+  box-shadow: none !important;
+  border-radius: 2px;
+  transition: border-color 0.15s;
+  border-width: 1px;
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  margin: 0;
+  margin-right: 7.5px !important;
+  background: #fff;
+  color: #555;
+  clear: none;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 0;
+  outline: 0;
+  padding: 0 !important;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-appearance: none;
+}
+p.search-box .button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  text-indent: 35px;
+  overflow: hidden;
+  background: none !important;
+}
+.tablenav .tablenav-pages {
+  height: 35px;
+  border-radius: 3px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #aaa;
+  border-color: #e8e8e8;
+  margin-right: 10px;
+}
+.tablenav .tablenav-pages a,
+.tablenav .tablenav-pages .tablenav-pages-navspan {
+  background: none !important;
+  border: none !important;
+}
+.tablenav .tablenav-pages .tablenav-pages-navspan {
+  display: none;
+}
+.tablenav .tablenav-pages input {
+  padding: 6.4px !important;
+  width: 35px !important;
+}
+hr.wp-header-end {
+  display: none;
+}
+#wpcontent {
+  padding: 0 !important;
+}
+ul#adminmenu li div.wp-menu-name {
+  text-transform: none;
+  font-weight: 300;
+  font-size: 1em;
+  margin-left: 65px;
+}
+body ul#adminmenu div.wp-menu-image {
+  margin-left: 15px;
+  width: 40px;
+}
+body ul#adminmenu li.wp-has-current-submenu + ul.wp-submenu li a,
+body ul#adminmenu li.wp-has-current-submenu:focus + ul.wp-submenu li a,
+body ul#adminmenu li.wp-has-current-submenu:hover + ul.wp-submenu li a,
+body ul#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu:focus + ul.wp-submenu li a,
+body ul#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu:hover + ul.wp-submenu li a,
+body ul#adminmenu li.wp-has-current-submenu ul.wp-submenu li a,
+body ul#adminmenu li.wp-has-current-submenu:focus ul.wp-submenu li a,
+body ul#adminmenu li.wp-has-current-submenu:hover ul.wp-submenu li a,
+body ul#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu:focus ul.wp-submenu li a,
+body ul#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu:hover ul.wp-submenu li a,
+body ul#adminmenu li.wp-has-current-submenu + ul.wp-submenu li a.current,
+body ul#adminmenu li.wp-has-current-submenu:focus + ul.wp-submenu li a.current,
+body ul#adminmenu li.wp-has-current-submenu:hover + ul.wp-submenu li a.current,
+body ul#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu:focus + ul.wp-submenu li a.current,
+body ul#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu:hover + ul.wp-submenu li a.current,
+body ul#adminmenu li.wp-has-current-submenu ul.wp-submenu li a.current,
+body ul#adminmenu li.wp-has-current-submenu:focus ul.wp-submenu li a.current,
+body ul#adminmenu li.wp-has-current-submenu:hover ul.wp-submenu li a.current,
+body ul#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu:focus ul.wp-submenu li a.current,
+body ul#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu:hover ul.wp-submenu li a.current {
+  font-weight: 300 !important;
+}
+body #adminmenu .awaiting-mod,
+body #adminmenu .update-plugins {
+  left: 20px;
+}
+body ul#adminmenu div.wp-menu-image:before {
+  font-size: 22px;
+  line-height: 1.6;
+}
+body #adminmenu li.wp-menu-separator {
+  height: 1px;
+  background-color: white;
+  opacity: 0.3;
+  margin: 0;
+}
+body.wp-admin ul#adminmenu .wp-submenu li a {
+  text-transform: none;
+  font-weight: 300 !important;
+  font-size: 1em;
+  padding-left: 25px;
+}
+body.wp-admin ul#adminmenu .wp-submenu li a:hover,
+body.wp-admin ul#adminmenu .wp-submenu li a:focus {
+  font-weight: 300 !important;
+  opacity: 1;
+}
+body.wp-admin ul#adminmenu .wp-submenu li.current a {
+  font-weight: 300 !important;
+  opacity: 1;
+}
+body.wp-admin ul#adminmenu .wp-submenu li.current a:hover,
+body.wp-admin ul#adminmenu .wp-submenu li.current a:focus {
+  font-weight: 300 !important;
+}
+.split-page-title-action .expander {
+  display: none;
+}
+table.widefat {
+  box-shadow: none;
+}
+@media (min-width: 782px) {
+  .edit-post-layout .editor-post-publish-panel {
+    top: 65px;
+  }
+}
+@media (min-width: 782px) and (max-width: 1024px) {
+  .folded #col-container {
+    display: block;
+  }
+  .folded #col-container #col-left {
+    width: 35%;
+  }
+  .folded #col-container #col-right {
+    width: 65%;
+  }
+  #col-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  #col-container #col-left,
+  #col-container #col-right {
+    width: 100%;
+  }
+}
+@media (max-width: 781px) {
+  #col-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  #col-container #col-left,
+  #col-container #col-right {
+    width: 100%;
+  }
+  .wp-list-table thead th {
+    display: none;
+  }
+  .wp-list-table thead th.column-primary {
+    display: table-cell;
+  }
+  .wp-list-table tr:not(.inline-edit-row):not(.no-items) td:not(.column-primary)::before {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+  }
+  td.column-thumb {
+    text-align: left !important;
+  }
+  td#cb:before {
+    display: none;
+  }
+}
+th.sortable a,
+th.sorted a {
+  padding: 0 !important;
+}
+.column-author img,
+.column-comment .comment-author img,
+.column-username img {
+  margin-bottom: 8px;
+}
+body.wp-admin input[type=checkbox]:checked:before {
+  width: 20px;
+  font-size: 25px;
+  margin: -3px 0 0 -4px;
+  color: #333;
+}
+body.wp-admin .tablenav .tablenav-pages a:hover {
+  color: black !important;
+}
+body.wp-admin .wp-filter .search-form {
+  margin: 6px 0;
+}
+body.wp-admin #posts-filter .wp-filter {
+  padding: 10px;
+}
+th#uam_access,
+th.column-uam_access,
+td.uam_access.column-uam_access {
+  display: none;
+}
+table.publish-channel-column tbody td {
+  padding: 0 5px !important;
+  border: none !important;
+  background: none;
+}
+.published-channel {
+  display: inline-block;
+  overflow: visible;
+  position: relative;
+  width: 30px;
+  height: 15px;
+}
+.published-channel:before {
+  font-family: dashicons;
+  font-size: 25px;
+  position: absolute;
+  line-height: 0.5;
+  top: 5px;
+}
+.published-channel.published-app:before {
+  content: "\f470";
+}
+.published-channel.published-web:before {
+  content: "\f472";
+}
+.published-channel.published:before {
+  color: black;
+}
+.published-channel span {
+  opacity: 0;
+  margin-left: 35px;
+  display: none;
+}
+tr.hovered .published-channels {
+  white-space: normal;
+  max-height: 100px;
+}
+tr.hovered .published-channels .published-channel {
+  width: 100%;
+  max-height: 100px;
+  margin-bottom: 12px;
+  min-height: 25px;
+}
+tr.hovered .published-channels .published-channel span {
+  opacity: 1;
+  display: block;
+}
+.published-channels {
+  max-height: 20px;
+  white-space: nowrap;
+  overflow: visible;
+}
+body.wp-admin #wpcontent #wpbody h1.wp-heading-inline {
+  line-height: 16px;
+}
+body.wp-admin.auto-fold .components-notice-list {
+  margin-top: 32px;
+}
+body.block-editor-page {
+  background-color: white !important;
+}
+span.tablenav-paging-text {
+  float: none !important;
+  width: auto;
+  padding: 0;
+  margin-left: 0.5em;
+}
+.column-comments .comment-count-approved,
+.column-comments .comment-count-no-comments,
+.column-response .comment-count-approved,
+.column-response .comment-count-no-comments {
+  font-size: 8px;
+  line-height: 17px;
+}
+.column-comments .post-com-count-approved {
+  margin-top: 0;
+}
+@media (min-width: 782px) and (min-width: 960px) {
+  body.auto-fold .edit-post-layout__content {
+    margin-left: 250px;
+  }
+}
+@media (max-width: 1024px) {
+  .wrap,
+  .wrap + #poststuff {
+    padding: 36px 48px;
+  }
+}
+@media (max-width: 782px) {
+  .wrap,
+  .wrap + #poststuff {
+    padding: 24px 36px;
+  }
+  .wp-list-table td.column-primary {
+    padding-right: 50px !important;
+  }
+  .tablenav .tablenav-pages {
+    margin: 0 0 25px;
+  }
+}

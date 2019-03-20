@@ -1,6 +1,23 @@
 /* LESS Elements 0.9 */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext');
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fChc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfChc9.ttf) format('truetype');
+}
 .fontAwesome {
   font-family: "fontAwesome" !important;
 }
@@ -10,7 +27,7 @@
   line-height: 1.6;
 }
 .sans {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto', sans-serif;
 }
 .heading {
   font-family: 'Roboto', sans-serif;
@@ -2343,7 +2360,7 @@ html.wp-toolbar {
   }
 }
 html.wp-toolbar body.wp-admin {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto', sans-serif;
 }
 html.wp-toolbar body.wp-admin #wpcontent #wpbody h1,
 html.wp-toolbar body.wp-admin #wpcontent #wpbody h2,
@@ -2351,9 +2368,7 @@ html.wp-toolbar body.wp-admin #wpcontent #wpbody h3,
 html.wp-toolbar body.wp-admin #wpcontent #wpbody h4,
 html.wp-toolbar body.wp-admin #wpcontent #wpbody h5,
 html.wp-toolbar body.wp-admin #wpcontent #wpbody h6 {
-  text-transform: uppercase;
-  font-weight: 400;
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto', sans-serif;
 }
 html.wp-toolbar body.wp-admin #wpcontent #wpbody #screen-meta-links {
   display: none!important;
@@ -2491,16 +2506,14 @@ body.wp-admin .add-new-h2:active,
 body.wp-admin .page-title-action,
 .wp-core-ui .page-title-action:active,
 body.wp-admin .page-title-action:active {
-  -webkit-border-radius: 0px;
-  border-radius: 0;
+  border-radius: 2px;
   outline: 0;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: normal;
   line-height: 2.3;
   border: none!important;
   box-shadow: none!important;
   text-shadow: none!important;
+  height: 35px;
   transition: 0.2s all linear;
   -webkit-transition: 0.2s all linear;
   -moz-transition: 0.2s all linear;
@@ -2555,10 +2568,7 @@ body.wp-admin .page-title-action.cpac-edit {
 .wp-core-ui input[type=number],
 .wp-core-ui select,
 .wp-core-ui textarea {
-  background: none;
   box-shadow: none;
-  border: none;
-  border-bottom: 2px solid transparent;
   transition: 0.2s all linear;
   -webkit-transition: 0.2s all linear;
   -moz-transition: 0.2s all linear;
@@ -2684,20 +2694,6 @@ input[type=radio]:checked:before {
   -o-transition: 0.2s all linear;
 }
 /* Admin Menu */
-#adminmenuback {
-  box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.25), 5px 0px 10px rgba(0, 0, 0, 0.22);
-}
-/* Admin Menu: submenu */
-#adminmenu .wp-submenu a,
-#adminmenu .wp-has-current-submenu .wp-submenu a,
-.folded #adminmenu .wp-has-current-submenu .wp-submenu a,
-#adminmenu a.wp-has-current-submenu:focus + .wp-submenu a,
-#adminmenu .wp-has-current-submenu.opensub .wp-submenu a {
-  letter-spacing: 1px;
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: 400!important;
-}
 /* Admin Menu: bubble */
 #adminmenu .awaiting-mod,
 #adminmenu .update-plugins {
@@ -2734,6 +2730,9 @@ body.auto-fold #adminmenu .update-plugins .plugin-count {
 }
 .wp-responsive-open div#wp-responsive-toggle a {
   border-color: transparent;
+}
+#adminmenu {
+  margin: 0;
 }
 #adminmenu,
 #adminmenu .wp-submenu,
@@ -2837,8 +2836,6 @@ ul#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after {
 }
 ul#adminmenu div.wp-menu-name {
   padding: 12px 10px 12px 0px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
   line-height: 1.5;
   font-size: 13px;
 }
@@ -2943,6 +2940,7 @@ body.folded #adminmenuback,
 body.folded #adminmenuwrap,
 body.folded #adminmenu div.wp-menu-image {
   width: 60px;
+  margin: 0;
 }
 @media only screen and (max-width: 782px) {
   body.folded #adminmenu,
@@ -2975,20 +2973,8 @@ body.folded.no-js #adminmenu .wp-has-submenu:hover .wp-submenu {
 }
 body.wp-admin .postbox,
 body.wp-admin .stuffbox {
-  border: none;
+  border: 1px solid #e8e8e8;
   border-radius: 3px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-body.wp-admin .postbox:hover,
-body.wp-admin .stuffbox:hover,
-body.wp-admin .postbox:active,
-body.wp-admin .stuffbox:active,
-body.wp-admin .postbox:target,
-body.wp-admin .stuffbox:target,
-body.wp-admin .postbox:focus,
-body.wp-admin .stuffbox:focus {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 body.wp-admin .postbox .hndle,
 body.wp-admin .stuffbox .hndle {
@@ -3251,7 +3237,7 @@ body.wp-admin .update-nag {
 }
 #adminmenu #toplevel_page_site-migration-export .wp-menu-image:before {
   content: "\f0e2";
-  line-height: 1.6!important;
+  line-height: 1.6 !important;
 }
 #adminmenu #toplevel_page_edit-post_type-acf .wp-menu-image:before {
   content: "\f036";
@@ -3540,6 +3526,14 @@ ul#aquilaHelp li a h3 {
 ul#aquilaHelp li a h4 {
   opacity: 1;
 }
+#screen-meta {
+  display: block;
+  margin: 0 35px;
+  box-shadow: none;
+}
+#screen-meta #screen-options-wrap {
+  box-shadow: none;
+}
 body.wp-admin {
   /* Sidebar manually collapsed. */
   /* Mobile menu opened. */
@@ -3655,8 +3649,17 @@ body.wp-admin.is-fullscreen-mode .components-notice-list {
   left: 0 !important;
 }
 .media-frame.mode-grid .media-toolbar {
-  height: 50px;
+  padding: 10px;
 }
 .media-frame .attachments-browser {
   overflow: scroll;
+}
+#footer-thankyou {
+  display: none;
+}
+div.editor-post-taxonomies__hierarchical-terms-choice input[type=checkbox]:checked:before {
+  color: #ffffff !important;
+}
+div.components-base-control__field input[type=checkbox]:checked:before {
+  color: #ffffff !important;
 }

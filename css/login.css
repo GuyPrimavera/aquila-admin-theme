@@ -1,5 +1,22 @@
 /* LESS Elements 0.9 */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext');
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fChc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfChc9.ttf) format('truetype');
+}
 .fontAwesome {
   font-family: "fontAwesome" !important;
 }
@@ -9,7 +26,7 @@
   line-height: 1.6;
 }
 .sans {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto', sans-serif;
 }
 .heading {
   font-family: 'Roboto', sans-serif;
@@ -132,11 +149,12 @@
   -o-transition: none!important;
 }
 body.login {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto', sans-serif;
 }
 body.login #login {
   width: 100%;
-  padding: 0;
+  padding: 30px;
+  box-sizing: border-box;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -153,6 +171,7 @@ body.login #login:before {
   position: relative;
   float: left;
   padding-top: 10px;
+  display: none;
 }
 body.login #login #login_error,
 body.login #login .message {
@@ -165,6 +184,11 @@ body.login #login .message {
 }
 body.login #login h1 a {
   display: none!important;
+  background-image: url(../images/logo_full.png);
+  height: 65px;
+  width: 100%;
+  display: block !important;
+  background-size: contain;
 }
 body.login #login a {
   opacity: 0.8;
@@ -251,11 +275,6 @@ body.login #login form input[type=text] {
   -moz-transition: 0.2s all linear;
   -o-transition: 0.2s all linear;
   font-weight: 400;
-}
-body.login #login form .input:focus,
-body.login #login form input[type=checkbox]:focus,
-body.login #login form input[type=text]:focus {
-  width: 100%;
 }
 body.login #login form .input#aiowps-captcha-answer,
 body.login #login form input[type=checkbox]#aiowps-captcha-answer,

@@ -68,7 +68,25 @@ $j(document).ready(function() {
 		        $j(this).addClass('active');
 		    }
 		  };
-	}); 
+	});
+
+	$j('tbody tr').on('mouseenter', function() {
+		var $el = $j(this);
+		setTimeout(function() {
+			if ($el.is(':hover')) {
+                $el.addClass('hovered');
+			}
+		}, 400);
+	});
+
+	$j('tbody tr').on('click', function() {
+		$j(this).addClass('hovered');
+	});
+
+    $j('tbody > tr').on('mouseleave', function() {
+        var $el = $j(this);
+        $el.removeClass('hovered');
+    });
 })
 
 // Media manager
