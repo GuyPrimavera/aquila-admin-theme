@@ -3663,3 +3663,6 @@ div.editor-post-taxonomies__hierarchical-terms-choice input[type=checkbox]:check
 div.components-base-control__field input[type=checkbox]:checked:before {
   color: #ffffff !important;
 }
+.editor-writing-flow {
+  margin-top: 20px;
+}
