@@ -12,8 +12,8 @@ function aquila_global_load_style() {
 		wp_enqueue_style( 'aquila-adminBar-style' );
 		wp_register_style( 'aquila-table-style', plugins_url( 'aquila-admin-theme/css/table.css' ), array(), $aquilaVer );
 		wp_enqueue_style( 'aquila-table-style');
-		wp_register_script( 'aquilaCalls', plugins_url( '/js/calls.js', __FILE__ ), array('jquery'), $aquilaVer, true );
-		wp_enqueue_script( 'aquilaCalls');
+        wp_register_script( 'aquilaCalls', plugins_url( '/js/calls.js', __FILE__ ), array('jquery'), filemtime(plugin_dir_path(__FILE__).'js/calls.js'), true );
+        wp_enqueue_script( 'aquilaCalls');
 	}
 }
 add_action( 'admin_enqueue_scripts', 'aquila_global_load_style' );
