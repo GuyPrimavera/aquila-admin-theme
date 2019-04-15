@@ -71,7 +71,7 @@ $j(document).ready(function() {
 	});
 
 	// Hover Animation
-	$j('tbody tr').ajaxStop(function()
+	function setMouseEventHandler()
 	{
 		$j('tbody tr').on('mouseenter', function () {
 			var $el = $j(this);
@@ -90,7 +90,12 @@ $j(document).ready(function() {
 			var $el = $j(this);
 			$el.removeClass('hovered');
 		});
+	}
+	setMouseEventHandler();
 
+	$j('tbody tr').ajaxStop(function()
+	{
+		setMouseEventHandler();
 	})
 })
 
