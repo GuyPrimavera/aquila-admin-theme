@@ -113,6 +113,54 @@ body.login {
 		    letter-spacing: 1px;
 		    line-height: 2;
 			}
+			&#resetpassform {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.user-pass1-wrap {
+					width: 100%;
+					max-width: 350px;
+					display: inline-block;
+					.wp-pwd {
+						opacity: 1;
+						.password-input-wrapper {
+							width: 100%;
+							display: flex;
+							flex-direction: row;
+							justify-content: space-between;
+							align-items: center;
+					    margin-bottom: 20px;
+							input {
+								display: inherit;
+								margin: 0;
+								&[type=text] {
+									display:none;
+								}
+							}
+							.button.button-secondary {
+								margin-left: 20px;
+						    padding: 20px 10px;
+						    border-radius: 4px;
+						    display: flex;
+						    flex-direction: row;
+						    align-items: center;
+						    justify-content: center;
+						    outline: none;
+						    border: none;
+						    box-shadow: none;
+							}
+							&.show-password {
+								input {
+									display: none;
+									&[type=text] {
+										display: block;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 	#backtoblog, #nav {

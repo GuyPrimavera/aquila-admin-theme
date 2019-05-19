@@ -5,8 +5,7 @@ if ( is_admin() ) {
 } else {
 	add_action('wp_before_admin_bar_render', 'colourSchemeCSS');
 }
-
-add_action('login_head', 'colourSchemeCSS');
+//add_action('login_head', 'colourSchemeCSS');
 function colourSchemeCSS() {
 include('mdColours.php');
 include('bright.php');
@@ -16,6 +15,7 @@ include('isDark.php');
 $aquilaColourSettings = get_option( 'aquilaColourSettings' );
 $aquilaPrimary = $aquilaColourSettings['aquila_primary_colour'];
 $aquilaSecondary = $aquilaColourSettings['aquila_secondary_colour'];
+$aquilaLinkText = $aquilaColourSettings['aquila_link_text_colour'];
 $aquilaMenuBack = $aquilaColourSettings['aquila_menu_back_colour'];
 $aquilaMenuText = $aquilaColourSettings['aquila_menu_text_colour'];
 
@@ -39,6 +39,12 @@ if ( $aquilaSecondary ) {
 } else {
   $sec = $mdLightBlueA700;
   $secNew = $sec;
+}
+
+if ( $aquilaLinkText ) {
+  $linkText = $aquilaLinkText;
+} else {
+  $linkText = $mdGrey900;
 }
 
 if ( $aquilaMenuBack ) {
@@ -102,7 +108,7 @@ if( isDark( $menu, 50 ) ) {
 }
 $bodyBack = $mdGrey100;
 $disabled = $mdGrey500;
-$linkText = $mdGrey900;
+//$linkText = $mdGrey900;
 
 // LessPHP
 if ( !class_exists( 'lessc' ) ) {
@@ -248,6 +254,10 @@ body.wp-admin {
   a:active,
   a:focus {
     color: @priD;
+  }
+  .wp-block-freeform.block-library-rich-text__tinymce a,
+  .components-button.is-link {
+    color: @linkText;
   }
   #media-upload a.del-link:hover,
   div.dashboard-widget-submit input:hover,
@@ -723,7 +733,7 @@ body.login.wp-core-ui {
   background: @menu;
   color: @menuText;
   #login {
-    form#loginform {
+    & > form {
       background: @menu2;
     }
   }

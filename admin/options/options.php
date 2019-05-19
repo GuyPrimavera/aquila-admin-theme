@@ -6,5 +6,6 @@ include('createFields.php');
 include('callbacks.php');
 include('createOptionsPage.php');
 include('help.php');
+include('setVariables.php');
 
 ?>

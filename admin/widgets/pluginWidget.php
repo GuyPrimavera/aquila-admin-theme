@@ -22,6 +22,7 @@ function aquila_plugin_widget() {
 
 add_action( 'wp_dashboard_setup', 'aquila_plugin_widget' );
 function aquila_plugin_widget_function() {
+	$visibleText = '';
 echo "<p class='about-description'>"; 
 
 	$aquilaOptions = get_option( 'aquila_settings' );

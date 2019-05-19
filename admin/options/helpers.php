@@ -49,6 +49,9 @@ function aquila_colour_picker( $optionGroup, $optionName ) {
 		case 'aquila_background_colour':
 			$colour = '#f5f5f5'; 
 			break;
+		case 'aquila_link_text_colour':
+			$colour = '#212121'; 
+			break;
 		case 'aquila_text_colour':
 			$colour = '#23282d'; 
 			break;
@@ -76,5 +79,16 @@ function aquila_help_box( $url, $title, $subtitle ) {
 		</li>
 	';
 }
+
+// Check checkbox values
+function aquila_isset( $var ) {
+	$aquilaOptions = get_option( 'aquila_settings' );
+	if(isset($aquilaOptions[$var]) && $aquilaOptions[$var] == 1) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
 
 ?>

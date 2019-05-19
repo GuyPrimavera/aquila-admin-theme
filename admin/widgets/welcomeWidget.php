@@ -38,7 +38,7 @@ function aquila_welcome_widget_function() {
 		<ul>
 			<li><i class='aquila-wordpress'></i><strong>" . __( 'WordPress', 'aquila-admin-theme' ) . "</strong><br/>" . $wordpressVer . "</li>
 			<li><i class='aquila-aquila'></i><strong>" . __( 'Aquila', 'aquila-admin-theme' ) . "</strong><br/>" . $aquilaVer . "</li>
-			<li><i class='aquila-palette'></i><strong>" . $themeInfo->get( 'Name' ) . "</strong><br/>" . $themeInfo->get( 'Version' ) . "</li>
+			<li><i class='aquila-palette'></i><strong>Theme</strong><br/>" . $themeInfo->get( 'Name' ) . " (" . $themeInfo->get( 'Version' ) . ")</li>
 			<li><i class='aquila-terminal'></i><strong>" . __( 'Server IP', 'aquila-admin-theme' ) . "</strong><br/>" . $server_ip_address . "</li>
 			<li><i class='aquila-php'></i><strong>" . __( 'PHP', 'aquila-admin-theme' ) . "</strong><br/>" . $phpVersion . "</li>
 			<li><i class='aquila-cubes'></i><strong>" . __( 'Memory Usage', 'aquila-admin-theme' ) . "</strong><br/>" . $memUsage . " / " . $memLimit . "MB (" . $memPercent . "%)</li>
