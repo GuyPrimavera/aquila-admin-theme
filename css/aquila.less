@@ -120,16 +120,17 @@ html.wp-toolbar {
 
 .wp-core-ui, body.wp-admin {
 	.button, .button-primary, .button-secondary, .add-new-h2, .add-new-h2:active, .page-title-action, .page-title-action:active {
-    -webkit-border-radius: 0px;
-    border-radius: 0;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
     outline: 0;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
-    line-height: 2.3;
+    letter-spacing: 0px;
+    font-weight: 500;
+    line-height: 2.1;
     border: none!important;
     box-shadow: none!important;
     text-shadow: none!important;
+    font-size: 14px;
     .trans;
     &.wpo_primary_big {
     	line-height: initial;
@@ -147,18 +148,19 @@ html.wp-toolbar {
 }
 .wp-core-ui {
   input[type=text], input[type=search], input[type=tel], input[type=time], input[type=url], input[type=week], input[type=password], input[type=color], input[type=date], input[type=datetime], input[type=datetime-local], input[type=email], input[type=month], input[type=number], select, textarea {
-    background: none;
+    //background: none;
     box-shadow: none;
-    border: none;
-    border-bottom: 2px solid transparent;
+    //border: none;
+    border-bottom: 2px solid #616161;
+    //padding: 8px;
     .trans;
 		&:hover, &:active, &:target, &:focus {
 			.mdShadow;
 		}
 	}
   input[type=radio], input[type=checkbox] {
-    background: none;
-    box-shadow: none;
+    //background: none;
+    //box-shadow: none;
     .trans;
 		&:hover, &:active, &:target, &:focus {
 			.mdShadow;
@@ -509,6 +511,14 @@ body.wp-admin {
 	#update-nag, .update-nag {
     border: none;
     box-shadow: none;
+	}
+	.wp-core-ui .attachment .thumbnail,
+	.edit-attachment-frame .attachment-media-view .details-image,
+	.imgedit-crop-wrap img {
+    background-color: #434343;
+		background-image: linear-gradient(45deg,#9e9e9e 25%,transparent 25%,transparent 75%,#9e9e9e 75%,#9e9e9e),linear-gradient(45deg,#9e9e9e 25%,transparent 25%,transparent 75%,#9e9e9e 75%,#9e9e9e);
+	    background-position: 0 0,10px 10px;
+	    background-size: 20px 20px;
 	}
 }
 

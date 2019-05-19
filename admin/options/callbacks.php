@@ -7,6 +7,14 @@ function aquilaDashboardCallback(  ) {
 function aquilaAdminbarCallback(  ) {
 	//echo __( 'Configure your admin bar', 'aquila-admin-theme' );
 }
+function aquilaLoginCallback(  ) {
+	/*echo '<form action="#">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" id="sample3">
+    <label class="mdl-textfield__label" for="sample3">Text...</label>
+  </div>
+</form>';*/
+}
 function aquilaLogoCallback(  ) {
 	echo __( 'Choose a custom logo for your admin area.', 'aquila-admin-theme' );
 }

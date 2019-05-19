@@ -37,6 +37,12 @@ function aquila_settings_init(  ) {
 		'aquilaGeneralSettings'
 	);
 	add_settings_section(
+		'aquila_loginSettings_section', 
+		__( 'Login page', 'aquila-admin-theme' ), 
+		'aquilaLoginCallback', 
+		'aquilaGeneralSettings'
+	);
+	add_settings_section(
 		'aquila_logoSettings_section', 
 		__( 'Custom Logo', 'aquila-admin-theme' ), 
 		'aquilaLogoCallback', 
@@ -62,7 +68,7 @@ function aquila_settings_init(  ) {
 	);
 
 	// Add settings fields
-	/// Dashboard settings
+	// Dashboard settings
 	add_settings_field( 
 		'aquila_chk_pluginSupport', 
 		__( 'Show Editors <strong>Plugins Support</strong> metabox?', 'aquila-admin-theme' ), 
@@ -99,7 +105,7 @@ function aquila_settings_init(  ) {
 		'aquila_dashboardSettings_section' 
 	);
 
-	/// Admin bar
+	// Admin bar
 	add_settings_field( 
 		'aquila_chk_abLinks', 
 		__( 'Show <strong>Adminbar</strong> links?', 'aquila-admin-theme' ), 
@@ -115,7 +121,16 @@ function aquila_settings_init(  ) {
 		'aquila_adminbarSettings_section'
 	);
 
-	/// Custom Logo
+	// Admin bar
+	add_settings_field( 
+		'aquila_chk_loginDisable', 
+		__( '<strong>Disable</strong> Aquila login page styling?', 'aquila-admin-theme' ), 
+		'aquila_chk_loginDisable_render', 
+		'aquilaGeneralSettings', 
+		'aquila_loginSettings_section' 
+	);
+
+	// Custom Logo
 	add_settings_field( 
 		'aquila_new_logo', 
 		__( 'Custom logo', 'aquila-admin-theme' ), 
@@ -131,7 +146,7 @@ function aquila_settings_init(  ) {
 		'aquila_logoSettings_section' 
 	);
 
-	/// Colour Scheme
+	// Colour Scheme
 	add_settings_field( 
 		'aquila_primary_colour', 
 		__( 'Primary Color', 'aquila-admin-theme' ), 
@@ -143,6 +158,13 @@ function aquila_settings_init(  ) {
 		'aquila_secondary_colour', 
 		__( 'Secondary Color', 'aquila-admin-theme' ), 
 		'aquila_secondary_colour_render', 
+		'aquilaColourSettings', 
+		'aquila_colourSettings_section' 
+	);
+	add_settings_field( 
+		'aquila_link_text_colour', 
+		__( 'Link Text Color', 'aquila-admin-theme' ), 
+		'aquila_link_text_colour_render', 
 		'aquilaColourSettings', 
 		'aquila_colourSettings_section' 
 	);

@@ -16,7 +16,6 @@ $GLOBALS['aquilaNewLogoSqr'] = $aquilaNewLogoSqr;
 if( isset($aquilaLogoSettings['aquila_new_logo']) && $aquilaLogoSettings['aquila_new_logo'] !== "" ) {
 	add_action( 'admin_head', 'aquila_new_logo_admin', 90); 
 	add_action( 'wp_head', 'aquila_new_logo_admin', 90); 
-	add_action( 'login_head', 'aquila_new_logo_login', 90 ); 
 }
 
 // Custom Logo (square)
@@ -65,27 +64,6 @@ function aquila_new_logo_admin() {
 			top: 15%;
 			left: 10%;
 		}		
-	</style>";
-}
-
-// Login screen
-function aquila_new_logo_login() {
-	echo "<style type='text/css'>
-		body.login #login:before {
-			display: none!important;
-		}
-		body.login #login h1 a {
-			display: block!important;
-		}
-		body.login #login h1 a {
-			background-image: url('" . $GLOBALS['aquilaNewLogo'] . "')!important;
-			background-size: contain;
-	    background-repeat: no-repeat;
-	    background-position: center center;
-	    width: auto;
-	    height: 80px;
-	    max-width: 350px;
-		}
 	</style>";
 }
 
