@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: material design wordpress, material design admin theme, material design wordpress admin, material wordpress, admin theme, admin, admin panel, admin theme style plugin, admin-theme, admin theme, aquila, backend theme, clean admin, color scheme, colour scheme, custom admin theme, flat admin theme, free admin theme, modern admin theme, new admin ui, plugin, simple admin theme, white label, white label admin, wordpress, wordPress admin, wordpress admin theme, wp-admin, wp admin page, wp admin theme
 Requires at least: 4.0
 Tested up to: 5.0-beta4
-Stable tag: 2.4
+Stable tag: 2.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -82,6 +82,9 @@ No. It only changes the admin area, the login page and the admin bar for logged-
 7. Front-end showing admin bar icon instead of full admin bar (logged-in).
 
 == Changelog ==
+
+= 2.4.1 - 07/12/2018 =
+* Fixed issue with body classes.
 
 = 2.4 - 13/11/2018 =
 * Added versioning to loaded resources.
@@ -191,6 +194,12 @@ No. It only changes the admin area, the login page and the admin bar for logged-
 * Beta release.
 
 == Upgrade Notice ==
+
+= 2.4.1 =
+* Bug fixes.
+
+= 2.4 =
+* Bug fixes.
 
 = 2.3 =
 * New admin bar with icon and hidden top-bar.

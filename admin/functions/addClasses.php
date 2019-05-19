@@ -4,7 +4,7 @@
 function aquila_admin_body_role($classes) {
 	//global $current_user;
 	//$userRole = array_shift($current_user->roles);
-	$classes .= 'aquila aquilaAdmin';
+	$classes .= ' aquila aquilaAdmin';
 	return $classes;
 }
 //add_filter('body_class','aquila_admin_body_role');
@@ -14,7 +14,7 @@ function aquila_front_body_class( $classes ) {
 	if ( is_admin_bar_showing() ) {
 		//global $current_user;
 		//$userRole = array_shift($current_user->roles);
-    $classes[] = 'aquila aquilaFront';
+    $classes[] = ' aquila aquilaFront';
     return $classes;
   } else {
     $classes[] = ' ';
