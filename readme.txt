@@ -3,8 +3,8 @@ Contributors: GuyPrimavera
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YVPWSJB4SPN5N
 Tags: admin theme, material design wordpress, material design admin theme, material design wordpress admin, material wordpress, admin, admin panel, admin theme style plugin, admin-theme, admin theme, aquila, backend theme, clean admin, color scheme, colour scheme, custom admin theme, flat admin theme, free admin theme, modern admin theme, new admin ui, plugin, simple admin theme, white label, white label admin, wordpress, WordPress admin, wordpress admin theme, wp-admin, wp admin page, wp admin theme
 Requires at least: 4.0
-Tested up to: 5.0-beta4
-Stable tag: 2.4.2
+Tested up to: 5.2
+Stable tag: 2.4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -82,6 +82,13 @@ No. It only changes the admin area, the login page and the admin bar for logged-
 7. Front-end showing admin bar icon instead of full admin bar (logged-in).
 
 == Changelog ==
+
+= 2.4.3 - 19/05/2019 =
+* Added option to hide admin bar logo drop-down menu.
+* Fixed issue with Gutenberg blocks being hidden behind admin menu.
+* Fixed issue with Gutenberg notices being partially obstructed behind Gutenberg top bar.
+* Fixed admin bar CSS on front-end.
+* Fixed alignment of WPBakery Page Builder modal windows.
 
 = 2.4.2 - 31/01/2019 =
 * Fixed error with lessc_formatter_compressed class.
@@ -205,6 +212,9 @@ No. It only changes the admin area, the login page and the admin bar for logged-
 * Beta release.
 
 == Upgrade Notice ==
+
+= 2.4.3 =
+* Minor bug fixes.
 
 = 2.4.2 =
 * Bug fixes.

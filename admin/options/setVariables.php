@@ -38,6 +38,11 @@ if ( aquila_isset('aquila_chk_abLinks') ) {
 if ( aquila_isset('aquila_chk_abVisible') ) {
 	$aquilaShowFullAdminbar = true;
 }
+
+if ( aquila_isset('aquila_chk_abLogoMenuHide') ) {
+	$aquilaHideLogoMenu = true;
+}
+
 /*
 if ( aquila_isset('aquila_new_logo') ) {
 	$aquilaCustomLogo = true;
