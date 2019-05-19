@@ -5,7 +5,7 @@
  * Description: The Aquila Admin Theme
  * Author: Guy Primavera
  * Author URI: https://guyprimavera.com/
- * Version: 2.4
+ * Version: 2.4.1
  * Text Domain: aquila-admin-theme
  * Domain Path: /lang/
  * License: GPL2
@@ -13,7 +13,7 @@
  * 2018 Guy Primavera
  */ 
 
-$aquilaVer = "2.4";
+$aquilaVer = "2.4.1";
 
 include ('scripts.php');
 include ('login/aquila-login-screen.php');
