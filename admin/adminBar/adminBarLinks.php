@@ -35,7 +35,9 @@ function aquila_remove_wp_logo_nodes() {
 }
 
 // Add Aquila links
-add_action('admin_bar_menu', 'aquila_wp_logo_links', 100);
+if (!$GLOBALS['aquilaHideLogoMenu']) {
+    add_action('admin_bar_menu', 'aquila_wp_logo_links', 100);
+}
 function aquila_wp_logo_links($admin_bar){
     $admin_bar->add_menu( array(
         'id'    => 'wpLessons',

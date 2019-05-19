@@ -2732,6 +2732,28 @@ body.auto-fold #adminmenu .update-plugins .plugin-count {
 .wp-responsive-open div#wp-responsive-toggle a {
   border-color: transparent;
 }
+@media (min-width: 782px) {
+  body.auto-fold .edit-post-layout__content {
+    margin-left: 60px;
+  }
+}
+@media (min-width: 782px) and (min-width: 960px) {
+  body.auto-fold .edit-post-layout__content {
+    margin-left: 250px;
+  }
+}
+@media (min-width: 782px) {
+  .edit-post-layout__content {
+    margin-left: 250px;
+    top: 120px;
+    min-height: calc(-20%);
+  }
+}
+@media (min-width: 782px) {
+  body.folded .edit-post-layout__content {
+    margin-left: 60px;
+  }
+}
 #adminmenu,
 #adminmenu .wp-submenu,
 #adminmenuback,
@@ -3658,6 +3680,9 @@ body.wp-admin.folded .components-notice-list {
 }
 body.wp-admin.is-fullscreen-mode .components-notice-list {
   left: 0 !important;
+}
+body.aquila #vc_ui-panel-add-element {
+  top: 10vh;
 }
 .media-frame.mode-grid .media-toolbar {
   height: 50px;

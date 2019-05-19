@@ -120,6 +120,13 @@ function aquila_settings_init(  ) {
 		'aquilaGeneralSettings', 
 		'aquila_adminbarSettings_section'
 	);
+	add_settings_field( 
+		'aquila_chk_abLogoMenuHide', 
+		__( '<strong>Hide Adminbar Logo Menu?</strong>', 'aquila-admin-theme' ), 
+		'aquila_chk_abLogoMenuHide_render', 
+		'aquilaGeneralSettings', 
+		'aquila_adminbarSettings_section'
+	);
 
 	// Admin bar
 	add_settings_field( 

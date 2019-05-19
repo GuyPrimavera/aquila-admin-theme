@@ -24,6 +24,9 @@ function aquila_chk_abLinks_render(  ) {
 function aquila_chk_abVisible_render(  ) { 
 	aquila_checkbox ('aquila_settings', 'aquila_chk_abVisible', '');
 }
+function aquila_chk_abLogoMenuHide_render(  ) { 
+	aquila_checkbox ('aquila_settings', 'aquila_chk_abLogoMenuHide', '');
+}
 
 // Login page
 function aquila_chk_loginDisable_render(  ) { 

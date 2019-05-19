@@ -1,6 +1,6 @@
 @import "vars.less";
-@import "/../icons/faVars.less";
-@import "/../icons/variables.less";
+@import "../icons/faVars.less";
+@import "../icons/variables.less";
 @import "mdColours.less";
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 
@@ -279,6 +279,30 @@ input[type=radio]:checked:before {
 .wp-responsive-open div#wp-responsive-toggle a {
 	// ToDo: make inset border
 	border-color: transparent;
+}
+
+// Gutenberg
+@media (min-width: 782px) {
+	body.auto-fold .edit-post-layout__content {
+			margin-left: @sideWidthFolded;
+	}
+}
+@media (min-width: 782px) and (min-width: 960px) {
+	body.auto-fold .edit-post-layout__content {
+			margin-left: @sideWidth;
+	}
+}
+@media (min-width: 782px) {
+	.edit-post-layout__content {
+			margin-left: @sideWidth;
+			top: 120px;
+			min-height: calc(100% - 120px);
+	}
+}
+@media (min-width: 782px) {
+	body.folded .edit-post-layout__content {
+			margin-left: @sideWidthFolded;
+	}
 }
 
 /// Admin Menu
@@ -1203,6 +1227,12 @@ body.wp-admin {
 		left: 0 !important;
 	}
 
+}
+
+// WpBakery Page Builder
+
+body.aquila #vc_ui-panel-add-element {
+	top: 10vh;
 }
 
 
