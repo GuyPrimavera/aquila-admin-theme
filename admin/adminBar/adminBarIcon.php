@@ -3,7 +3,7 @@
 // Add icon in place of admin bar
 function aquila_adminbar_icon() {
 	if ( is_admin_bar_showing() ) {
-		if ($GLOBALS['aquilaShowFullAdminbar']) {
+		if ( isset( $GLOBALS['aquilaShowFullAdminbar'] ) ) {
 			echo '<style>
 				.aquilaFront #wpadminbar {
 					display: block;
@@ -18,7 +18,7 @@ add_action( 'admin_bar_menu', 'aquila_adminbar_icon', 999 );
 // Add body class
 function aquila_adminbar_open_class( $classes ) {
 	if ( is_admin_bar_showing() ) {
-		if ($GLOBALS['aquilaShowFullAdminbar']) {
+		if ( isset( $GLOBALS['aquilaShowFullAdminbar'] ) ) {
 	    $classes[] = 'aquilaOpenBar';
 	  } else {
 	    $classes[] = 'aquilaClosedBar';
