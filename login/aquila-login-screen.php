@@ -2,7 +2,7 @@
 
 if (!$aquilaLoginDisable) {
 	add_filter( 'login_headerurl', 'aquila_admin_login_logo_url' );
-	add_filter( 'login_headertitle', 'aquila_admin_login_logo_title' );
+	add_filter( 'login_headertext', 'aquila_admin_login_logo_title' );
 	add_action( 'login_head', 'aquila_new_logo_login', 90 ); 
 	add_action('login_head', 'colourSchemeCSS');
 	add_action( 'login_enqueue_scripts', 'aquila_global_load_style' );
