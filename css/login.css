@@ -1,5 +1,22 @@
 /* LESS Elements 0.9 */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext');
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fChc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfChc9.ttf) format('truetype');
+}
 .fontAwesome {
   font-family: "fontAwesome" !important;
 }
@@ -186,11 +203,23 @@ body.login #login form {
   display: flex;
   flex-direction: column;
 }
-body.login #login form p {
+body.login #login form p,
+body.login #login form .user-pass-wrap {
   width: 320px;
   max-width: 100%;
-  display: inline-flex;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+body.login #login form .forgetmenot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body.login #login form .forgetmenot label {
+  width: auto;
+  margin: 0;
 }
 body.login #login form input[type=checkbox]:checked:before {
   content: "\f147";
@@ -267,8 +296,7 @@ body.login #login form input[type=checkbox] {
   height: 16px;
   display: inline-block;
   line-height: 1;
-  margin-bottom: 3px;
-  margin-right: 5px;
+  margin: 5px;
 }
 body.login #login form input[type=checkbox]:focus {
   width: 16px;
@@ -277,10 +305,8 @@ body.login #login form label {
   font-size: 14px;
   text-align: center;
   width: 100%;
-  float: left;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  line-height: 2;
+  line-height: 1.4;
+  margin: 10px auto;
 }
 body.login #login form#resetpassform {
   display: flex;

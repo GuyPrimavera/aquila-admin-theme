@@ -1,6 +1,23 @@
 /* LESS Elements 0.9 */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext');
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fChc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfChc9.ttf) format('truetype');
+}
 .fontAwesome {
   font-family: "fontAwesome" !important;
 }
@@ -2690,10 +2707,7 @@ input[type=radio]:checked:before {
 .folded #adminmenu .wp-has-current-submenu .wp-submenu a,
 #adminmenu a.wp-has-current-submenu:focus + .wp-submenu a,
 #adminmenu .wp-has-current-submenu.opensub .wp-submenu a {
-  letter-spacing: 1px;
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: 400!important;
+  font-size: 14px;
 }
 /* Admin Menu: bubble */
 #adminmenu .awaiting-mod,
@@ -2746,7 +2760,7 @@ body.auto-fold #adminmenu .update-plugins .plugin-count {
   .edit-post-layout__content {
     margin-left: 250px;
     top: 120px;
-    min-height: calc(-20%);
+    min-height: calc(100% - 120px);
   }
 }
 @media (min-width: 782px) {
@@ -2856,10 +2870,8 @@ ul#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after {
 }
 ul#adminmenu div.wp-menu-name {
   padding: 12px 10px 12px 0px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  line-height: 1.5;
-  font-size: 13px;
+  line-height: 1.4;
+  font-size: 16px;
 }
 ul#adminmenu div.wp-menu-image {
   width: 60px;
@@ -3278,7 +3290,7 @@ body.wp-admin .imgedit-crop-wrap img {
 }
 #adminmenu #toplevel_page_site-migration-export .wp-menu-image:before {
   content: "\f0e2";
-  line-height: 1.6!important;
+  line-height: 1.6 !important;
 }
 #adminmenu #toplevel_page_edit-post_type-acf .wp-menu-image:before {
   content: "\f036";

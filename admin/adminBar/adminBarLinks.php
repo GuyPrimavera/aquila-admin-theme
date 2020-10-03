@@ -1,7 +1,7 @@
 <?php if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
 
 // Admin Bar links
-if ( ! isset( $GLOBALS['aquilaShowAdminbarLinks'] ) ) {
+if ( ! isset( $GLOBALS['aquilaShowAdminbarLinks'] ) || !) {
     add_action( 'admin_bar_menu', 'aquila_admin_bar_cleanup', 200 );
     function aquila_admin_bar_cleanup()
     {
@@ -35,7 +35,7 @@ function aquila_remove_wp_logo_nodes() {
 }
 
 // Add Aquila links
-if ( ! isset( $GLOBALS['aquilaHideLogoMenu'] ) ) {
+if ( !isset($GLOBALS['aquilaHideLogoMenu']) || !$GLOBALS['aquilaHideLogoMenu']) {
     add_action('admin_bar_menu', 'aquila_wp_logo_links', 100);
 }
 function aquila_wp_logo_links($admin_bar){

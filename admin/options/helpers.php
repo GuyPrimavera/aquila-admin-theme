@@ -20,7 +20,7 @@ function aquila_img_upload( $optionGroup, $optionName ) {
 	$aquilaColourSettings = get_option( 'aquilaColourSettings' );
 	//$aquilaPrimary = $aquilaColourSettings['aquila_primary_colour'];
 	//$aquilaSecondary = $aquilaColourSettings['aquila_secondary_colour'];
-	$aquilaMenuBack = $aquilaColourSettings['aquila_menu_back_colour'];
+	$aquilaMenuBack = $aquilaColourSettings['aquila_menu_back_colour'] ?? '#616161';
 	if ( isset ( $options[$optionName] ) ) { 
 		$imgSrc = $options[$optionName]; 
 	} else { 

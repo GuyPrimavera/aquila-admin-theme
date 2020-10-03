@@ -1,5 +1,6 @@
 @import "vars.less";
-@import "/../icons/variables.less";
+// @import "../../icons/variables.less";
+@import "../icons/variables.less";
 
 /// Login
 
@@ -44,11 +45,23 @@ body.login {
 			.box-shadow(none);
 			display: flex;
 			flex-direction: column;
-			p {
+			p,
+			.user-pass-wrap {
 				width: 320px;
 				max-width: 100%;
-				display: inline-flex;
-				margin:  0 auto;
+				margin: 0 auto;
+				display: flex;
+				flex-direction: column;
+			}
+			.forgetmenot {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				label {
+					width: auto;
+					margin: 0;
+				}
 			}
 			input[type=checkbox]:checked:before {
 				content: "\f147";
@@ -98,20 +111,17 @@ body.login {
 				height: 16px;
 				display: inline-block;
 				line-height: 1;
-				margin-bottom: 3px;
-				margin-right: 5px;
+				margin: 5px;
 				&:focus{
 					width: 16px;
 				}
 			}
 			label {
-		    font-size: 14px;
-		    .tac;
-		    width: 100%;
-		    float: left;
-		    text-transform: uppercase;
-		    letter-spacing: 1px;
-		    line-height: 2;
+				font-size: 14px;
+				.tac;
+				width: 100%;
+				line-height: 1.4;
+				margin: 10px auto;
 			}
 			&#resetpassform {
 				display: flex;
