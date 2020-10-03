@@ -13,11 +13,11 @@ include('isDark.php');
 
 /// Define custom colours
 $aquilaColourSettings = get_option( 'aquilaColourSettings' );
-$aquilaPrimary = $aquilaColourSettings['aquila_primary_colour'];
-$aquilaSecondary = $aquilaColourSettings['aquila_secondary_colour'];
-$aquilaLinkText = $aquilaColourSettings['aquila_link_text_colour'];
-$aquilaMenuBack = $aquilaColourSettings['aquila_menu_back_colour'];
-$aquilaMenuText = $aquilaColourSettings['aquila_menu_text_colour'];
+$aquilaPrimary = $aquilaColourSettings['aquila_primary_colour'] ?? '#ffee58';
+$aquilaSecondary = $aquilaColourSettings['aquila_secondary_colour'] ?? '#0091ea';
+$aquilaLinkText = $aquilaColourSettings['aquila_link_text_colour'] ?? '#212121';
+$aquilaMenuBack = $aquilaColourSettings['aquila_menu_back_colour'] ?? '#616161';
+$aquilaMenuText = $aquilaColourSettings['aquila_menu_text_colour'] ?? '#ffffff';
 
 // Check darkness of custom colours
 if ( $aquilaPrimary ) {

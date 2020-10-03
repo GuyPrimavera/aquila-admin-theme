@@ -7,8 +7,8 @@ function clean_output_buffer() {
 
 // Custom Logo
 $aquilaLogoSettings = get_option( 'aquilaLogoSettings' );
-$aquilaNewLogo = $aquilaLogoSettings['aquila_new_logo'];
-$aquilaNewLogoSqr = $aquilaLogoSettings['aquila_new_logo_sqr']; 
+$aquilaNewLogo = $aquilaLogoSettings['aquila_new_logo'] ?? 'none';
+$aquilaNewLogoSqr = $aquilaLogoSettings['aquila_new_logo_sqr'] ?? 'none'; 
 
 $GLOBALS['aquilaNewLogo'] = $aquilaNewLogo;
 $GLOBALS['aquilaNewLogoSqr'] = $aquilaNewLogoSqr;

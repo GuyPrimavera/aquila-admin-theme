@@ -35,7 +35,7 @@ function aquila_remove_wp_logo_nodes() {
 }
 
 // Add Aquila links
-if (!$GLOBALS['aquilaHideLogoMenu']) {
+if (isset($GLOBALS['aquilaHideLogoMenu']) && !$GLOBALS['aquilaHideLogoMenu']) {
     add_action('admin_bar_menu', 'aquila_wp_logo_links', 100);
 }
 function aquila_wp_logo_links($admin_bar){
