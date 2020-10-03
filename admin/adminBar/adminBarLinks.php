@@ -1,11 +1,11 @@
 <?php if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
 
 // Admin Bar links
-if (!$GLOBALS['aquilaShowAdminbarLinks']) {
+if ( ! isset( $GLOBALS['aquilaShowAdminbarLinks'] ) || !$GLOBALS['aquilaShowAdminbarLinks'] ) {
     add_action( 'admin_bar_menu', 'aquila_admin_bar_cleanup', 200 );
-    function aquila_admin_bar_cleanup() 
+    function aquila_admin_bar_cleanup()
     {
-        global $wp_admin_bar;   
+        global $wp_admin_bar;
         if ( !is_object( $wp_admin_bar ) ) {
             return;
         }
@@ -18,7 +18,7 @@ if (!$GLOBALS['aquilaShowAdminbarLinks']) {
             if( (!$node->parent || 'top-secondary' == $node->parent) && (!in_array($node->id, $nodesKeep)) ) {
                 $wp_admin_bar->remove_menu( $node->id );
                 //echo $node->id . '<br/>';
-            }           
+            }
         }
     }
 }
@@ -26,7 +26,7 @@ if (!$GLOBALS['aquilaShowAdminbarLinks']) {
 // Remove nodes
 add_action( 'admin_bar_menu', 'aquila_remove_wp_logo_nodes', 999 );
 function aquila_remove_wp_logo_nodes() {
-    global $wp_admin_bar;   
+    global $wp_admin_bar;
     $wp_admin_bar->remove_node( 'about' );
     $wp_admin_bar->remove_node( 'wporg' );
     $wp_admin_bar->remove_node( 'documentation' );
@@ -45,9 +45,9 @@ function aquila_wp_logo_links($admin_bar){
         'title' => __( 'WordPress Lessons', 'aquila-admin-theme' ),
         'href'  => 'https://codex.wordpress.org/WordPress_Lessons',
         'meta'  => array(
-            'title' => __(''),          
-            'class' => __(''), 
-            'target' => __('_blank'),                        
+            'title' => __(''),
+            'class' => __(''),
+            'target' => __('_blank'),
         ),
     ));
     $admin_bar->add_menu( array(
@@ -56,9 +56,9 @@ function aquila_wp_logo_links($admin_bar){
         'title' => __( 'WordPress User Guide', 'aquila-admin-theme' ),
         'href'  => 'http://easywpguide.com/wordpress-manual/',
         'meta'  => array(
-            'title' => __(''),          
-            'class' => __(''),            
-            'target' => __('_blank'),                        
+            'title' => __(''),
+            'class' => __(''),
+            'target' => __('_blank'),
         ),
     ));
     $admin_bar->add_menu( array(
@@ -67,9 +67,9 @@ function aquila_wp_logo_links($admin_bar){
         'title' => __( 'Aquila Support', 'aquila-admin-theme' ),
         'href'  => 'https://designbymito.com/support/',
         'meta'  => array(
-            'title' => __(''),          
-            'class' => __(''),            
-            'target' => __('_blank'),                        
+            'title' => __(''),
+            'class' => __(''),
+            'target' => __('_blank'),
         ),
     ));
 }
