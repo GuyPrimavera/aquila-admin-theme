@@ -1,7 +1,7 @@
 <?php if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
 
 // Admin Bar links
-if ( ! isset( $GLOBALS['aquilaShowAdminbarLinks'] ) || !) {
+if ( ! isset( $GLOBALS['aquilaShowAdminbarLinks'] ) || !$GLOBALS['aquilaShowAdminbarLinks']) {
     add_action( 'admin_bar_menu', 'aquila_admin_bar_cleanup', 200 );
     function aquila_admin_bar_cleanup()
     {
