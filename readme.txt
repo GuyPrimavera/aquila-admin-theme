@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: admin theme, material design wordpress, material design admin theme, material design wordpress admin, material wordpress, admin, admin panel, admin theme style plugin, admin-theme, admin theme, aquila, backend theme, clean admin, color scheme, colour scheme, custom admin theme, flat admin theme, free admin theme, modern admin theme, new admin ui, plugin, simple admin theme, white label, white label admin, wordpress, WordPress admin, wordpress admin theme, wp-admin, wp admin page, wp admin theme
 Requires at least: 4.0
 Tested up to: 5.5.1
-Stable tag: 3.0.1
+Stable tag: 3.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -83,7 +83,7 @@ No. It only changes the admin area, the login page and the admin bar for logged-
 
 == Changelog ==
 
-= 3.0.1 - 03/10/2020 =
+= 3.0.2 - 03/10/2020 =
 * Login styling updated.
 * Code updated for PHP 7.4 compatibility.
 
@@ -217,7 +217,7 @@ No. It only changes the admin area, the login page and the admin bar for logged-
 
 == Upgrade Notice ==
 
-= 3.0.1 =
+= 3.0.2 =
 * Login styling updated.
 * Code updated to be compatible with PHP 7.4.
 
