@@ -182,6 +182,11 @@ body.admin-bar #wpadminbar .noticon {
   display: none;
   padding-left: 0px;
 }
+@media screen and (max-width: 782px) {
+  .aquilaFront #wpadminbar {
+    padding-left: 50px;
+  }
+}
 .aquilaShowBarDefault.aquilaFront #wpadminbar {
   padding-left: 0px;
 }
@@ -323,8 +328,15 @@ body.admin-bar #wpadminbar .noticon {
     height: 46px;
   }
 }
-#wpadminbar #wp-admin-bar-site-name > .ab-item:before {
-  display: none!important;
+@media screen and (max-width: 782px) {
+  #wpadminbar #wp-admin-bar-site-name > .ab-item {
+    font-size: 0;
+  }
+}
+@media screen and (min-width: 783px) {
+  #wpadminbar #wp-admin-bar-site-name > .ab-item:before {
+    display: none!important;
+  }
 }
 #wpadminbar li#wp-admin-bar-wp-logo {
   margin-right: 20px!important;

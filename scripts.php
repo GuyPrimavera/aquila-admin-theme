@@ -16,7 +16,7 @@ function aquila_global_load_style() {
 }
 add_action('admin_enqueue_scripts', 'aquila_global_load_style');
 add_action('wp_head', 'aquila_global_load_style', 99);
-if (!$GLOBALS['aquilaLoginDisable']) {
+if (empty($GLOBALS['aquilaLoginDisable']) || !$GLOBALS['aquilaLoginDisable']) {
 	add_action('login_enqueue_scripts', 'aquila_global_load_style');
 }
 
@@ -45,7 +45,7 @@ function aquila_login_load_style() {
 	wp_enqueue_style('aquila-login-style');
 }
 
-if (!$GLOBALS['aquilaLoginDisable']) {
+if (empty($GLOBALS['aquilaLoginDisable']) || !$GLOBALS['aquilaLoginDisable']) {
 	add_action('login_enqueue_scripts', 'aquila_login_load_style');
 }
 
