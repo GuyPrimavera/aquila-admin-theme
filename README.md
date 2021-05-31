@@ -6,7 +6,7 @@ Material Design inspired admin theme with a customisable color scheme. Add your 
 
 ## Description
 
-A Material Design inspired customisable color scheme and re-design for WordPress Admin (v4.0 onwards). Used by [Design by Mito](https://designbymito.com/) for client websites, Aquila also cleans up the admin area from unnecessary or potentially confusing items for the end-user.
+A Material Design inspired customisable color scheme and re-design for WordPress Admin (v4.0 onwards). Useful for client websites, Aquila also cleans up the admin area from unnecessary or potentially confusing items for the end-user.
 
 Many updates have been made to the admin area, including:
 

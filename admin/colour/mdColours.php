@@ -1,10 +1,9 @@
-<?php if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
+<?php if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) { exit; }
 
 /// Material Design Colours - PHP variables
 // Guy Primavera
 
 // Red
-
 $mdRed50 						= "#FFEBEE";
 $mdRed100 					= "#FFCDD2";
 $mdRed200 					= "#EF9A9A";
@@ -21,7 +20,6 @@ $mdRedA400 					= "#FF1744";
 $mdRedA700 					= "#D50000";
 
 //  Pink 
-
 $mdPink50 					= "#FCE4EC";
 $mdPink100 					= "#F8BBD0";
 $mdPink200 					= "#F48FB1";
@@ -38,7 +36,6 @@ $mdPinkA400 				= "#F50057";
 $mdPinkA700 				= "#C51162";
 
 //  Purple 
-
 $mdPurple50 				= "#F3E5F5";
 $mdPurple100 				= "#E1BEE7";
 $mdPurple200 				= "#CE93D8";
@@ -55,7 +52,6 @@ $mdPurpleA400 			= "#D500F9";
 $mdPurpleA700 			= "#AA00FF";
 
 //  Deep Purple 
-
 $mdDeepPurple50 		= "#EDE7F6";
 $mdDeepPurple100 		= "#D1C4E9";
 $mdDeepPurple200 		= "#B39DDB";
@@ -72,7 +68,6 @@ $mdDeepPurpleA400 	= "#651FFF";
 $mdDeepPurpleA700 	= "#6200EA";
 
 //  Indigo 
-
 $mdIndigo50 				= "#E8EAF6";
 $mdIndigo100 				= "#C5CAE9";
 $mdIndigo200 				= "#9FA8DA";
@@ -89,7 +84,6 @@ $mdIndigoA400 			= "#3D5AFE";
 $mdIndigoA700 			= "#304FFE";
 
 // Blue
-
 $mdBlue50 					= "#E3F2FD";
 $mdBlue100 					= "#BBDEFB";
 $mdBlue200 					= "#90CAF9";
@@ -106,7 +100,6 @@ $mdBlueA400 				= "#2979FF";
 $mdBlueA700 				= "#2962FF";
 
 //  Light Blue
-
 $mdLightBlue50 			= "#E1F5FE";
 $mdLightBlue100 		= "#B3E5FC";
 $mdLightBlue200 		= "#81D4fA";
@@ -123,7 +116,6 @@ $mdLightBlueA400 		= "#00B0FF";
 $mdLightBlueA700 		= "#0091EA";
 
 //  Cyan 
-
 $mdCyan50 					= "#E0F7FA";
 $mdCyan100 					= "#B2EBF2";
 $mdCyan200 					= "#80DEEA";
@@ -140,7 +132,6 @@ $mdCyanA400 				= "#00E5FF";
 $mdCyanA700 				= "#00B8D4";
 
 //  Teal 
-
 $mdTeal50 					= "#E0F2F1";
 $mdTeal100 					= "#B2DFDB";
 $mdTeal200 					= "#80CBC4";
@@ -157,7 +148,6 @@ $mdTealA400 				= "#1DE9B6";
 $mdTealA700 				= "#00BFA5";
 
 //  Green 
-
 $mdGreen50 					= "#E8F5E9";
 $mdGreen100 				= "#C8E6C9";
 $mdGreen200 				= "#A5D6A7";
@@ -174,7 +164,6 @@ $mdGreenA400 				= "#00E676";
 $mdGreenA700 				= "#00C853";
 
 // Light Green
-
 $mdLightGreen50 		= "#F1F8E9";
 $mdLightGreen100 		= "#DCEDC8";
 $mdLightGreen200 		= "#C5E1A5";
@@ -191,7 +180,6 @@ $mdLightGreenA400 	= "#76FF03";
 $mdLightGreenA700 	= "#64DD17";
 
 //  Lime
-
 $mdLime50 					= "#F9FBE7";
 $mdLime100 					= "#F0F4C3";
 $mdLime200 					= "#E6EE9C";
@@ -208,7 +196,6 @@ $mdLimeA400 				= "#C6FF00";
 $mdLimeA700 				= "#AEEA00";
 
 // Yellow 
-
 $mdYellow50 				= "#FFFDE7";
 $mdYellow100 				= "#FFF9C4";
 $mdYellow200 				= "#FFF590";
@@ -225,7 +212,6 @@ $mdYellowA400 			= "#FFEA00";
 $mdYellowA700 			= "#FFD600";
 
 // Amber
-
 $mdAmber50 					= "#FFF8E1";
 $mdAmber100 				= "#FFECB3";
 $mdAmber200 				= "#FFE082";
@@ -242,7 +228,6 @@ $mdAmberA400 				= "#FFC400";
 $mdAmberA700 				= "#FFAB00";
 
 // Orange
-
 $mdOrange50 				= "#FFF3E0";
 $mdOrange100 				= "#FFE0B2";
 $mdOrange200 				= "#FFCC80";
@@ -259,7 +244,6 @@ $mdOrangeA400 			= "#FF9100";
 $mdOrangeA700 			= "#FF6D00";
 
 // Deep Orange
-
 $mdDeepOrange50 		= "#FBE9A7";
 $mdDeepOrange100 		= "#FFCCBC";
 $mdDeepOrange200 		= "#FFAB91";
@@ -276,7 +260,6 @@ $mdDeepOrangeA400 	= "#FF3D00";
 $mdDeepOrangeA700 	= "#DD2600";
 
 // Brown 
-
 $mdBrown50 					= "#EFEBE9";
 $mdBrown100 				= "#D7CCC8";
 $mdBrown200 				= "#BCAAA4";
@@ -289,7 +272,6 @@ $mdBrown800 				= "#4E342E";
 $mdBrown900 				= "#3E2723";
 
 // Grey
-
 $mdGrey50 					= "#FAFAFA";
 $mdGrey100 					= "#F5F5F5";
 $mdGrey200 					= "#EEEEEE";
@@ -304,7 +286,6 @@ $mdBlack 						= "#000000";
 $mdWhite		 				= "#ffffff";
 
 // Blue Grey
-
 $mdBlueGrey50 			= "#ECEFF1";
 $mdBlueGrey100 			= "#CFD8DC";
 $mdBlueGrey200 			= "#B0BBC5";
@@ -315,5 +296,3 @@ $mdBlueGrey600 			= "#546E7A";
 $mdBlueGrey700 			= "#455A64";
 $mdBlueGrey800 			= "#37474F";
 $mdBlueGrey900 			= "#263238";
-
-?>

@@ -3,27 +3,19 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fChc9.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmSU5fChc9.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxP.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu7GxP.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfChc9.ttf) format('truetype');
-}
-.fontAwesome {
-  font-family: "fontAwesome" !important;
-}
-.menuFA {
-  font-family: "fontAwesome" !important;
-  font-size: 18px;
-  line-height: 1.6;
+  src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlfChc9.ttf) format('truetype');
 }
 .sans {
   font-family: 'Roboto', sans-serif !important;
@@ -39,6 +31,25 @@
 .icoAquila {
   font-family: 'Aquila' !important;
   content: "\a002";
+}
+.icoDash {
+  font-family: dashicons;
+  display: inline-block;
+  line-height: 1;
+  font-weight: 400;
+  font-style: normal;
+  speak: never;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  vertical-align: top;
+  text-align: center;
+  transition: color 0.1s ease-in;
 }
 .tac {
   text-align: center;
@@ -202,6 +213,7 @@ body.login #login form {
   box-shadow: none;
   display: flex;
   flex-direction: column;
+  border: none;
 }
 body.login #login form p,
 body.login #login form .user-pass-wrap {
@@ -220,9 +232,6 @@ body.login #login form .forgetmenot {
 body.login #login form .forgetmenot label {
   width: auto;
   margin: 0;
-}
-body.login #login form input[type=checkbox]:checked:before {
-  content: "\f147";
 }
 body.login #login form #wp-submit {
   border: none;

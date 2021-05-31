@@ -1,37 +1,55 @@
 // Variables and Mixins - Guy Primavera
 @import "elements.less";
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext');
+@import "mdColours.less";
+@import "../icons/aquila/variables.less";
+
 
 @desktop:   ~"only screen and (min-width: 1025px)";
 @laptop:   ~"only screen and (max-width: 1024px)";
 @tablet:   ~"only screen and (max-width: 960px)";
 @mobile:   ~"only screen and (max-width: 782px)";
+@mobileSmall:   ~"only screen and (max-width: 600px)";
 
-// Variables (actually constants)
-
-@sideWidth: 250px;
-@sideWidthFolded: 60px;
-@barHeight: 65px;
+// Constants
+@sideWidth: 210px;
+@sideWidthFolded: 50px;
+@barHeight: 50px;
 @barHeightMobile: 46px;
+@sideMenuHeight: 36px;
+@submenuFontSize: 14px;
 
 // Mixins
-
-.fontAwesome { font-family: "fontAwesome"!important; }
-.menuFA { font-family: "fontAwesome" !important;font-size: 18px;line-height: 1.6; }
-//.serif { font-family: 'Raleway', serif; }
 .sans { font-family: 'Roboto', sans-serif!important; }
 .heading { font-family: 'Roboto', sans-serif; }
 .bgCov { background-size: cover; background-position: center center; background-repeat: repeat; }
 .icoAquila { font-family: 'Aquila' !important; content: "\a002"; }
+.icoDash {
+	font-family: dashicons;
+	display: inline-block;
+	line-height: 1;
+	font-weight: 400;
+	font-style: normal;
+	speak: never;
+	text-decoration: inherit;
+	text-transform: none;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	vertical-align: top;
+	text-align: center;
+	transition: color .1s ease-in;
+}
 
 // Text
-
 .tac {
 	text-align: center;
 }
 
 // Positioning
-
 .va {
   position: relative;
   top: 50%;
@@ -43,6 +61,7 @@
 .abs {
 	position: absolute;
 }
+
 .absFull {
 	position: absolute;
 	top: 0;
@@ -50,92 +69,114 @@
 	height: 100%;
 	width: 100%;
 }
+
 .fix {
 	position: fixed;
 }
+
 .rel {
 	position: relative;
 }
+
 .dN {
 	display: none;
 }
+
 .dNI {
 	display: none!important;
 }
+
 .fl {
 	float: left;
 }
+
 .fr {
 	float: right;
 }
+
 .z0 {
 	z-index: 0;
 }
+
 .z1 {
 	z-index: 1;
 }
+
 .z10 {
 	z-index: 10;
 }
+
 .z99 {
 	z-index: 99;
 }
+
 .z999 {
 	z-index: 999;
 }
 
 /* Widths & Heights */
-
 .w0 {
 	width: 0%;
 }
+
 .w25 {
 	width: 25%;
 }
+
 .w50 {
 	width: 50%;
 }
+
 .w75 {
 	width: 75%;
 }
+
 .w100 {
 	width: 100%;
 }
+
 .mw100 {
 	max-width: 100%;
 }
+
 .h0 {
 	height: 0%;
 }
+
 .h25 {
 	height: 25%;
 }
+
 .h50 {
 	height: 50%;
 }
+
 .h75 {
 	height: 75%;
 }
+
 .h100 {
 	height: 100%;
 }
+
 .mh100 {
 	max-height: 100%;
 }
 
 /* Other */
-
 .borderBox {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
 .trans {
 	transition: 0.2s all linear; 
 	-webkit-transition: 0.2s all linear; 
 	-moz-transition: 0.2s all linear;
 	-o-transition: 0.2s all linear;
 }
+
 .transNone {
 	transition: none!important; 
 	-webkit-transition: none!important; 
@@ -144,21 +185,21 @@
 }
 
 // From Chris Coyier
-
 .border-radius (@radius: 5px) {
 	-webkit-border-radius: @radius;
 	-moz-border-radius:    @radius;
 	border-radius:         @radius;
-
 	-moz-background-clip:    padding;
 	-webkit-background-clip: padding-box;
 	background-clip:         padding-box;
 }
+
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;
 	-moz-opacity: 		@opacity;
 	opacity: 		@opacity;
 }
+
 .gradient (@startColor: #eee, @endColor: white) {
 	background-color: @startColor;
 	background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
@@ -167,6 +208,7 @@
 	background: -ms-linear-gradient(top, @startColor, @endColor);
 	background: -o-linear-gradient(top, @startColor, @endColor);
 }
+
 .horizontal-gradient (@startColor: #eee, @endColor: white) {
  	background-color: @startColor;
 	background-image: -webkit-gradient(linear, left top, right top, from(@startColor), to(@endColor));
@@ -175,24 +217,28 @@
 	background-image: -ms-linear-gradient(left, @startColor, @endColor);
 	background-image: -o-linear-gradient(left, @startColor, @endColor);
 }
+
 .transition (@transition) {
 	-webkit-transition: @transition;  
 	-moz-transition:    @transition;
 	-ms-transition:     @transition; 
 	-o-transition:      @transition;  
 }
+
 .transform(@string){
 	-webkit-transform: @string;
 	-moz-transform: 	 @string;
 	-ms-transform: 		 @string;
 	-o-transform: 		 @string;
 }
+
 .scale (@factor) {
 	-webkit-transform: scale(@factor);
 	-moz-transform: 	 scale(@factor);
 	-ms-transform: 		 scale(@factor);
 	-o-transform: 		 scale(@factor);
 }
+
 .rotate (@deg) {
 	-webkit-transform: rotate(@deg);
 	-moz-transform: 	 rotate(@deg);

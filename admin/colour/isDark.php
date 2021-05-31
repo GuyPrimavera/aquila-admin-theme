@@ -1,14 +1,12 @@
-<?php if ( __FILE__ == $_SERVER['SCRIPT_FILENAME'] ) { exit; }
+<?php if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) { exit; }
 
 function isDark($hexCode, $darknessVar) {
   // $darknessVar must be a number between 0 and 100
-  // $lightnessVar = 180;
-
-  if($hexCode[0] == '#')
+  if ($hexCode[0] == '#') {
     $hexCode = substr($hexCode, 1);
-
-  if (strlen($hexCode) == 3)
-  {
+  }
+  
+  if (strlen($hexCode) == 3) {
     $hexCode = $hexCode[0] . $hexCode[0] . $hexCode[1] . $hexCode[1] . $hexCode[2] . $hexCode[2];
   }
 
@@ -19,7 +17,6 @@ function isDark($hexCode, $darknessVar) {
   $rgbColour = $b + ($g << 0x8) + ($r << 0x10);
 
   // rgb to hsl
-
   $r = 0xFF & ($rgbColour >> 0x10);
   $g = 0xFF & ($rgbColour >> 0x8);
   $b = 0xFF & $rgbColour;
@@ -33,27 +30,25 @@ function isDark($hexCode, $darknessVar) {
 
   $l = ($maxC + $minC) / 2.0;
 
-  if($maxC == $minC)
-  {
+  if ($maxC == $minC) {
     $s = 0;
     $h = 0;
-  }
-  else
-  {
-    if($l < .5)
-    {
+  } else {
+    if ($l < .5) {
       $s = ($maxC - $minC) / ($maxC + $minC);
-    }
-    else
-    {
+    } else {
       $s = ($maxC - $minC) / (2.0 - $maxC - $minC);
     }
-    if($r == $maxC)
+
+    if ($r == $maxC) {
       $h = ($g - $b) / ($maxC - $minC);
-    if($g == $maxC)
+    }
+    if ($g == $maxC) {
       $h = 2.0 + ($b - $r) / ($maxC - $minC);
-    if($b == $maxC)
+    }
+    if ($b == $maxC) {
       $h = 4.0 + ($r - $g) / ($maxC - $minC);
+    }
 
     $h = $h / 6.0; 
   }
@@ -62,18 +57,7 @@ function isDark($hexCode, $darknessVar) {
   $s = (int)round(255.0 * $s);
   $l = (int)round(255.0 * $l);
 
-  $darkness = 100 - ( ( $l / 255 ) * 100 );
+  $darkness = 100 - (($l / 255 ) * 100);
 
-  //return (object) Array('hue' => $h, 'saturation' => $s, 'lightness' => $l);
-
-  //return $l;
-
-  if ($darkness > $darknessVar) {
-    return true;
-  } else {
-    return false;
-  }
-
+  return $darkness > $darknessVar;
 }
-
-?>

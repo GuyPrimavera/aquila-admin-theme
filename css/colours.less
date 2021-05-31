@@ -1,12 +1,10 @@
 @import "mdColours.less";
 
 // Colour Scheme
-
 @primary: @md_yellow_400;
 @secondary: @md_light_blue_A700;
 
 // Colour constants
-
 @b20: rgba(0, 0, 0, 0.2);
 @b40: rgba(0, 0, 0, 0.4);
 @b60: rgba(0, 0, 0, 0.6);
@@ -17,8 +15,7 @@
 @w60: rgba(255, 255, 255, 0.6);
 @w80: rgba(255, 255, 255, 0.8);
 
-/* colors.scss & _variables.scss */
-
+// colors.scss & _variables.scss
 @base: @md_grey_100;
 @baseD: @md_grey_700;
 @box: @md_grey_300;
@@ -38,9 +35,7 @@
 @button-color: @secondary;
 @form-checked: @secondary;
 
-
 // admin menu & admin-bar
-
 @menu-text: @textL;
 @menu-icon: @primary;
 @menu-background: @menuBG;
@@ -75,8 +70,7 @@
 @menu-customizer-text: mix( @base, @text, 40% );
 
 
-/* _mixins.scss */
-
+// _mixins.scss
 .button( @button-color, @text: #fff ) {
 	background: @button-color;
 	border-color: darken( @button-color, 10% ) darken( @button-color, 15% ) darken( @button-color, 15% );
@@ -122,7 +116,4 @@
 		 	box-shadow: inset 0 3px 0 darken( @button-color, 15% ) !important;
 		}
 	}
-
 }
-
-
