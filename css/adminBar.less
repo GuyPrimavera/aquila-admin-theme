@@ -33,6 +33,10 @@ body.admin-bar {
 		display: none;
 		padding-left: 0px;
 
+		@media screen and (max-width: 782px) {
+			padding-left: 50px;
+		}
+
 		.aquilaShowBarDefault& {
 			padding-left: 0px;
 		}
@@ -192,8 +196,15 @@ body.admin-bar {
 
 	#wp-admin-bar-site-name>.ab-item {
 
-		&:before {
-			.dNI;
+		@media screen and (max-width: 782px) {
+			font-size: 0;
+		}
+
+		@media screen and (min-width: 783px) {
+
+			&:before {
+				.dNI;
+			}
 		}
 	}
 

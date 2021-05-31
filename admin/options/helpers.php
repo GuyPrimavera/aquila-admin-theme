@@ -16,18 +16,19 @@ function aquila_checkbox($optionGroup, $optionName, $helpText) {
 function aquila_img_upload($optionGroup, $optionName) {
 	$options = get_option($optionGroup);
 	$aquilaColourSettings = get_option('aquilaColourSettings');
-	//$aquilaPrimary = $aquilaColourSettings['aquila_primary_colour'];
-	//$aquilaSecondary = $aquilaColourSettings['aquila_secondary_colour'];
 	$aquilaMenuBack = $aquilaColourSettings['aquila_menu_back_colour'] ?? '#212121';
 	if (isset($options[$optionName])) { 
 		$imgSrc = $options[$optionName]; 
 	} else { 
-		$imgSrc = 'none'; 
+		$imgSrc = null; 
 	};
 	echo '<input class="aquilaNewLogoUrl" type="text" name="'. $optionGroup .'['. $optionName .']" value="'. $imgSrc .'" style="margin-bottom:10px; clear:right; display: none;">
-	<a href="#" class="button aquilaNewLogoUpload">'. __( 'Upload logo', 'aquila-admin-theme' ) .'</a>
-	<a href="#" class="button aquilaNewLogoClear">'. __( 'Remove logo', 'aquila-admin-theme' ) .'</a>
-	<img style="background-color: '. $aquilaMenuBack .';" class="aquilaOptionsLogo '. $optionName .'" src="'. $imgSrc .'" />';
+	<a href="#" class="button aquilaNewLogoUpload">'. __( 'Upload logo', 'aquila-admin-theme' ) .'</a>';
+
+	if (!!$options && !!$imgSrc) {
+		echo '<a href="#" class="button aquilaNewLogoClear">'. __( 'Remove logo', 'aquila-admin-theme' ) .'</a>';
+	}
+	echo '<img style="background-color: '. $aquilaMenuBack .';" class="aquilaOptionsLogo '. $optionName .'" src="'. $imgSrc .'" />';
 	echo wp_get_attachment_url(get_option('media_selector_attachment_id'));
 }
 
