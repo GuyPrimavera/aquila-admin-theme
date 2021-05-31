@@ -1,15 +1,15 @@
 @import "vars.less";
-// @import "../../icons/variables.less";
-@import "../icons/variables.less";
+// @import "../icons/variables.less";
 
-/// Login
-
+// Login
 body.login {
 	.sans;
+
 	#login {
 		width: 100%;
 		padding: 0;
 		.va;
+
 		&:before {
 			.icoAquila;
 			font-size: 150px;
@@ -20,6 +20,7 @@ body.login {
 			float: left;
 			padding-top: 10px;
 		}
+
 		#login_error, .message {
 		    border: none;
 		    padding: 0;
@@ -28,23 +29,30 @@ body.login {
 		    .tac;
 		    box-shadow: none;
 		}
+
 		h1 {
+
 			a {
 				.dNI;
 			}
 		}
+
 		a {
 			opacity: 0.8;
 			.trans;
 			text-decoration: none!important;
+
 			&:hover, &:active, &:focus {
 				opacity: 1;
 			}
 		}
+
 		form {
 			.box-shadow(none);
 			display: flex;
 			flex-direction: column;
+			border: none;
+
 			p,
 			.user-pass-wrap {
 				width: 320px;
@@ -53,19 +61,19 @@ body.login {
 				display: flex;
 				flex-direction: column;
 			}
+
 			.forgetmenot {
 				display: flex;
 				flex-direction: row;
 				justify-content: center;
 				align-items: center;
+
 				label {
 					width: auto;
 					margin: 0;
 				}
 			}
-			input[type=checkbox]:checked:before {
-				content: "\f147";
-			}
+
 			#wp-submit {
 				border: none;
 				.box-shadow(none)!important;
@@ -80,9 +88,8 @@ body.login {
 		    font-weight: 700;
 		    letter-spacing: 1px;
 		    font-size: 14px;
-				&:hover {
-				}
 			}
+
 			.input, input[type=checkbox], input[type=text] {
 				display: block;
 				appearance: none;
@@ -97,25 +104,28 @@ body.login {
 				font-size: 18px;
 				.trans;
 				font-weight: 400;
-				&:hover{
-				}
+
 				&:focus{
 					width: 100%;
 				}
+
 				&#aiowps-captcha-answer {
 					width: auto;
 				}
 			}
+
 			input[type=checkbox] {
 				width: 16px;
 				height: 16px;
 				display: inline-block;
 				line-height: 1;
 				margin: 5px;
+
 				&:focus{
 					width: 16px;
 				}
 			}
+
 			label {
 				font-size: 14px;
 				.tac;
@@ -123,16 +133,20 @@ body.login {
 				line-height: 1.4;
 				margin: 10px auto;
 			}
+
 			&#resetpassform {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+
 				.user-pass1-wrap {
 					width: 100%;
 					max-width: 350px;
 					display: inline-block;
+
 					.wp-pwd {
 						opacity: 1;
+
 						.password-input-wrapper {
 							width: 100%;
 							display: flex;
@@ -140,13 +154,16 @@ body.login {
 							justify-content: space-between;
 							align-items: center;
 					    margin-bottom: 20px;
+
 							input {
 								display: inherit;
 								margin: 0;
+
 								&[type=text] {
 									display:none;
 								}
 							}
+
 							.button.button-secondary {
 								margin-left: 20px;
 						    padding: 20px 10px;
@@ -159,9 +176,11 @@ body.login {
 						    border: none;
 						    box-shadow: none;
 							}
+
 							&.show-password {
 								input {
 									display: none;
+
 									&[type=text] {
 										display: block;
 									}
@@ -173,6 +192,7 @@ body.login {
 			}
 		}
 	}
+
 	#backtoblog, #nav {
     font-size: 13px;
     padding: 0 24px;
@@ -182,9 +202,11 @@ body.login {
     .tac;
     padding: 10px 0 0 0;
 	}
+
 	#backtoblog {
     padding-bottom: 100px;
 	}
+
 	.wp-social-login-widget {
 		width: 300px;
 		margin: 0 auto;
@@ -201,9 +223,7 @@ body.login {
 }
 
 // Login Plugins
-
 // Jetpack
-
 #loginform #jetpack-sso-wrap, #loginform .jetpack-sso-clear {
 	width: 320px;
   max-width: 100%;
@@ -212,7 +232,6 @@ body.login {
 }
 
 // All in One WP Security
-
 .aiowps-captcha-equation {
   text-align: center;
   font-size: 20px;

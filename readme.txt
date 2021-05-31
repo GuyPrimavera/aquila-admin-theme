@@ -3,8 +3,8 @@ Contributors: GuyPrimavera
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YVPWSJB4SPN5N
 Tags: admin theme, material design wordpress, material design admin theme, material design wordpress admin, material wordpress, admin, admin panel, admin theme style plugin, admin-theme, admin theme, aquila, backend theme, clean admin, color scheme, colour scheme, custom admin theme, flat admin theme, free admin theme, modern admin theme, new admin ui, plugin, simple admin theme, white label, white label admin, wordpress, WordPress admin, wordpress admin theme, wp-admin, wp admin page, wp admin theme
 Requires at least: 4.0
-Tested up to: 5.5.1
-Stable tag: 3.0.3
+Tested up to: 5.7
+Stable tag: 3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -82,6 +82,14 @@ No. It only changes the admin area, the login page and the admin bar for logged-
 7. Front-end showing admin bar icon instead of full admin bar (logged-in).
 
 == Changelog ==
+
+= 3.1 - 31/05/2021 =
+* Code refactored.
+* Bug fixes.
+* New support links for adminbar.
+* Footer credit removed.
+* Removed FontAwesome dependency.
+* Version updated.
 
 = 3.0.3 - 03/10/2020 =
 * Login styling updated.
@@ -216,6 +224,14 @@ No. It only changes the admin area, the login page and the admin bar for logged-
 * Beta release.
 
 == Upgrade Notice ==
+
+= 3.1 =
+* Code refactored.
+* Bug fixes.
+* New support links for adminbar.
+* Footer credit removed.
+* Removed FontAwesome dependency.
+* Version updated.
 
 = 3.0.3 =
 * Login styling updated.

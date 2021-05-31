@@ -1,17 +1,15 @@
-<?php
+<?php if (__FILE__ == $_SERVER['SCRIPT_FILENAME']) { exit; }
 
 function aquila_support_widget() {
-	
 	wp_add_dashboard_widget(
-	 'aquila-support',         								// Widget slug.
-	 'Aquila Support',         											// Title.
-	 'aquila_support_widget_function' 	// Display function.
+	 'aquila-support', // Widget slug.
+	 'Aquila Support', // Title.
+	 'aquila_support_widget_function' // Display function.
 	);
 }
 add_action( 'wp_dashboard_setup', 'aquila_support_widget' );
 
 function aquila_support_widget_function() {
-	
 	echo "	
 	<p class='about-description'>
 		<h4>Aquila Support</h4>
@@ -27,5 +25,3 @@ function aquila_support_widget_function() {
 		</ul>
 	</p>";
 }
-
-?>
