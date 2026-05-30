@@ -7,8 +7,8 @@ function clean_output_buffer() {
 
 // Custom Logo
 $aquilaLogoSettings = get_option('aquilaLogoSettings');
-$aquilaNewLogo = $aquilaLogoSettings['aquila_new_logo'] ?? 'none';
-$aquilaNewLogoSqr = $aquilaLogoSettings['aquila_new_logo_sqr'] ?? 'none'; 
+$aquilaNewLogo = isset($aquilaLogoSettings['aquila_new_logo']) ? esc_url_raw($aquilaLogoSettings['aquila_new_logo']) : '';
+$aquilaNewLogoSqr = isset($aquilaLogoSettings['aquila_new_logo_sqr']) ? esc_url_raw($aquilaLogoSettings['aquila_new_logo_sqr']) : '';
 
 $GLOBALS['aquilaNewLogo'] = $aquilaNewLogo;
 $GLOBALS['aquilaNewLogoSqr'] = $aquilaNewLogoSqr;
@@ -27,12 +27,15 @@ if (isset($aquilaLogoSettings['aquila_new_logo_sqr']) && $aquilaLogoSettings['aq
 // Admin bar
 function aquila_new_logo_admin() {
 	if (is_admin_bar_showing()) {
+		$logo_url = !empty($GLOBALS['aquilaNewLogo']) ? esc_url($GLOBALS['aquilaNewLogo']) : '';
+		$logo_sqr_url = !empty($GLOBALS['aquilaNewLogoSqr']) ? esc_url($GLOBALS['aquilaNewLogoSqr']) : '';
+
 		echo "<style type='text/css'>
 			#wpadminbar li#wp-admin-bar-wp-logo > .ab-item .ab-icon:before {
 				display: none!important;
 			}
 			#wpadminbar #wp-toolbar li#wp-admin-bar-wp-logo > .ab-item span.ab-icon {
-				background-image: url('" . $GLOBALS['aquilaNewLogo'] . "')!important;
+				background-image: url('" . $logo_url . "')!important;
 				background-size: contain;
 				background-repeat: no-repeat;
 				background-position: center center;
@@ -43,7 +46,7 @@ function aquila_new_logo_admin() {
 				left: 0;
 			}
 			#aquilaAdminbarIcon {
-				background-image: url('" . $GLOBALS['aquilaNewLogoSqr'] . "')!important;
+				background-image: url('" . $logo_sqr_url . "')!important;
 				background-size: 40px;
 				background-repeat: no-repeat;
 				background-position: center center;
@@ -55,7 +58,7 @@ function aquila_new_logo_admin() {
 				display: none!important;
 			}
 			body.folded #wpadminbar #wp-toolbar li#wp-admin-bar-wp-logo > .ab-item span.ab-icon {
-				background-image: url('" . $GLOBALS['aquilaNewLogoSqr'] . "')!important;
+				background-image: url('" . $logo_sqr_url . "')!important;
 				background-size: contain;
 				background-repeat: no-repeat;
 				background-position: center center;
@@ -71,12 +74,14 @@ function aquila_new_logo_admin() {
 
 function aquila_new_logo_sqr_admin() {
 	if (is_admin_bar_showing()) {
+		$logo_sqr_url = !empty($GLOBALS['aquilaNewLogoSqr']) ? esc_url($GLOBALS['aquilaNewLogoSqr']) : '';
+
 		echo "<style type='text/css'>
 			body.folded #wpadminbar li#wp-admin-bar-wp-logo > .ab-item .ab-icon:before {
 				display: none!important;
 			}
 			body.folded #wpadminbar #wp-toolbar li#wp-admin-bar-wp-logo > .ab-item span.ab-icon {
-				background-image: url('" . $GLOBALS['aquilaNewLogoSqr'] . "')!important;
+				background-image: url('" . $logo_sqr_url . "')!important;
 				background-size: contain;
 				background-repeat: no-repeat;
 				background-position: center center;

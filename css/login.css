@@ -1,179 +1,20 @@
-/* LESS Elements 0.9 */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmSU5fChc9.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu7GxP.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlfChc9.ttf) format('truetype');
-}
-.sans {
-  font-family: 'Roboto', sans-serif !important;
-}
-.heading {
-  font-family: 'Roboto', sans-serif;
-}
-.bgCov {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: repeat;
-}
-.icoAquila {
-  font-family: 'Aquila' !important;
-  content: "\a002";
-}
-.icoDash {
-  font-family: dashicons;
-  display: inline-block;
-  line-height: 1;
-  font-weight: 400;
-  font-style: normal;
-  speak: never;
-  text-decoration: inherit;
-  text-transform: none;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  width: 20px;
-  height: 20px;
-  font-size: 20px;
-  vertical-align: top;
-  text-align: center;
-  transition: color 0.1s ease-in;
-}
-.tac {
-  text-align: center;
-}
-.va {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-.abs {
-  position: absolute;
-}
-.absFull {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-.fix {
-  position: fixed;
-}
-.rel {
-  position: relative;
-}
-.dN {
-  display: none;
-}
-.dNI {
-  display: none!important;
-}
-.fl {
-  float: left;
-}
-.fr {
-  float: right;
-}
-.z0 {
-  z-index: 0;
-}
-.z1 {
-  z-index: 1;
-}
-.z10 {
-  z-index: 10;
-}
-.z99 {
-  z-index: 99;
-}
-.z999 {
-  z-index: 999;
-}
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext");
 /* Widths & Heights */
-.w0 {
-  width: 0%;
-}
-.w25 {
-  width: 25%;
-}
-.w50 {
-  width: 50%;
-}
-.w75 {
-  width: 75%;
-}
-.w100 {
-  width: 100%;
-}
-.mw100 {
-  max-width: 100%;
-}
-.h0 {
-  height: 0%;
-}
-.h25 {
-  height: 25%;
-}
-.h50 {
-  height: 50%;
-}
-.h75 {
-  height: 75%;
-}
-.h100 {
-  height: 100%;
-}
-.mh100 {
-  max-height: 100%;
-}
 /* Other */
-.borderBox {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.trans {
-  transition: 0.2s all linear;
-  -webkit-transition: 0.2s all linear;
-  -moz-transition: 0.2s all linear;
-  -o-transition: 0.2s all linear;
-}
-.transNone {
-  transition: none!important;
-  -webkit-transition: none!important;
-  -moz-transition: none!important;
-  -o-transition: none!important;
-}
 body.login {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
 }
 body.login #login {
   width: 100%;
   padding: 0;
   position: relative;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 body.login #login:before {
-  font-family: 'Aquila' !important;
-  content: "\a002";
+  font-family: "Aquila" !important;
+  content: "ꀂ";
   font-size: 150px;
   line-height: 1;
   text-align: center;
@@ -182,8 +23,7 @@ body.login #login:before {
   float: left;
   padding-top: 10px;
 }
-body.login #login #login_error,
-body.login #login .message {
+body.login #login #login_error, body.login #login .message {
   border: none;
   padding: 0;
   margin-left: 0;
@@ -192,7 +32,7 @@ body.login #login .message {
   box-shadow: none;
 }
 body.login #login h1 a {
-  display: none!important;
+  display: none !important;
 }
 body.login #login a {
   opacity: 0.8;
@@ -200,16 +40,12 @@ body.login #login a {
   -webkit-transition: 0.2s all linear;
   -moz-transition: 0.2s all linear;
   -o-transition: 0.2s all linear;
-  text-decoration: none!important;
+  text-decoration: none !important;
 }
-body.login #login a:hover,
-body.login #login a:active,
-body.login #login a:focus {
+body.login #login a:hover, body.login #login a:active, body.login #login a:focus {
   opacity: 1;
 }
 body.login #login form {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
   display: flex;
   flex-direction: column;
@@ -235,8 +71,7 @@ body.login #login form .forgetmenot label {
 }
 body.login #login form #wp-submit {
   border: none;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
+  box-shadow: none;
   box-shadow: none !important;
   text-decoration: none;
   text-shadow: none;
@@ -253,28 +88,14 @@ body.login #login form #wp-submit {
   letter-spacing: 1px;
   font-size: 14px;
 }
-body.login #login form .input,
-body.login #login form input[type=checkbox],
-body.login #login form input[type=text] {
-  appearance: none;
+body.login #login form .input, body.login #login form input[type=checkbox], body.login #login form input[type=text] {
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   outline: 0;
   border: 1px solid rgba(255, 255, 255, 0.4);
   width: 90%;
-  -webkit-border-top-right-radius: 3px;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-top-left-radius: 0;
-  -moz-border-radius-topright: 3px;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 0;
-  -moz-border-radius-topleft: 0;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  -moz-background-clip: padding-box;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
@@ -290,14 +111,10 @@ body.login #login form input[type=text] {
   -o-transition: 0.2s all linear;
   font-weight: 400;
 }
-body.login #login form .input:focus,
-body.login #login form input[type=checkbox]:focus,
-body.login #login form input[type=text]:focus {
+body.login #login form .input:focus, body.login #login form input[type=checkbox]:focus, body.login #login form input[type=text]:focus {
   width: 100%;
 }
-body.login #login form .input#aiowps-captcha-answer,
-body.login #login form input[type=checkbox]#aiowps-captcha-answer,
-body.login #login form input[type=text]#aiowps-captcha-answer {
+body.login #login form .input#aiowps-captcha-answer, body.login #login form input[type=checkbox]#aiowps-captcha-answer, body.login #login form input[type=text]#aiowps-captcha-answer {
   width: auto;
 }
 body.login #login form input[type=checkbox] {
@@ -363,13 +180,12 @@ body.login #login form#resetpassform .user-pass1-wrap .wp-pwd .password-input-wr
 body.login #login form#resetpassform .user-pass1-wrap .wp-pwd .password-input-wrapper.show-password input[type=text] {
   display: block;
 }
-body.login #backtoblog,
-body.login #nav {
+body.login #backtoblog, body.login #nav {
   font-size: 13px;
   padding: 0 24px;
   width: 320px;
   max-width: 100%;
-  margin: 0 auto!important;
+  margin: 0 auto !important;
   text-align: center;
   padding: 10px 0 0 0;
 }
@@ -381,19 +197,19 @@ body.login .wp-social-login-widget {
   margin: 0 auto;
   text-align: center;
 }
+
 .interim-login #login {
-  top: 0!important;
-  -webkit-transform: unset!important;
-  -ms-transform: unset!important;
-  transform: unset!important;
+  top: 0 !important;
+  transform: unset !important;
 }
-#loginform #jetpack-sso-wrap,
-#loginform .jetpack-sso-clear {
+
+#loginform #jetpack-sso-wrap, #loginform .jetpack-sso-clear {
   width: 320px;
   max-width: 100%;
   display: inline-block;
   margin: 0 auto;
 }
+
 .aiowps-captcha-equation {
   text-align: center;
   font-size: 20px;

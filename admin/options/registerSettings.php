@@ -206,14 +206,73 @@ function aquila_settings_init() {
 	);
 
 	// Register settings
-	register_setting('aquilaGeneralSettings', 'aquila_settings');
-	register_setting('aquilaLogoSettings', 'aquilaLogoSettings');
-	register_setting('aquilaAdminbarSettings', 'aquilaAdminbarSettings');
-	register_setting('aquilaColourSettings', 'aquilaColourSettings');
+	register_setting('aquilaGeneralSettings', 'aquila_settings', 'aquila_sanitize_general_settings');
+	register_setting('aquilaLogoSettings', 'aquilaLogoSettings', 'aquila_sanitize_logo_settings');
+	register_setting('aquilaAdminbarSettings', 'aquilaAdminbarSettings', 'aquila_sanitize_adminbar_settings');
+	register_setting('aquilaColourSettings', 'aquilaColourSettings', 'aquila_sanitize_colour_settings');
+}
+
+function aquila_sanitize_general_settings(mixed $input): array {
+	$input = is_array($input) ? $input : array();
+	$checkboxes = array(
+		'aquila_chk_pluginSupport',
+		'aquila_chk_dashBoxes',
+		'aquila_chk_postBlog',
+		'aquila_chk_hideFooter',
+		'aquila_chk_showNag',
+		'aquila_chk_abLinks',
+		'aquila_chk_abVisible',
+		'aquila_chk_abLogoMenuHide',
+		'aquila_chk_loginDisable',
+	);
+
+	$sanitized = array();
+	foreach ($checkboxes as $key) {
+		$sanitized[$key] = empty($input[$key]) ? 0 : 1;
+	}
+
+	return $sanitized;
+}
+
+function aquila_sanitize_logo_settings(mixed $input): array {
+	$input = is_array($input) ? $input : array();
+	$sanitized = array(
+		'aquila_new_logo' => '',
+		'aquila_new_logo_sqr' => '',
+	);
+
+	foreach ($sanitized as $key => $default) {
+		$sanitized[$key] = empty($input[$key]) ? '' : esc_url_raw($input[$key]);
+	}
+
+	return $sanitized;
+}
+
+function aquila_sanitize_adminbar_settings(mixed $input): array {
+	return is_array($input) ? $input : array();
+}
+
+function aquila_sanitize_colour_settings(mixed $input): array {
+	$input = is_array($input) ? $input : array();
+	$defaults = array(
+		'aquila_primary_colour' => '#039be5',
+		'aquila_secondary_colour' => '#ffeb3b',
+		'aquila_link_text_colour' => '#212121',
+		'aquila_menu_back_colour' => '#212121',
+		'aquila_menu_text_colour' => '#ffffff',
+	);
+
+	$sanitized = array();
+	foreach ($defaults as $key => $default) {
+		$value = isset($input[$key]) ? sanitize_hex_color($input[$key]) : null;
+		$sanitized[$key] = $value ? $value : $default;
+	}
+
+	return $sanitized;
 }
 
 // Add Settings link to Plugins page
-function aquila_action_links($links) {
+function aquila_action_links(array $links): array {
    $aquila_links[] = '<a href="'. esc_url(get_admin_url(null, 'options-general.php?page=aquilaSettings')) .'">'. __('Settings', 'aquila-admin-theme') .'</a>';
 
    return array_merge($aquila_links, $links);

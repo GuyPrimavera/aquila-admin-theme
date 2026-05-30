@@ -1,12 +1,12 @@
-@import "variables";
+﻿@import "variables.scss";
 
 @font-face {
   font-family: 'Aquila';
-  src:  url('@{icomoon-font-path}/Aquila.eot?dnmeo0');
-  src:  url('@{icomoon-font-path}/Aquila.eot?dnmeo0#iefix') format('embedded-opentype'),
-    url('@{icomoon-font-path}/Aquila.ttf?dnmeo0') format('truetype'),
-    url('@{icomoon-font-path}/Aquila.woff?dnmeo0') format('woff'),
-    url('@{icomoon-font-path}/Aquila.svg?dnmeo0#Aquila') format('svg');
+  src:  url('#{$icomoon-font-path}/Aquila.eot?dnmeo0');
+  src:  url('#{$icomoon-font-path}/Aquila.eot?dnmeo0#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/Aquila.ttf?dnmeo0') format('truetype'),
+    url('#{$icomoon-font-path}/Aquila.woff?dnmeo0') format('woff'),
+    url('#{$icomoon-font-path}/Aquila.svg?dnmeo0#Aquila') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -28,192 +28,194 @@
 
 .aquila-tools {
   &:before {
-    content: @aquila-tools;
+    content: $aquila-tools;
   }
 }
 .aquila-comment {
   &:before {
-    content: @aquila-comment;
+    content: $aquila-comment;
   }
 }
 .aquila-import_export {
   &:before {
-    content: @aquila-import_export;
+    content: $aquila-import_export;
   }
 }
 .aquila-shopping_basket {
   &:before {
-    content: @aquila-shopping_basket;
+    content: $aquila-shopping_basket;
   }
 }
 .aquila-person_pin {
   &:before {
-    content: @aquila-person_pin;
+    content: $aquila-person_pin;
   }
 }
 .aquila-person_add {
   &:before {
-    content: @aquila-person_add;
+    content: $aquila-person_add;
   }
 }
 .aquila-person {
   &:before {
-    content: @aquila-person;
+    content: $aquila-person;
   }
 }
 .aquila-palette {
   &:before {
-    content: @aquila-palette;
+    content: $aquila-palette;
   }
 }
 .aquila-photo {
   &:before {
-    content: @aquila-photo;
+    content: $aquila-photo;
   }
 }
 .aquila-envelope {
   &:before {
-    content: @aquila-envelope;
+    content: $aquila-envelope;
   }
 }
 .aquila-cubes {
   &:before {
-    content: @aquila-cubes;
+    content: $aquila-cubes;
   }
 }
 .aquila-plug {
   &:before {
-    content: @aquila-plug;
+    content: $aquila-plug;
   }
 }
 .aquila-page {
   &:before {
-    content: @aquila-page;
+    content: $aquila-page;
   }
 }
 .aquila-feather {
   &:before {
-    content: @aquila-feather;
+    content: $aquila-feather;
   }
 }
 .aquila-settings {
   &:before {
-    content: @aquila-settings;
+    content: $aquila-settings;
   }
 }
 .aquila-aquila_full {
   &:before {
-    content: @aquila-aquila_full;
+    content: $aquila-aquila_full;
   }
 }
 .aquila-terminal {
   &:before {
-    content: @aquila-terminal;
+    content: $aquila-terminal;
   }
 }
 .aquila-code {
   &:before {
-    content: @aquila-code;
+    content: $aquila-code;
   }
 }
 .aquila-java {
   &:before {
-    content: @aquila-java;
+    content: $aquila-java;
   }
 }
 .aquila-javascript {
   &:before {
-    content: @aquila-javascript;
+    content: $aquila-javascript;
   }
 }
 .aquila-jquery {
   &:before {
-    content: @aquila-jquery;
+    content: $aquila-jquery;
   }
 }
 .aquila-mysql {
   &:before {
-    content: @aquila-mysql;
+    content: $aquila-mysql;
   }
 }
 .aquila-php {
   &:before {
-    content: @aquila-php;
+    content: $aquila-php;
   }
 }
 .aquila-edge {
   &:before {
-    content: @aquila-edge;
+    content: $aquila-edge;
   }
 }
 .aquila-mito {
   &:before {
-    content: @aquila-mito;
+    content: $aquila-mito;
   }
 }
 .aquila-aquila {
   &:before {
-    content: @aquila-aquila;
+    content: $aquila-aquila;
   }
 }
 .aquila-css {
   &:before {
-    content: @aquila-css;
+    content: $aquila-css;
   }
 }
 .aquila-html {
   &:before {
-    content: @aquila-html;
+    content: $aquila-html;
   }
 }
 .aquila-wordpress {
   &:before {
-    content: @aquila-wordpress;
+    content: $aquila-wordpress;
   }
 }
 .aquila-magento {
   &:before {
-    content: @aquila-magento;
+    content: $aquila-magento;
   }
 }
 .aquila-pencil {
   &:before {
-    content: @aquila-pencil;
+    content: $aquila-pencil;
   }
 }
 .aquila-apple {
   &:before {
-    content: @aquila-apple;
+    content: $aquila-apple;
   }
 }
 .aquila-windows {
   &:before {
-    content: @aquila-windows;
+    content: $aquila-windows;
   }
 }
 .aquila-chrome {
   &:before {
-    content: @aquila-chrome;
+    content: $aquila-chrome;
   }
 }
 .aquila-firefox {
   &:before {
-    content: @aquila-firefox;
+    content: $aquila-firefox;
   }
 }
 .aquila-ie {
   &:before {
-    content: @aquila-ie;
+    content: $aquila-ie;
   }
 }
 .aquila-opera {
   &:before {
-    content: @aquila-opera;
+    content: $aquila-opera;
   }
 }
 .aquila-safari {
   &:before {
-    content: @aquila-safari;
+    content: $aquila-safari;
   }
 }
+
+
 

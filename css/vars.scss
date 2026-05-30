@@ -1,0 +1,270 @@
+// Variables and Mixins
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext");
+@import "mdColours";
+
+// Breakpoints
+$desktop: only screen and (min-width: 1025px);
+$laptop: only screen and (max-width: 1024px);
+$tablet: only screen and (max-width: 960px);
+$mobile: only screen and (max-width: 782px);
+$mobileSmall: only screen and (max-width: 600px);
+
+// Constants
+$sideWidth: 210px;
+$sideWidthFolded: 50px;
+$barHeight: 50px;
+$barHeightMobile: 46px;
+$sideMenuHeight: 36px;
+$submenuFontSize: 14px;
+
+// Aquila icon constants (ported from icons/aquila/variables.less)
+$aquila-aquila_full: "\e918";
+$aquila-aquila: "\a002";
+
+// Mixins
+@mixin sans {
+  font-family: "Roboto", sans-serif !important;
+}
+
+@mixin heading {
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin bgCov {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+}
+
+@mixin icoAquila {
+  font-family: "Aquila" !important;
+  content: "\a002";
+}
+
+@mixin icoDash {
+  font-family: dashicons;
+  display: inline-block;
+  line-height: 1;
+  font-weight: 400;
+  font-style: normal;
+  speak: never;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  vertical-align: top;
+  text-align: center;
+  transition: color 0.1s ease-in;
+}
+
+// Text
+@mixin tac {
+  text-align: center;
+}
+
+// Positioning
+@mixin va {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin abs {
+  position: absolute;
+}
+
+@mixin absFull {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@mixin fix {
+  position: fixed;
+}
+
+@mixin rel {
+  position: relative;
+}
+
+@mixin dN {
+  display: none;
+}
+
+@mixin dNI {
+  display: none !important;
+}
+
+@mixin fl {
+  float: left;
+}
+
+@mixin fr {
+  float: right;
+}
+
+@mixin z0 {
+  z-index: 0;
+}
+
+@mixin z1 {
+  z-index: 1;
+}
+
+@mixin z10 {
+  z-index: 10;
+}
+
+@mixin z99 {
+  z-index: 99;
+}
+
+@mixin z999 {
+  z-index: 999;
+}
+
+/* Widths & Heights */
+@mixin w0 {
+  width: 0%;
+}
+
+@mixin w25 {
+  width: 25%;
+}
+
+@mixin w50 {
+  width: 50%;
+}
+
+@mixin w75 {
+  width: 75%;
+}
+
+@mixin w100 {
+  width: 100%;
+}
+
+@mixin mw100 {
+  max-width: 100%;
+}
+
+@mixin h0 {
+  height: 0%;
+}
+
+@mixin h25 {
+  height: 25%;
+}
+
+@mixin h50 {
+  height: 50%;
+}
+
+@mixin h75 {
+  height: 75%;
+}
+
+@mixin h100 {
+  height: 100%;
+}
+
+@mixin mh100 {
+  max-height: 100%;
+}
+
+/* Other */
+@mixin borderBox {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin trans {
+  transition: 0.2s all linear;
+  -webkit-transition: 0.2s all linear;
+  -moz-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+}
+
+@mixin transNone {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+}
+
+@mixin box-shadow($arguments) {
+  -webkit-box-shadow: $arguments;
+  -moz-box-shadow: $arguments;
+  box-shadow: $arguments;
+}
+
+// From Chris Coyier
+@mixin border-radius($radius: 5px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+@mixin opacity($opacity: 0.5) {
+  -webkit-opacity: $opacity;
+  -moz-opacity: $opacity;
+  opacity: $opacity;
+}
+
+@mixin gradient($startColor: #eee, $endColor: white) {
+  background-color: $startColor;
+  background: -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor));
+  background: -webkit-linear-gradient(top, $startColor, $endColor);
+  background: -moz-linear-gradient(top, $startColor, $endColor);
+  background: -ms-linear-gradient(top, $startColor, $endColor);
+  background: -o-linear-gradient(top, $startColor, $endColor);
+}
+
+@mixin horizontal-gradient($startColor: #eee, $endColor: white) {
+  background-color: $startColor;
+  background-image: -webkit-gradient(linear, left top, right top, from($startColor), to($endColor));
+  background-image: -webkit-linear-gradient(left, $startColor, $endColor);
+  background-image: -moz-linear-gradient(left, $startColor, $endColor);
+  background-image: -ms-linear-gradient(left, $startColor, $endColor);
+  background-image: -o-linear-gradient(left, $startColor, $endColor);
+}
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+}
+
+@mixin transform($string) {
+  -webkit-transform: $string;
+  -moz-transform: $string;
+  -ms-transform: $string;
+  -o-transform: $string;
+}
+
+@mixin scale($factor) {
+  -webkit-transform: scale($factor);
+  -moz-transform: scale($factor);
+  -ms-transform: scale($factor);
+  -o-transform: scale($factor);
+}
+
+@mixin rotate($deg) {
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -o-transform: rotate($deg);
+}
